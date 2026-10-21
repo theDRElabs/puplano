@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# build / render output
+remotion/out/
+projects/*/renders/
+*.mp4
+*.webm
+
+# generated voice audio (regenerate with scripts/voice.ts)
+*.mp3
+
+# misc
+.DS_Store
+*.log
+.env
+.env.*

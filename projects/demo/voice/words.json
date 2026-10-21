@@ -1,0 +1,656 @@
+{
+  "voiceName": "Alice",
+  "durationMs": 52323,
+  "words": [
+    {
+      "word": "Welcome",
+      "startMs": 0,
+      "endMs": 430
+    },
+    {
+      "word": "to",
+      "startMs": 453,
+      "endMs": 499
+    },
+    {
+      "word": "the",
+      "startMs": 557,
+      "endMs": 627
+    },
+    {
+      "word": "pipeline",
+      "startMs": 685,
+      "endMs": 1196
+    },
+    {
+      "word": "test.",
+      "startMs": 1231,
+      "endMs": 1776
+    },
+    {
+      "word": "This",
+      "startMs": 1985,
+      "endMs": 2171
+    },
+    {
+      "word": "is",
+      "startMs": 2229,
+      "endMs": 2322
+    },
+    {
+      "word": "a",
+      "startMs": 2368,
+      "endMs": 2403
+    },
+    {
+      "word": "short",
+      "startMs": 2485,
+      "endMs": 2775
+    },
+    {
+      "word": "narration,",
+      "startMs": 2821,
+      "endMs": 3460
+    },
+    {
+      "word": "written",
+      "startMs": 3634,
+      "endMs": 3924
+    },
+    {
+      "word": "only",
+      "startMs": 3982,
+      "endMs": 4238
+    },
+    {
+      "word": "to",
+      "startMs": 4307,
+      "endMs": 4377
+    },
+    {
+      "word": "check",
+      "startMs": 4458,
+      "endMs": 4714
+    },
+    {
+      "word": "that",
+      "startMs": 4783,
+      "endMs": 4923
+    },
+    {
+      "word": "the",
+      "startMs": 4969,
+      "endMs": 5050
+    },
+    {
+      "word": "voice,",
+      "startMs": 5132,
+      "endMs": 5550
+    },
+    {
+      "word": "the",
+      "startMs": 5666,
+      "endMs": 5782
+    },
+    {
+      "word": "timing",
+      "startMs": 5840,
+      "endMs": 6293
+    },
+    {
+      "word": "and",
+      "startMs": 6374,
+      "endMs": 6548
+    },
+    {
+      "word": "the",
+      "startMs": 6618,
+      "endMs": 6687
+    },
+    {
+      "word": "video",
+      "startMs": 6734,
+      "endMs": 7047
+    },
+    {
+      "word": "templates",
+      "startMs": 7117,
+      "endMs": 7767
+    },
+    {
+      "word": "all",
+      "startMs": 7883,
+      "endMs": 8162
+    },
+    {
+      "word": "work",
+      "startMs": 8231,
+      "endMs": 8464
+    },
+    {
+      "word": "together.",
+      "startMs": 8533,
+      "endMs": 9125
+    },
+    {
+      "word": "Let's",
+      "startMs": 9567,
+      "endMs": 9834
+    },
+    {
+      "word": "start",
+      "startMs": 9857,
+      "endMs": 10101
+    },
+    {
+      "word": "with",
+      "startMs": 10136,
+      "endMs": 10252
+    },
+    {
+      "word": "a",
+      "startMs": 10286,
+      "endMs": 10321
+    },
+    {
+      "word": "number.",
+      "startMs": 10414,
+      "endMs": 10913
+    },
+    {
+      "word": "Imagine",
+      "startMs": 11238,
+      "endMs": 11680
+    },
+    {
+      "word": "a",
+      "startMs": 11703,
+      "endMs": 11726
+    },
+    {
+      "word": "monthly",
+      "startMs": 11807,
+      "endMs": 12214
+    },
+    {
+      "word": "rent",
+      "startMs": 12307,
+      "endMs": 12562
+    },
+    {
+      "word": "of",
+      "startMs": 12608,
+      "endMs": 12666
+    },
+    {
+      "word": "$1,700,",
+      "startMs": 12759,
+      "endMs": 14710
+    },
+    {
+      "word": "rising",
+      "startMs": 14954,
+      "endMs": 15337
+    },
+    {
+      "word": "to",
+      "startMs": 15395,
+      "endMs": 15488
+    },
+    {
+      "word": "$1,850",
+      "startMs": 15581,
+      "endMs": 17369
+    },
+    {
+      "word": "over",
+      "startMs": 17485,
+      "endMs": 17787
+    },
+    {
+      "word": "two",
+      "startMs": 17857,
+      "endMs": 18170
+    },
+    {
+      "word": "years.",
+      "startMs": 18286,
+      "endMs": 18832
+    },
+    {
+      "word": "That",
+      "startMs": 19215,
+      "endMs": 19412
+    },
+    {
+      "word": "is",
+      "startMs": 19470,
+      "endMs": 19552
+    },
+    {
+      "word": "an",
+      "startMs": 19598,
+      "endMs": 19668
+    },
+    {
+      "word": "increase",
+      "startMs": 19737,
+      "endMs": 20237
+    },
+    {
+      "word": "of",
+      "startMs": 20283,
+      "endMs": 20388
+    },
+    {
+      "word": "about",
+      "startMs": 20446,
+      "endMs": 20748
+    },
+    {
+      "word": "9",
+      "startMs": 20864,
+      "endMs": 21107
+    },
+    {
+      "word": "percent.",
+      "startMs": 21189,
+      "endMs": 21746
+    },
+    {
+      "word": "Now",
+      "startMs": 21839,
+      "endMs": 22106
+    },
+    {
+      "word": "a",
+      "startMs": 22222,
+      "endMs": 22280
+    },
+    {
+      "word": "date.",
+      "startMs": 22373,
+      "endMs": 22884
+    },
+    {
+      "word": "In",
+      "startMs": 23395,
+      "endMs": 23557
+    },
+    {
+      "word": "2026,",
+      "startMs": 23627,
+      "endMs": 25078
+    },
+    {
+      "word": "this",
+      "startMs": 25113,
+      "endMs": 25310
+    },
+    {
+      "word": "test",
+      "startMs": 25380,
+      "endMs": 25693
+    },
+    {
+      "word": "was",
+      "startMs": 25751,
+      "endMs": 25868
+    },
+    {
+      "word": "recorded",
+      "startMs": 25926,
+      "endMs": 26378
+    },
+    {
+      "word": "on",
+      "startMs": 26436,
+      "endMs": 26506
+    },
+    {
+      "word": "a",
+      "startMs": 26552,
+      "endMs": 26587
+    },
+    {
+      "word": "phone,",
+      "startMs": 26657,
+      "endMs": 27237
+    },
+    {
+      "word": "from",
+      "startMs": 27388,
+      "endMs": 27551
+    },
+    {
+      "word": "a",
+      "startMs": 27597,
+      "endMs": 27621
+    },
+    {
+      "word": "tiny",
+      "startMs": 27702,
+      "endMs": 28108
+    },
+    {
+      "word": "server,",
+      "startMs": 28178,
+      "endMs": 28735
+    },
+    {
+      "word": "with",
+      "startMs": 28886,
+      "endMs": 29083
+    },
+    {
+      "word": "no",
+      "startMs": 29176,
+      "endMs": 29374
+    },
+    {
+      "word": "editing",
+      "startMs": 29490,
+      "endMs": 29885
+    },
+    {
+      "word": "software",
+      "startMs": 29954,
+      "endMs": 30500
+    },
+    {
+      "word": "at",
+      "startMs": 30546,
+      "endMs": 30720
+    },
+    {
+      "word": "all.",
+      "startMs": 30790,
+      "endMs": 31719
+    },
+    {
+      "word": "Here",
+      "startMs": 31765,
+      "endMs": 32044
+    },
+    {
+      "word": "is",
+      "startMs": 32102,
+      "endMs": 32218
+    },
+    {
+      "word": "a",
+      "startMs": 32276,
+      "endMs": 32299
+    },
+    {
+      "word": "longer",
+      "startMs": 32392,
+      "endMs": 32717
+    },
+    {
+      "word": "sentence,",
+      "startMs": 32775,
+      "endMs": 33309
+    },
+    {
+      "word": "to",
+      "startMs": 33332,
+      "endMs": 33425
+    },
+    {
+      "word": "test",
+      "startMs": 33495,
+      "endMs": 33750
+    },
+    {
+      "word": "the",
+      "startMs": 33797,
+      "endMs": 33866
+    },
+    {
+      "word": "pauses:",
+      "startMs": 33913,
+      "endMs": 34679
+    },
+    {
+      "word": "when",
+      "startMs": 35004,
+      "endMs": 35178
+    },
+    {
+      "word": "the",
+      "startMs": 35213,
+      "endMs": 35283
+    },
+    {
+      "word": "narration",
+      "startMs": 35318,
+      "endMs": 35805
+    },
+    {
+      "word": "slows",
+      "startMs": 35898,
+      "endMs": 36293
+    },
+    {
+      "word": "down,",
+      "startMs": 36363,
+      "endMs": 36815
+    },
+    {
+      "word": "speeds",
+      "startMs": 36966,
+      "endMs": 37396
+    },
+    {
+      "word": "up,",
+      "startMs": 37477,
+      "endMs": 37709
+    },
+    {
+      "word": "or",
+      "startMs": 37744,
+      "endMs": 37907
+    },
+    {
+      "word": "stops",
+      "startMs": 37976,
+      "endMs": 38301
+    },
+    {
+      "word": "for",
+      "startMs": 38348,
+      "endMs": 38464
+    },
+    {
+      "word": "a",
+      "startMs": 38522,
+      "endMs": 38545
+    },
+    {
+      "word": "breath,",
+      "startMs": 38603,
+      "endMs": 39172
+    },
+    {
+      "word": "the",
+      "startMs": 39346,
+      "endMs": 39451
+    },
+    {
+      "word": "timing",
+      "startMs": 39509,
+      "endMs": 39869
+    },
+    {
+      "word": "data",
+      "startMs": 39927,
+      "endMs": 40240
+    },
+    {
+      "word": "should",
+      "startMs": 40287,
+      "endMs": 40484
+    },
+    {
+      "word": "follow",
+      "startMs": 40542,
+      "endMs": 40821
+    },
+    {
+      "word": "every",
+      "startMs": 40937,
+      "endMs": 41366
+    },
+    {
+      "word": "word,",
+      "startMs": 41436,
+      "endMs": 42017
+    },
+    {
+      "word": "so",
+      "startMs": 42191,
+      "endMs": 42330
+    },
+    {
+      "word": "the",
+      "startMs": 42400,
+      "endMs": 42469
+    },
+    {
+      "word": "text",
+      "startMs": 42527,
+      "endMs": 42853
+    },
+    {
+      "word": "on",
+      "startMs": 42911,
+      "endMs": 43015
+    },
+    {
+      "word": "screen",
+      "startMs": 43085,
+      "endMs": 43410
+    },
+    {
+      "word": "lands",
+      "startMs": 43491,
+      "endMs": 43770
+    },
+    {
+      "word": "exactly",
+      "startMs": 43840,
+      "endMs": 44548
+    },
+    {
+      "word": "when",
+      "startMs": 44606,
+      "endMs": 44757
+    },
+    {
+      "word": "it",
+      "startMs": 44803,
+      "endMs": 44873
+    },
+    {
+      "word": "is",
+      "startMs": 44931,
+      "endMs": 45012
+    },
+    {
+      "word": "spoken.",
+      "startMs": 45047,
+      "endMs": 45767
+    },
+    {
+      "word": "Last,",
+      "startMs": 46278,
+      "endMs": 46789
+    },
+    {
+      "word": "a",
+      "startMs": 46823,
+      "endMs": 46893
+    },
+    {
+      "word": "short",
+      "startMs": 47009,
+      "endMs": 47288
+    },
+    {
+      "word": "line.",
+      "startMs": 47346,
+      "endMs": 47787
+    },
+    {
+      "word": "That",
+      "startMs": 47915,
+      "endMs": 48147
+    },
+    {
+      "word": "is",
+      "startMs": 48205,
+      "endMs": 48298
+    },
+    {
+      "word": "the",
+      "startMs": 48356,
+      "endMs": 48437
+    },
+    {
+      "word": "whole",
+      "startMs": 48484,
+      "endMs": 48681
+    },
+    {
+      "word": "test.",
+      "startMs": 48716,
+      "endMs": 49262
+    },
+    {
+      "word": "If",
+      "startMs": 49471,
+      "endMs": 49610
+    },
+    {
+      "word": "you",
+      "startMs": 49656,
+      "endMs": 49738
+    },
+    {
+      "word": "can",
+      "startMs": 49784,
+      "endMs": 49889
+    },
+    {
+      "word": "hear",
+      "startMs": 49935,
+      "endMs": 50074
+    },
+    {
+      "word": "this",
+      "startMs": 50121,
+      "endMs": 50260
+    },
+    {
+      "word": "clearly,",
+      "startMs": 50341,
+      "endMs": 50806
+    },
+    {
+      "word": "the",
+      "startMs": 50875,
+      "endMs": 50991
+    },
+    {
+      "word": "voice",
+      "startMs": 51073,
+      "endMs": 51398
+    },
+    {
+      "word": "works.",
+      "startMs": 51456,
+      "endMs": 52338
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Broken demo",
+  "audioFile": "voice/demo.mp3",
+  "durationMs": 20000,
+  "scenes": [
+    {"id":"s1","chapter":1,"startMs":0,"endMs":4000,"layout":1,"template":"kinetic_title","props":{"text":"One"}},
+    {"id":"s2","chapter":1,"startMs":4000,"endMs":8000,"layout":1,"template":"kinetic_title","props":{"text":"Two"}},
+    {"id":"s3","chapter":1,"startMs":8000,"endMs":12000,"layout":1,"template":"kinetic_title","props":{"text":"Three"}},
+    {"id":"s4","chapter":2,"startMs":13000,"endMs":18000,"layout":2,"template":"image_zoom","props":{"imageFile":"assets/photo1.jpg","license":{"type":"CC BY-SA 4.0","sourceUrl":"https://commons.wikimedia.org/wiki/File:Example.jpg"}}}
+  ],
+  "overlays": [
+    {"id":"o1","kind":"label","text":"Too long","startMs":15000,"endMs":25000}
+  ],
+  "music": {"file":"assets/music/track.mp3","baseVolume":0.3,"duckedVolume":0.5,"fadeMs":500}
+}

@@ -1,0 +1,5 @@
+{
+  "voiceName": "Alice",
+  "modelId": "eleven_multilingual_v2",
+  "maxChunkChars": 2500
+}

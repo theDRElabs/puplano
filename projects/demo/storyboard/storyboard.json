@@ -1,0 +1,184 @@
+{
+  "title": "Pipeline test",
+  "audioFile": "voice/narration.mp3",
+  "durationMs": 52323,
+  "scenes": [
+    {
+      "id": "s1",
+      "chapter": 1,
+      "startMs": 0,
+      "endMs": 3460,
+      "layout": 1,
+      "template": "kinetic_title",
+      "narration": "Welcome to the pipeline test. This is a short narration,",
+      "props": {
+        "text": "Pipeline test",
+        "subtext": "This is a short narration"
+      }
+    },
+    {
+      "id": "s2",
+      "chapter": 1,
+      "startMs": 3460,
+      "endMs": 9125,
+      "layout": 3,
+      "transitionIn": { "type": "fade", "durationMs": 500 },
+      "template": "kinetic_title",
+      "narration": "written only to check that the voice, the timing and the video templates all work together.",
+      "props": {
+        "text": "Voice, timing and templates",
+        "subtext": "written only to check that they all work together"
+      }
+    },
+    {
+      "id": "s3",
+      "chapter": 2,
+      "startMs": 9125,
+      "endMs": 14710,
+      "layout": 1,
+      "transitionIn": { "type": "slide_up", "durationMs": 400 },
+      "template": "stat_counter",
+      "narration": "Let's start with a number. Imagine a monthly rent of $1,700,",
+      "source": { "label": "Pipeline test script" },
+      "props": {
+        "label": "Monthly rent",
+        "from": 0,
+        "to": 1700,
+        "prefix": "$",
+        "decimals": 0
+      }
+    },
+    {
+      "id": "s4",
+      "chapter": 2,
+      "startMs": 14710,
+      "endMs": 18832,
+      "layout": 2,
+      "transitionIn": { "type": "cut", "durationMs": 300 },
+      "template": "chart",
+      "narration": "rising to $1,850 over two years.",
+      "source": { "label": "Pipeline test script" },
+      "props": {
+        "kind": "bar",
+        "title": "Monthly rent over two years",
+        "unit": "$",
+        "data": [
+          { "label": "Monthly rent", "value": 1700 },
+          { "label": "Monthly rent in two years", "value": 1850 }
+        ]
+      }
+    },
+    {
+      "id": "s5",
+      "chapter": 2,
+      "startMs": 18832,
+      "endMs": 22884,
+      "layout": 3,
+      "transitionIn": { "type": "fade", "durationMs": 400 },
+      "template": "stat_counter",
+      "narration": "That is an increase of about 9 percent. Now a date.",
+      "source": { "label": "Pipeline test script" },
+      "props": {
+        "label": "Increase over two years",
+        "from": 0,
+        "to": 9,
+        "suffix": "%",
+        "decimals": 0
+      }
+    },
+    {
+      "id": "s6",
+      "chapter": 3,
+      "startMs": 22884,
+      "endMs": 31719,
+      "layout": 1,
+      "transitionIn": { "type": "slide_left", "durationMs": 500 },
+      "template": "timeline",
+      "narration": "In 2026, this test was recorded on a phone, from a tiny server, with no editing software at all.",
+      "source": { "label": "Pipeline test script" },
+      "props": {
+        "events": [
+          { "date": "2026", "label": "This test was recorded" },
+          { "date": "2026", "label": "On a phone, from a tiny server" }
+        ]
+      }
+    },
+    {
+      "id": "s7",
+      "chapter": 4,
+      "startMs": 31719,
+      "endMs": 38301,
+      "layout": 2,
+      "transitionIn": { "type": "fade", "durationMs": 400 },
+      "template": "kinetic_title",
+      "narration": "Here is a longer sentence, to test the pauses: when the narration slows down, speeds up, or stops",
+      "props": {
+        "text": "A longer sentence, to test the pauses",
+        "subtext": "when the narration slows down, speeds up, or stops"
+      }
+    },
+    {
+      "id": "s8",
+      "chapter": 4,
+      "startMs": 38301,
+      "endMs": 45767,
+      "layout": 3,
+      "transitionIn": { "type": "cut", "durationMs": 300 },
+      "template": "kinetic_title",
+      "narration": "for a breath, the timing data should follow every word, so the text on screen lands exactly when it is spoken.",
+      "props": {
+        "text": "Timing that follows every word",
+        "subtext": "the text on screen lands exactly when it is spoken"
+      }
+    },
+    {
+      "id": "s9",
+      "chapter": 5,
+      "startMs": 45767,
+      "endMs": 52323,
+      "layout": 1,
+      "transitionIn": { "type": "fade", "durationMs": 600 },
+      "template": "kinetic_title",
+      "narration": "Last, a short line. That is the whole test. If you can hear this clearly, the voice works.",
+      "props": {
+        "text": "That is the whole test",
+        "subtext": "if you can hear this clearly, the voice works"
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "id": "o1",
+      "kind": "source_caption",
+      "text": "Source: Pipeline test script",
+      "position": "bottom",
+      "startMs": 9125,
+      "endMs": 14710
+    },
+    {
+      "id": "o2",
+      "kind": "source_caption",
+      "text": "Source: Pipeline test script",
+      "position": "bottom",
+      "startMs": 14710,
+      "endMs": 18832
+    },
+    {
+      "id": "o3",
+      "kind": "source_caption",
+      "text": "Source: Pipeline test script",
+      "position": "bottom",
+      "startMs": 18832,
+      "endMs": 22884
+    },
+    {
+      "id": "o4",
+      "kind": "source_caption",
+      "text": "Source: Pipeline test script",
+      "position": "bottom",
+      "startMs": 22884,
+      "endMs": 31719
+    }
+  ],
+  "music": { "file": "assets/music/track.mp3", "baseVolume": 0.3, "duckedVolume": 0.1, "fadeMs": 500 }
+}
