@@ -6,6 +6,7 @@ import { MapScene } from "./templates/MapScene";
 import { QuoteCutout } from "./templates/QuoteCutout";
 import { StatCounter } from "./templates/StatCounter";
 import { Timeline } from "./templates/Timeline";
+import { VideoClip } from "./templates/VideoClip";
 import { regionBounds } from "./regions";
 
 export type Scene = {
@@ -22,7 +23,7 @@ const sourceText = (lic: any): string | undefined => {
   if (!lic) return undefined;
   let host = "";
   try { host = new URL(lic.sourceUrl).hostname; } catch {}
-  return [lic.type, host].filter(Boolean).join(" · ");
+  return [lic.credit, lic.type, host].filter(Boolean).join(" · ");
 };
 
 export const renderTemplate = (s: Scene): React.ReactElement => {
@@ -43,6 +44,8 @@ export const renderTemplate = (s: Scene): React.ReactElement => {
       return <QuoteCutout quote={p.quote} author={p.attribution} image={p.imageFile} layout={layout} />;
     case "image_zoom":
       return <ImageZoom image={p.imageFile} caption={p.caption} source={sourceText(p.license)} layout={layout} />;
+    case "video_clip":
+      return <VideoClip video={p.videoFile} caption={p.caption} source={sourceText(p.license)} startFromMs={p.startFromMs} layout={layout} />;
     default:
       throw new Error("Unknown template: " + s.template);
   }

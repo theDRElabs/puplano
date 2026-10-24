@@ -97,8 +97,19 @@ const ImageZoom = z.object({
   }),
 });
 
+const VideoClip = z.object({
+  ...base,
+  template: z.literal("video_clip"),
+  props: z.object({
+    videoFile: z.string().min(1),
+    caption: z.string().optional(),
+    startFromMs: z.number().int().min(0).default(0),
+    license: License,
+  }),
+});
+
 export const Scene = z.discriminatedUnion("template", [
-  KineticTitle, StatCounter, Chart, Timeline, MapScene, QuoteCutout, ImageZoom,
+  KineticTitle, StatCounter, Chart, Timeline, MapScene, QuoteCutout, ImageZoom, VideoClip,
 ]);
 
 // Things drawn ON TOP of scenes. These are allowed to overlap scenes.

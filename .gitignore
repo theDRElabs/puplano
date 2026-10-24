@@ -3,6 +3,7 @@ node_modules/
 
 # build / render output
 remotion/out/
+remotion/public/generated/
 projects/*/renders/
 *.mp4
 *.webm

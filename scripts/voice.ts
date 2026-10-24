@@ -3,7 +3,7 @@ import { execFileSync } from "node:child_process";
 import { homedir } from "node:os";
 import path from "node:path";
 
-const ROOT = path.join(homedir(), "pipeline");
+const ROOT = path.join(homedir(), "puplano");
 const project = process.argv[2];
 if (!project) { console.log("Usage: npx tsx scripts/voice.ts <project-name>"); process.exit(1); }
 
@@ -137,9 +137,22 @@ async function main() {
   execFileSync("ffmpeg", ["-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", listFile, "-c:a", "libmp3lame", "-b:a", "128k", out]);
   const probe = execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", out]);
   const durationMs = Math.round(Number(probe.toString().trim()) * 1000);
+  const timingToleranceMs = 100;
+  const badTiming = allWords.find(
+    (word) => word.startMs >= durationMs || word.endMs > durationMs + timingToleranceMs,
+  );
+  if (badTiming) {
+    throw new Error(
+      `Word timing for "${badTiming.word}" runs outside the final audio duration`,
+    );
+  }
+  const normalizedWords = allWords.map((word) => ({
+    ...word,
+    endMs: Math.min(word.endMs, durationMs),
+  }));
 
-  writeFileSync(path.join(voiceDir, "words.json"), JSON.stringify({ voiceName: config.voiceName, durationMs, words: allWords }, null, 2));
-  console.log(`Done: ${allWords.length} words, ${(durationMs / 1000).toFixed(1)} seconds`);
+  writeFileSync(path.join(voiceDir, "words.json"), JSON.stringify({ voiceName: config.voiceName, durationMs, words: normalizedWords }, null, 2));
+  console.log(`Done: ${normalizedWords.length} words, ${(durationMs / 1000).toFixed(1)} seconds`);
   console.log(`Audio: ${out}`);
 }
 

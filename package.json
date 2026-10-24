@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "voice": "tsx scripts/voice.ts",
+    "validate": "tsx scripts/validate-storyboard.ts",
+    "check-numbers": "python3 scripts/check-numbers.py",
+    "render": "tsx scripts/render.ts",
+    "typecheck": "npm --prefix remotion run typecheck:all"
   },
   "keywords": [],
   "author": "",

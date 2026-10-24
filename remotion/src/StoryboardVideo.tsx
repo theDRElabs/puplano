@@ -1,6 +1,28 @@
 import React from "react";
-import { AbsoluteFill, Sequence, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import {
+  AbsoluteFill,
+  Html5Audio,
+  Sequence,
+  interpolate,
+  staticFile,
+  useCurrentFrame,
+  useVideoConfig,
+} from "remotion";
 import { renderTemplate, Scene } from "./adapter";
+import { WordCaptions } from "./WordCaptions";
+
+export type WordTiming = {
+  word: string;
+  startMs: number;
+  endMs: number;
+};
+
+type Music = {
+  file: string;
+  baseVolume: number;
+  duckedVolume: number;
+  fadeMs: number;
+};
 
 type Overlay = {
   id: string;
@@ -13,9 +35,71 @@ type Overlay = {
 
 export type StoryboardProps = {
   title: string;
+  audioFile?: string;
   durationMs: number;
   scenes: Scene[];
   overlays: Overlay[];
+  music?: Music;
+  words?: WordTiming[];
+};
+
+const mediaSource = (file: string) =>
+  /^https?:\/\//i.test(file) ? file : staticFile(file);
+
+const narrationIsActive = (words: WordTiming[], timeMs: number): boolean => {
+  let low = 0;
+  let high = words.length - 1;
+  let candidate = -1;
+
+  while (low <= high) {
+    const middle = Math.floor((low + high) / 2);
+    if (words[middle].startMs <= timeMs + 120) {
+      candidate = middle;
+      low = middle + 1;
+    } else {
+      high = middle - 1;
+    }
+  }
+
+  return candidate >= 0 && words[candidate].endMs >= timeMs - 450;
+};
+
+const AudioTracks: React.FC<{
+  audioFile?: string;
+  durationMs: number;
+  music?: Music;
+  words: WordTiming[];
+}> = ({ audioFile, durationMs, music, words }) => {
+  const { fps } = useVideoConfig();
+
+  const musicVolume = (frame: number): number => {
+    if (!music) return 0;
+    const timeMs = (frame * 1000) / fps;
+    const narrating = words.length === 0 || narrationIsActive(words, timeMs);
+    const level = narrating ? music.duckedVolume : music.baseVolume;
+    if (music.fadeMs === 0) return level;
+
+    const fadeIn = Math.min(1, timeMs / music.fadeMs);
+    const fadeOut = Math.min(1, Math.max(0, durationMs - timeMs) / music.fadeMs);
+    return level * Math.min(fadeIn, fadeOut);
+  };
+
+  return (
+    <>
+      {audioFile && (
+        <Html5Audio name="Narration" src={mediaSource(audioFile)} />
+      )}
+      {music && (
+        <Html5Audio
+          name="Music"
+          src={mediaSource(music.file)}
+          loop
+          loopVolumeCurveBehavior="extend"
+          volume={musicVolume}
+        />
+      )}
+    </>
+  );
 };
 
 const Transition: React.FC<{ type?: string; durationMs?: number; children: React.ReactNode }> = ({ type, durationMs = 0, children }) => {
@@ -52,7 +136,14 @@ const OverlayItem: React.FC<{ o: Overlay }> = ({ o }) => {
   );
 };
 
-export const StoryboardVideo: React.FC<StoryboardProps> = ({ scenes, overlays = [] }) => {
+export const StoryboardVideo: React.FC<StoryboardProps> = ({
+  audioFile,
+  durationMs,
+  scenes,
+  overlays = [],
+  music,
+  words = [],
+}) => {
   const { fps } = useVideoConfig();
   const f = (ms: number) => Math.round((ms * fps) / 1000);
   return (
@@ -69,6 +160,13 @@ export const StoryboardVideo: React.FC<StoryboardProps> = ({ scenes, overlays = 
           <OverlayItem o={o} />
         </Sequence>
       ))}
+      {words.length > 0 && <WordCaptions words={words} />}
+      <AudioTracks
+        audioFile={audioFile}
+        durationMs={durationMs}
+        music={music}
+        words={words}
+      />
     </AbsoluteFill>
   );
 };

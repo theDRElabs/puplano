@@ -10,5 +10,5 @@ Ideas to apply later:
 - Slow push and parallax on still images.
 - Scene = background + components on top (storyboard change).
 - Fade-through-black transition.
-- Footage source still unsolved (Pexels paused).
+- Footage uses a provider-neutral local asset workflow with required license metadata; automated provider search remains intentionally out of scope.
 - Take the principles, do not copy their brand assets or wording.
