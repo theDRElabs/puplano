@@ -14,9 +14,39 @@ type CaptionCue = {
   words: WordTiming[];
 };
 
+export type CaptionStyle = {
+  size: number;
+  color: string;
+  background: string;
+  opacity: number;
+  position: "bottom";
+  fontFamily?: string;
+  activeColor?: string;
+};
+
+export type CaptionOptions = {
+  maxWords?: number;
+  maxMs?: number;
+};
+
+const DEFAULT_MAX_WORDS = 7;
+const DEFAULT_MAX_MS = 3500;
+
 const endsSentence = (word: string) => /[.!?]["')\]]?$/.test(word);
 
-export const buildCaptionCues = (words: WordTiming[]): CaptionCue[] => {
+const withOpacity = (color: string, opacity: number): string => {
+  const match = /^#([0-9a-f]{6})$/i.exec(color);
+  if (!match) return color;
+  const value = Number.parseInt(match[1], 16);
+  return `rgba(${(value >> 16) & 255}, ${(value >> 8) & 255}, ${value & 255}, ${opacity})`;
+};
+
+export const buildCaptionCues = (
+  words: WordTiming[],
+  options: CaptionOptions = {},
+): CaptionCue[] => {
+  const maxWords = options.maxWords ?? DEFAULT_MAX_WORDS;
+  const maxMs = options.maxMs ?? DEFAULT_MAX_MS;
   const cues: CaptionCue[] = [];
   let current: WordTiming[] = [];
 
@@ -36,9 +66,9 @@ export const buildCaptionCues = (words: WordTiming[]): CaptionCue[] => {
     const previous = current[current.length - 1];
     const shouldBreak =
       previous &&
-      (current.length >= 7 ||
+      (current.length >= maxWords ||
         word.startMs - previous.endMs > 550 ||
-        word.endMs - current[0].startMs > 3500 ||
+        word.endMs - current[0].startMs > maxMs ||
         (current.length >= 3 && endsSentence(previous.word)));
 
     if (shouldBreak) flush();
@@ -66,11 +96,19 @@ const findCue = (cues: CaptionCue[], timeMs: number): CaptionCue | undefined => 
   return undefined;
 };
 
-export const WordCaptions: React.FC<{ words: WordTiming[] }> = ({ words }) => {
+export const WordCaptions: React.FC<{
+  words: WordTiming[];
+  captionStyle?: CaptionStyle;
+  maxWords?: number;
+  maxMs?: number;
+}> = ({ words, captionStyle, maxWords, maxMs }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const timeMs = (frame * 1000) / fps;
-  const cues = useMemo(() => buildCaptionCues(words), [words]);
+  const cues = useMemo(
+    () => buildCaptionCues(words, { maxWords, maxMs }),
+    [words, maxWords, maxMs],
+  );
   const cue = findCue(cues, timeMs);
   if (!cue) return null;
 
@@ -88,6 +126,16 @@ export const WordCaptions: React.FC<{ words: WordTiming[] }> = ({ words }) => {
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );
 
+  const style = captionStyle ?? {
+    size: 38,
+    color: "white",
+    background: "rgba(5, 9, 16, 0.76)",
+    opacity: 1,
+    position: "bottom" as const,
+    fontFamily: inter,
+    activeColor: "rgb(77, 163, 255)",
+  };
+
   return (
     <AbsoluteFill
       style={{
@@ -96,7 +144,7 @@ export const WordCaptions: React.FC<{ words: WordTiming[] }> = ({ words }) => {
         padding: "0 160px 112px",
         pointerEvents: "none",
         opacity,
-        fontFamily: inter,
+        fontFamily: style.fontFamily ?? inter,
       }}
     >
       <div
@@ -104,10 +152,10 @@ export const WordCaptions: React.FC<{ words: WordTiming[] }> = ({ words }) => {
           maxWidth: 1380,
           padding: "16px 26px 18px",
           borderRadius: 12,
-          backgroundColor: "rgba(5, 9, 16, 0.76)",
+          backgroundColor: withOpacity(style.background, style.opacity),
           boxShadow: "0 12px 40px rgba(0,0,0,0.28)",
-          color: "white",
-          fontSize: 38,
+          color: style.color,
+          fontSize: style.size,
           fontWeight: 700,
           lineHeight: 1.25,
           textAlign: "center",
@@ -117,7 +165,7 @@ export const WordCaptions: React.FC<{ words: WordTiming[] }> = ({ words }) => {
           <span
             key={`${word.startMs}-${index}`}
             style={{
-              color: index === activeWord ? "#4da3ff" : "white",
+              color: index === activeWord ? (style.activeColor ?? style.color) : style.color,
               marginRight: index === cue.words.length - 1 ? 0 : "0.28em",
             }}
           >

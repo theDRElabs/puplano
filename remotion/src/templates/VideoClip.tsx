@@ -8,6 +8,7 @@ import {
   useVideoConfig,
 } from "remotion";
 import { loadFont } from "@remotion/google-fonts/Inter";
+import { rgba, useStyle } from "../style";
 
 const { fontFamily: inter } = loadFont("normal", {
   weights: ["400", "700", "800"],
@@ -32,6 +33,7 @@ export const VideoClip: React.FC<Props> = ({
   startFromMs = 0,
   layout,
 }) => {
+  const { palette, typography } = useStyle();
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const fadeIn = interpolate(frame, [0, 10], [0, 1], {
@@ -68,7 +70,7 @@ export const VideoClip: React.FC<Props> = ({
       {caption && (
         <div
           style={{
-            color: "white",
+            color: palette.foreground,
             fontSize: 58,
             fontWeight: 800,
             lineHeight: 1.15,
@@ -78,7 +80,7 @@ export const VideoClip: React.FC<Props> = ({
         </div>
       )}
       {source && (
-        <div style={{ color: "#9fb3c8", fontSize: 26, marginTop: 18 }}>
+        <div style={{ color: palette.muted, fontSize: 26, marginTop: 18, fontFamily: `${typography.bodyFont}, ${inter}` }}>
           {source}
         </div>
       )}
@@ -89,13 +91,13 @@ export const VideoClip: React.FC<Props> = ({
     return (
       <AbsoluteFill
         style={{
-          backgroundColor: "#0b1220",
+          backgroundColor: palette.background,
           padding: 120,
           flexDirection: "row",
           alignItems: "center",
           gap: 80,
           opacity: fadeIn * fadeOut,
-          fontFamily: inter,
+          fontFamily: `${typography.displayFont}, ${inter}`,
         }}
       >
         <div
@@ -117,16 +119,16 @@ export const VideoClip: React.FC<Props> = ({
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: "#0b1220",
+        backgroundColor: palette.background,
         opacity: fadeIn * fadeOut,
-        fontFamily: inter,
+        fontFamily: `${typography.displayFont}, ${inter}`,
       }}
     >
       <AbsoluteFill style={{ overflow: "hidden" }}>{footage}</AbsoluteFill>
       <AbsoluteFill
         style={{
           background:
-            "radial-gradient(circle at center, transparent 35%, rgba(11,18,32,0.7) 100%), linear-gradient(to top, rgba(11,18,32,0.92) 0%, transparent 55%)",
+            `radial-gradient(circle at center, transparent 35%, ${rgba(palette.background, 0.7)} 100%), linear-gradient(to top, ${rgba(palette.background, 0.92)} 0%, transparent 55%)`,
         }}
       />
       {(caption || source) && (

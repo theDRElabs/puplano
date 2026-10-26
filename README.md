@@ -91,6 +91,22 @@ Narration is embedded automatically. If music exists, it loops, fades at both
 ends, and ducks while narration is active. Word timings also drive synchronized
 phrase captions with active-word highlighting.
 
+### Style profiles
+
+Render style is data, not code. Profiles live in `styles/<id>.json` and are
+validated by `schemas/style.ts`. A profile controls fps, frame dimensions,
+palette, typography, grade targets, pacing targets, and caption limits.
+
+```bash
+npm run render -- <project> --style clean-explainer
+```
+
+`--style` defaults to `network-truecrime`. The profile supplies the video fps
+(Remotion derives frame timing and duration from it), width, height, palette,
+typography, and caption limits. Storyboard timings, media, and audio are not
+changed by a style. Use `--frames 430-460` to render a short slice for visual
+checks.
+
 ## Images, footage, and licenses
 
 Media sourcing is provider-neutral by default: obtain a clip or image you are

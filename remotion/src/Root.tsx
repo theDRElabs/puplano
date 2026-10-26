@@ -7,7 +7,23 @@ import { Timeline } from "./templates/Timeline";
 import { MapScene } from "./templates/MapScene";
 import { QuoteCutout } from "./templates/QuoteCutout";
 import { ImageZoom } from "./templates/ImageZoom";
-import { StoryboardVideo } from "./StoryboardVideo";
+import { StoryboardVideo, type StoryboardProps } from "./StoryboardVideo";
+
+const storyboardDefaults: StoryboardProps = {
+  title: "Test",
+  durationMs: 5000,
+  overlays: [],
+  scenes: [
+    {
+      id: "s1",
+      template: "kinetic_title",
+      layout: 1,
+      startMs: 0,
+      endMs: 5000,
+      props: { text: "Test" },
+    },
+  ],
+};
 
 export const Root: React.FC = () => {
   return (
@@ -82,8 +98,17 @@ export const Root: React.FC = () => {
         fps={30}
         width={1920}
         height={1080}
-        defaultProps={{ title: "Test", durationMs: 5000, overlays: [], scenes: [{ id: "s1", template: "kinetic_title", layout: 1, startMs: 0, endMs: 5000, props: { text: "Test" } }] }}
-        calculateMetadata={({ props }) => ({ durationInFrames: Math.max(1, Math.round((props.durationMs * 30) / 1000)) })}
+        defaultProps={storyboardDefaults}
+        calculateMetadata={({ props }) => {
+          const video = props.style?.video;
+          const fps = video?.fps ?? 30;
+          return {
+            fps,
+            width: video?.width ?? 1920,
+            height: video?.height ?? 1080,
+            durationInFrames: Math.max(1, Math.round((props.durationMs * fps) / 1000)),
+          };
+        }}
       />
     </>
   );

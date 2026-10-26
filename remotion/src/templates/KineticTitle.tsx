@@ -1,11 +1,13 @@
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { loadFont } from "@remotion/google-fonts/Inter";
+import { useStyle } from "../style";
 const { fontFamily: inter } = loadFont("normal", { weights: ["400", "700", "800"], subsets: ["latin"] });
 
 type Props = { text: string; subtext?: string; layout: number };
 
 export const KineticTitle: React.FC<Props> = ({ text, subtext, layout }) => {
+  const { palette, typography } = useStyle();
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const words = text.split(" ");
@@ -26,9 +28,9 @@ export const KineticTitle: React.FC<Props> = ({ text, subtext, layout }) => {
 
   return (
     <AbsoluteFill
-      style={{ backgroundColor: "#0b1220", justifyContent: vertical, alignItems: align, padding: 120, opacity: fadeOut }}
+      style={{ backgroundColor: palette.background, justifyContent: vertical, alignItems: align, padding: 120, opacity: fadeOut }}
     >
-      {layout === 2 && <div style={{ width: 120, height: 8, backgroundColor: "#4da3ff", marginBottom: 40 }} />}
+      {layout === 2 && <div style={{ width: 120, height: 8, backgroundColor: palette.accent, marginBottom: 40 }} />}
       <div
         style={{
           display: "flex",
@@ -36,11 +38,11 @@ export const KineticTitle: React.FC<Props> = ({ text, subtext, layout }) => {
           gap: "0 28px",
           justifyContent: align,
           textAlign,
-          fontFamily: inter,
+          fontFamily: `${typography.displayFont}, ${inter}`,
           fontWeight: 800,
           fontSize: 110,
           lineHeight: 1.1,
-          color: "white",
+          color: palette.foreground,
         }}
       >
         {words.map((w, i) => {
@@ -53,7 +55,7 @@ export const KineticTitle: React.FC<Props> = ({ text, subtext, layout }) => {
         })}
       </div>
       {subtext && (
-        <div style={{ marginTop: 36, fontSize: 42, color: "#9fb3c8", fontFamily: inter, opacity: subtextIn }}>
+        <div style={{ marginTop: 36, fontSize: 42, color: palette.muted, fontFamily: `${typography.bodyFont}, ${inter}`, opacity: subtextIn }}>
           {subtext}
         </div>
       )}

@@ -1,0 +1,60 @@
+{
+  "id": "network-truecrime",
+  "label": "Network True Crime",
+  "video": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "safeAreaPct": 5
+  },
+  "palette": {
+    "background": "#0c0a09",
+    "foreground": "#f2ece6",
+    "accent": "#c9a227",
+    "muted": "#7a6f66"
+  },
+  "typography": {
+    "displayFont": "Inter",
+    "bodyFont": "Inter",
+    "captionFont": "Inter",
+    "captionSizePx": 34,
+    "captionColor": "#f2ece6",
+    "captionBackground": "#000000",
+    "captionBackgroundOpacity": 0.55,
+    "labelColor": "#ffffff",
+    "labelBackground": "#000000",
+    "labelBackgroundOpacity": 0.45,
+    "labelPosition": "lower_left"
+  },
+  "grade": {
+    "meanRgb": [96, 83, 77],
+    "medianLuma": 79,
+    "saturation": 0.24,
+    "grain": 0.06,
+    "vignette": 0.18
+  },
+  "pacing": {
+    "wpmSpoken": 152,
+    "wpmTotal": 134,
+    "silenceRatio": 0.12,
+    "pausesPerMinute": 11,
+    "pauseMedianMs": 530,
+    "pauseP90Ms": 1140,
+    "sentenceMinMs": 500,
+    "sentenceMaxMs": 900,
+    "beatMs": [2500, 4500],
+    "cutsPerMinute": 12,
+    "medianShotMs": 3700,
+    "minShotMs": 1600,
+    "longShotShare": 0.27,
+    "cutOnSentenceEnd": 0.65,
+    "holdsUpToMs": 42000,
+    "curve": ["open_high", "mid_ease", "climax_accel", "resolve_hold"]
+  },
+  "captions": {
+    "maxWords": 7,
+    "maxMs": 3500,
+    "position": "bottom",
+    "nameLabel": true
+  }
+}

@@ -24,9 +24,9 @@ export const KineticTitle: React.FC<Props> = ({ text, subtext, layout }) => {
 
   return (
     <AbsoluteFill
-      style={{ backgroundColor: "#0b1220", justifyContent: vertical, alignItems: align, padding: 120, opacity: fadeOut }}
+      style={{ backgroundColor: "#0c0a09", justifyContent: vertical, alignItems: align, padding: 120, opacity: fadeOut }}
     >
-      {layout === 2 && <div style={{ width: 120, height: 8, backgroundColor: "#4da3ff", marginBottom: 40 }} />}
+      {layout === 2 && <div style={{ width: 120, height: 8, backgroundColor: "#c9a227", marginBottom: 40 }} />}
       <div
         style={{
           display: "flex",

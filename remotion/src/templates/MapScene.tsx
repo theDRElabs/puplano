@@ -4,6 +4,7 @@ import { geoNaturalEarth1, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
 import world from "world-atlas/countries-50m.json";
 import { loadFont } from "@remotion/google-fonts/Inter";
+import { rgba, useStyle } from "../style";
 const { fontFamily: inter } = loadFont("normal", { weights: ["400", "700", "800"], subsets: ["latin"] });
 
 type Pin = { name: string; lon: number; lat: number };
@@ -13,6 +14,7 @@ const countries: any = feature(world as any, (world as any).objects.countries);
 countries.features = countries.features.filter((f: any) => f.properties.name !== "Antarctica");
 
 export const MapScene: React.FC<Props> = ({ title, highlight, pins, layout, bounds }) => {
+  const { palette, typography } = useStyle();
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const fadeOut = interpolate(frame, [durationInFrames - 10, durationInFrames], [1, 0], { extrapolateLeft: "clamp" });
@@ -34,22 +36,23 @@ export const MapScene: React.FC<Props> = ({ title, highlight, pins, layout, boun
   const xy = pins.map((p) => proj([p.lon, p.lat]) as [number, number]);
   const route = pins.length > 1 ? path({ type: "LineString", coordinates: pins.map((p) => [p.lon, p.lat]) } as any) : null;
   const draw = interpolate(frame, [20, 20 + pins.length * 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const landColor = rgba(palette.muted, 0.35);
   return (
-    <AbsoluteFill style={{ backgroundColor: "#0b1220", padding: 120, opacity: fadeOut, fontFamily: inter }}>
-      <div style={{ color: "white", fontSize: 64, fontWeight: 800 }}>{title}</div>
+    <AbsoluteFill style={{ backgroundColor: palette.background, padding: 120, opacity: fadeOut, fontFamily: `${typography.displayFont}, ${inter}` }}>
+      <div style={{ color: palette.foreground, fontSize: 64, fontWeight: 800 }}>{title}</div>
       <svg width={W} height={H} style={{ marginTop: 20 }}>
-        <defs><radialGradient id="vig" cx="50%" cy="50%" r="55%"><stop offset="55%" stopColor="#0b1220" stopOpacity="0" /><stop offset="90%" stopColor="#0b1220" stopOpacity="1" /></radialGradient></defs>
+        <defs><radialGradient id="vig" cx="50%" cy="50%" r="55%"><stop offset="55%" stopColor={palette.background} stopOpacity="0" /><stop offset="90%" stopColor={palette.background} stopOpacity="1" /></radialGradient></defs>
         {countries.features.map((f: any, i: number) => (
-          <path key={i} d={path(f) || ""} fill={highlight.includes(f.properties.name) ? "#4da3ff" : "#1c2a40"} stroke="#0b1220" strokeWidth={1} />
+          <path key={i} d={path(f) || ""} fill={highlight.includes(f.properties.name) ? palette.accent : landColor} stroke={palette.background} strokeWidth={1} />
         ))}
         {layout === 2 && <rect width={W} height={H} fill="url(#vig)" />}
         {layout === 3 && route && (
-          <path d={route} fill="none" stroke="white" strokeWidth={6} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} />
+          <path d={route} fill="none" stroke={palette.foreground} strokeWidth={6} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} />
         )}
         {pins.map((p, i) => (
           <g key={i} opacity={show(i)}>
-            <circle cx={xy[i][0]} cy={xy[i][1]} r={14} fill="white" stroke="#4da3ff" strokeWidth={6} />
-            <text x={xy[i][0]} y={xy[i][1] - 30} fill="white" fontSize={40} fontWeight={700} fontFamily={inter} textAnchor="middle" stroke="#0b1220" strokeWidth={8} paintOrder="stroke" strokeLinejoin="round">{p.name}</text>
+            <circle cx={xy[i][0]} cy={xy[i][1]} r={14} fill={palette.foreground} stroke={palette.accent} strokeWidth={6} />
+            <text x={xy[i][0]} y={xy[i][1] - 30} fill={palette.foreground} fontSize={40} fontWeight={700} fontFamily={`${typography.bodyFont}, ${inter}`} textAnchor="middle" stroke={palette.background} strokeWidth={8} paintOrder="stroke" strokeLinejoin="round">{p.name}</text>
           </g>
         ))}
       </svg>

@@ -1,0 +1,60 @@
+{
+  "id": "clean-explainer",
+  "label": "Clean Explainer",
+  "video": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "safeAreaPct": 8
+  },
+  "palette": {
+    "background": "#f6f4ef",
+    "foreground": "#141414",
+    "accent": "#1d4ed8",
+    "muted": "#6b7280"
+  },
+  "typography": {
+    "displayFont": "Inter",
+    "bodyFont": "Inter",
+    "captionFont": "Inter",
+    "captionSizePx": 30,
+    "captionColor": "#141414",
+    "captionBackground": "#ffffff",
+    "captionBackgroundOpacity": 0.92,
+    "labelColor": "#ffffff",
+    "labelBackground": "#1d4ed8",
+    "labelBackgroundOpacity": 0.9,
+    "labelPosition": "lower_left"
+  },
+  "grade": {
+    "meanRgb": [232, 229, 222],
+    "medianLuma": 210,
+    "saturation": 0.95,
+    "grain": 0,
+    "vignette": 0
+  },
+  "pacing": {
+    "wpmSpoken": 175,
+    "wpmTotal": 160,
+    "silenceRatio": 0.08,
+    "pausesPerMinute": 8,
+    "pauseMedianMs": 420,
+    "pauseP90Ms": 800,
+    "sentenceMinMs": 450,
+    "sentenceMaxMs": 750,
+    "beatMs": [3000, 5200],
+    "cutsPerMinute": 8,
+    "medianShotMs": 6000,
+    "minShotMs": 2500,
+    "longShotShare": 0.55,
+    "cutOnSentenceEnd": 0.5,
+    "holdsUpToMs": 60000,
+    "curve": ["open_calm", "mid_steady", "climax_clear", "resolve_soft"]
+  },
+  "captions": {
+    "maxWords": 8,
+    "maxMs": 4000,
+    "position": "bottom",
+    "nameLabel": false
+  }
+}

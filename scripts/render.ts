@@ -14,6 +14,7 @@ import { Storyboard } from "../schemas/storyboard";
 import { WordTimings } from "../schemas/words";
 import { stageProjectAssets } from "./project-assets";
 import { verifyStoryboardMedia } from "./media-workflow";
+import { DEFAULT_STYLE_ID, loadStyle } from "./style";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -21,11 +22,13 @@ type Options = {
   project: string;
   output?: string;
   scale: number;
+  style: string;
+  frames?: string;
 };
 
 const usage = () => {
   console.log(
-    "Usage: npm run render -- <project> [--output <file.mp4>] [--scale <number>]",
+    "Usage: npm run render -- <project> [--output <file.mp4>] [--scale <number>] [--style <id>] [--frames <start-end>]",
   );
 };
 
@@ -37,18 +40,23 @@ const parseArgs = (): Options => {
     process.exit(1);
   }
 
-  const options: Options = { project, scale: 1 };
+  const options: Options = { project, scale: 1, style: DEFAULT_STYLE_ID };
   while (args.length > 0) {
     const flag = args.shift();
     const value = args.shift();
     if (!value) throw new Error(`Missing value for ${flag}`);
     if (flag === "--output") options.output = value;
     else if (flag === "--scale") options.scale = Number(value);
+    else if (flag === "--style") options.style = value;
+    else if (flag === "--frames") options.frames = value;
     else throw new Error(`Unknown option: ${flag}`);
   }
 
   if (!Number.isFinite(options.scale) || options.scale < 0.1 || options.scale > 2) {
     throw new Error("--scale must be a number from 0.1 to 2");
+  }
+  if (options.frames && !/^\d+-\d+$/.test(options.frames)) {
+    throw new Error("--frames must be a start-end frame range, for example 430-460");
   }
   return options;
 };
@@ -97,6 +105,7 @@ const main = async () => {
     throw new Error(`Invalid project name: ${options.project}`);
   }
 
+  const style = loadStyle(options.style);
   const projectDir = path.join(ROOT, "projects", options.project);
   const storyboardFile = path.join(projectDir, "storyboard", "storyboard.json");
   const wordsFile = path.join(projectDir, "voice", "words.json");
@@ -145,7 +154,7 @@ const main = async () => {
   try {
     writeFileSync(
       propsFile,
-      JSON.stringify({ ...staged.storyboard, words: wordsResult.data.words }),
+      JSON.stringify({ ...staged.storyboard, words: wordsResult.data.words, style }),
     );
 
     const remotionDir = path.join(ROOT, "remotion");
@@ -160,27 +169,27 @@ const main = async () => {
     }
 
     console.log(`4/4 Rendering ${path.relative(ROOT, output)}`);
-    execFileSync(
-      remotionBin,
-      [
-        "render",
-        "src/index.ts",
-        "StoryboardVideo",
-        output,
-        "--props",
-        propsFile,
-        "--codec",
-        "h264",
-        "--audio-codec",
-        "aac",
-        "--scale",
-        String(options.scale),
-        "--log",
-        "warn",
-        "--overwrite",
-      ],
-      { cwd: remotionDir, stdio: "inherit" },
-    );
+    const remotionArgs = [
+      "render",
+      "src/index.ts",
+      "StoryboardVideo",
+      output,
+      "--props",
+      propsFile,
+      "--codec",
+      "h264",
+      "--audio-codec",
+      "aac",
+      "--scale",
+      String(options.scale),
+    ];
+    if (options.frames) remotionArgs.push("--frames", options.frames);
+    remotionArgs.push("--log", "warn", "--overwrite");
+
+    execFileSync(remotionBin, remotionArgs, {
+      cwd: remotionDir,
+      stdio: "inherit",
+    });
   } finally {
     rmSync(temporaryDir, { recursive: true, force: true });
   }

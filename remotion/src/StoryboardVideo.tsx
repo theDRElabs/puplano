@@ -9,6 +9,7 @@ import {
   useVideoConfig,
 } from "remotion";
 import { renderTemplate, Scene } from "./adapter";
+import { StyleProvider, rgba, useStyle, type StyleProfile } from "./style";
 import { WordCaptions } from "./WordCaptions";
 
 export type WordTiming = {
@@ -41,6 +42,7 @@ export type StoryboardProps = {
   overlays: Overlay[];
   music?: Music;
   words?: WordTiming[];
+  style?: StyleProfile;
 };
 
 const mediaSource = (file: string) =>
@@ -116,19 +118,33 @@ const Transition: React.FC<{ type?: string; durationMs?: number; children: React
 };
 
 const OverlayItem: React.FC<{ o: Overlay }> = ({ o }) => {
+  const style = useStyle();
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const fade = interpolate(frame, [0, 8, durationInFrames - 8, durationInFrames], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const top = o.position === "top";
+  const top = o.kind === "label" ? false : o.position === "top";
   const box: React.CSSProperties = {
-    fontFamily: "Inter, sans-serif",
-    color: "#ffffff",
+    fontFamily: style.typography.bodyFont,
+    color: style.palette.foreground,
     fontSize: 32,
     maxWidth: 1500,
   };
-  if (o.kind === "source_caption") { box.fontSize = 26; box.color = "#9fb3c8"; }
-  if (o.kind === "lower_third") { box.fontSize = 42; box.fontWeight = 600; box.padding = "16px 28px"; box.background = "rgba(11,18,32,0.78)"; box.borderLeft = "6px solid #4da3ff"; }
-  if (o.kind === "label") { box.fontSize = 30; box.fontWeight = 700; box.padding = "8px 24px"; box.borderRadius = 999; box.background = "#4da3ff"; box.color = "#0b1220"; }
+  if (o.kind === "source_caption") { box.fontSize = 26; box.color = style.palette.muted; }
+  if (o.kind === "lower_third") {
+    box.fontSize = 42;
+    box.fontWeight = 600;
+    box.padding = "16px 28px";
+    box.background = rgba(style.palette.background, 0.78);
+    box.borderLeft = `6px solid ${style.palette.accent}`;
+  }
+  if (o.kind === "label") {
+    box.fontSize = 30;
+    box.fontWeight = 700;
+    box.padding = "8px 24px";
+    box.borderRadius = 999;
+    box.background = rgba(style.typography.labelBackground, style.typography.labelBackgroundOpacity);
+    box.color = style.typography.labelColor;
+  }
   return (
     <AbsoluteFill style={{ opacity: fade, padding: top ? "60px 80px 0" : "0 80px 60px", justifyContent: top ? "flex-start" : "flex-end", alignItems: "flex-start" }}>
       <div style={box}>{o.text}</div>
@@ -136,7 +152,7 @@ const OverlayItem: React.FC<{ o: Overlay }> = ({ o }) => {
   );
 };
 
-export const StoryboardVideo: React.FC<StoryboardProps> = ({
+const StoryboardVideoBody: React.FC<StoryboardProps> = ({
   audioFile,
   durationMs,
   scenes,
@@ -144,10 +160,11 @@ export const StoryboardVideo: React.FC<StoryboardProps> = ({
   music,
   words = [],
 }) => {
+  const style = useStyle();
   const { fps } = useVideoConfig();
   const f = (ms: number) => Math.round((ms * fps) / 1000);
   return (
-    <AbsoluteFill style={{ backgroundColor: "#0b1220" }}>
+    <AbsoluteFill style={{ backgroundColor: style.palette.background }}>
       {scenes.map((s) => (
         <Sequence key={s.id} from={f(s.startMs)} durationInFrames={Math.max(1, f(s.endMs) - f(s.startMs))}>
           <Transition type={s.transitionIn?.type} durationMs={s.transitionIn?.durationMs}>
@@ -160,7 +177,22 @@ export const StoryboardVideo: React.FC<StoryboardProps> = ({
           <OverlayItem o={o} />
         </Sequence>
       ))}
-      {words.length > 0 && <WordCaptions words={words} />}
+      {words.length > 0 && (
+        <WordCaptions
+          words={words}
+          maxWords={style.captions.maxWords}
+          maxMs={style.captions.maxMs}
+          captionStyle={{
+            size: style.typography.captionSizePx,
+            color: style.typography.captionColor,
+            background: style.typography.captionBackground,
+            opacity: style.typography.captionBackgroundOpacity,
+            position: style.captions.position,
+            fontFamily: style.typography.captionFont,
+            activeColor: style.palette.accent,
+          }}
+        />
+      )}
       <AudioTracks
         audioFile={audioFile}
         durationMs={durationMs}
@@ -170,3 +202,9 @@ export const StoryboardVideo: React.FC<StoryboardProps> = ({
     </AbsoluteFill>
   );
 };
+
+export const StoryboardVideo: React.FC<StoryboardProps> = (props) => (
+  <StyleProvider style={props.style}>
+    <StoryboardVideoBody {...props} />
+  </StyleProvider>
+);
