@@ -93,10 +93,76 @@ phrase captions with active-word highlighting.
 
 ## Images, footage, and licenses
 
-Media sourcing is intentionally provider-neutral: obtain a clip or image you
-are allowed to use, place it under the project's `assets/` directory, and keep
-its license and source URL in the storyboard. Puplano does not scrape a stock
-provider or silently download unverified media.
+Media sourcing is provider-neutral by default: obtain a clip or image you are
+allowed to use, place it under the project's `assets/` directory, and keep its
+license and source URL in the storyboard. Puplano does not silently download
+unverified media.
+
+### Automated Archive.org sourcing
+
+Puplano uses Archive.org's official advanced-search, metadata, and download APIs.
+Discovery is metadata-based; it never proves that footage is visually relevant.
+The workflow therefore requires contact-sheet review and an explicit time range
+before a clip can be attached to a scene.
+
+```bash
+# Create scene-specific visual briefs, then edit media/shot-plan.json.
+npm run source-media -- <project> plan
+
+# Search every outstanding brief, or run one focused search.
+npm run source-media -- <project> discover --collection prelinger --rows 12 --pages 2
+npm run source-media -- <project> search 'police AND investigation' --scene s4 --rows 12
+
+# Download the exact derivative named in Archive.org metadata.
+npm run source-media -- <project> download <identifier> --file <remote.mp4>
+
+# Generate timestamped beginning/middle/end contact sheets (times are seconds).
+npm run source-media -- <project> preview <originalAssetId> --skip-intro 15 --max-shots 60
+
+# Record a human/agent review of the uploader's rights claim.
+npm run source-media -- <project> approve <originalAssetId> \
+  --reviewer '<name>' \
+  --evidence 'https://archive.org/details/<identifier>,<license-url>' \
+  --note '<what was reviewed and limits of the approval>' \
+  --jurisdiction US --credit '<creator>'
+
+# Select only a visually reviewed shot that covers the complete scene.
+npm run source-media -- <project> select <originalAssetId> <sceneId> \
+  --shot shot-012 --start 123.4 --end 130.1 \
+  --reviewer '<name>' --reason '<scene-specific visual reason>'
+
+# Patch by derived clip ID—not item ID or whole film—and verify everything.
+npm run source-media -- <project> patch <clipAssetId>
+npm run source-media -- <project> verify
+```
+
+Search defaults to public-domain, CC0, and CC BY claims. CC BY-SA is available
+only with `--include-share-alike` and requires a recorded distribution plan at
+approval. NC, ND, malformed, conflicting, missing, restricted, dark, private,
+and no-download sources are rejected. A license URL is uploader-supplied
+metadata—not legal verification or an Archive.org guarantee.
+
+The manifest keeps originals, derived clips, checksums, FFprobe results, exact
+remote filenames, transformations, review notes, and clip lineage separately.
+Generated preview pages stay local; the chosen three-frame contact sheet is
+preserved under `media/reviews/` as durable review evidence. `media/credits.md`
+contains complete attribution and modification details. Rendering rechecks the
+manifest, source/clip checksums, selected evidence, scene coverage, and
+attribution before staging assets.
+
+Requests use `Puplano/0.2 (source-media)` and serialize through a shared rate
+lock. Set `PUPLANO_UA_SUFFIX` to identify the executing agent/model, for example
+`PUPLANO_UA_SUFFIX='(gpt-5.6-sol)'`. Successful API responses are cached;
+transient responses and interrupted transfers are retried with bounded backoff,
+timeouts, `Retry-After` support, and full checksum validation.
+
+To preserve an older one-item manifest while separating its original and
+unreviewed derivative, use:
+
+```bash
+npm run source-media -- <project> migrate <identifier> \
+  --file <exact-remote-file> --original <project-relative-original-file>
+```
 
 Licensed footage uses the `video_clip` template:
 

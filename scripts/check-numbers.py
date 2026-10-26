@@ -1,6 +1,7 @@
 import json, re, sys
 W = dict(one=1, two=2, three=3, four=4, five=5, six=6, seven=7, eight=8, nine=9, ten=10, twenty=20, hundred=100, thousand=1000, million=10**6, billion=10**9)
-SKIP = {"license", "imageFile", "videoFile", "startFromMs", "decimals"}
+# Technical identifiers and media timing are provenance, not displayed claims.
+SKIP = {"license", "imageFile", "videoFile", "mediaAssetId", "startFromMs", "decimals"}
 
 def nums(text):
     out = set()

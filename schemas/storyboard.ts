@@ -5,10 +5,13 @@ const Source = z.object({
   url: z.string().url().optional(),
 });
 
-const License = z.object({
+export const License = z.object({
   type: z.string().min(1),
   sourceUrl: z.string().url(),
   credit: z.string().optional(),
+  licenseUrl: z.string().url().optional(),
+  attribution: z.string().optional(),
+  modifications: z.string().optional(),
 });
 
 // How a scene enters (the change from the previous scene)
@@ -104,6 +107,7 @@ const VideoClip = z.object({
     videoFile: z.string().min(1),
     caption: z.string().optional(),
     startFromMs: z.number().int().min(0).default(0),
+    mediaAssetId: z.string().min(1).optional(),
     license: License,
   }),
 });
@@ -172,4 +176,5 @@ export const Storyboard = z
   });
 
 export type Scene = z.infer<typeof Scene>;
+export type License = z.infer<typeof License>;
 export type Storyboard = z.infer<typeof Storyboard>;

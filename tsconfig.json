@@ -12,5 +12,5 @@
     "types": ["node"],
     "typeRoots": ["./remotion/node_modules/@types"]
   },
-  "include": ["scripts", "schemas", "remotion/src"]
+  "include": ["scripts", "schemas", "providers", "tests", "remotion/src"]
 }

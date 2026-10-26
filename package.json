@@ -8,7 +8,9 @@
     "validate": "tsx scripts/validate-storyboard.ts",
     "check-numbers": "python3 scripts/check-numbers.py",
     "render": "tsx scripts/render.ts",
-    "typecheck": "npm --prefix remotion run typecheck:all"
+    "typecheck": "npm --prefix remotion run typecheck:all",
+    "source-media": "tsx scripts/source-media.ts",
+    "test": "tsx --test tests/*.test.ts"
   },
   "keywords": [],
   "author": "",

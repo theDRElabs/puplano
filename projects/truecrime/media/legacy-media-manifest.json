@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "identifier": "boys_beware",
+      "title": "Boys Beware",
+      "creator": "Sid Davis",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "licenseType": "Public domain",
+      "credit": "Sid Davis",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/boys_beware",
+      "localFile": "assets/boys_beware_clip.mp4",
+      "bytes": 63743264,
+      "md5": "830d7933909600d4e677ed9e8f67f7ad",
+      "width": 640,
+      "height": 480,
+      "durationMs": 612412,
+      "retrievedAt": "2026-10-24T18:17:20.749Z"
+    }
+  ]
+}

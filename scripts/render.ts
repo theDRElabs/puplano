@@ -13,6 +13,7 @@ import { fileURLToPath } from "node:url";
 import { Storyboard } from "../schemas/storyboard";
 import { WordTimings } from "../schemas/words";
 import { stageProjectAssets } from "./project-assets";
+import { verifyStoryboardMedia } from "./media-workflow";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -90,7 +91,7 @@ const assertSceneBoundaries = (
   });
 };
 
-const main = () => {
+const main = async () => {
   const options = parseArgs();
   if (!/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/.test(options.project)) {
     throw new Error(`Invalid project name: ${options.project}`);
@@ -117,6 +118,7 @@ const main = () => {
     );
   }
   assertSceneBoundaries(storyboardResult.data, wordsResult.data);
+  await verifyStoryboardMedia(projectDir, storyboardResult.data);
 
   console.log("2/4 Checking storyboard numbers against the script");
   execFileSync("python3", [path.join(ROOT, "scripts", "check-numbers.py"), options.project], {
@@ -186,10 +188,8 @@ const main = () => {
   console.log(`Done: ${output}`);
 };
 
-try {
-  main();
-} catch (error) {
+main().catch(error => {
   const message = error instanceof Error ? error.message : String(error);
   console.error(`FAILED: ${message}`);
   process.exit(1);
-}
+});

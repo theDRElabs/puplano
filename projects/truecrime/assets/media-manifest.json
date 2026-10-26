@@ -1,0 +1,700 @@
+{
+  "version": 2,
+  "entries": [
+    {
+      "id": "boys_beware-07eca6f8dd44-legacy",
+      "identifier": "boys_beware",
+      "title": "Boys Beware",
+      "creator": "Sid Davis",
+      "remoteFile": "boys_beware.mp4",
+      "detailsUrl": "https://archive.org/details/boys_beware",
+      "downloadUrl": "https://archive.org/download/boys_beware/boys_beware.mp4",
+      "localFile": "assets/boys_beware_clip.mp4",
+      "checksums": {
+        "bytes": 1974795,
+        "md5": "c5ec599cbfc83f8fc03065ad40044ecd",
+        "sha256": "aa7e2bf8688a12ba70db08ccdb8baa37bb2535ae3ee121ce2ee2af1a3147505e"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 30030,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "b45ab18a16c03d06a6b96f5fc6c1c8c75f84eab48750bb138715126c9e2b77c0",
+        "checkedAt": "2026-10-24T20:08:18.480Z"
+      },
+      "retrievedAt": "2026-10-24T18:17:20.749Z",
+      "kind": "legacy-clip",
+      "parentId": "boys_beware-07eca6f8dd44",
+      "legacyNote": "Recovered legacy derivative: source in/out times were not recorded. Opening credits rejected; not eligible for selection or patching."
+    },
+    {
+      "id": "boys_beware-07eca6f8dd44",
+      "identifier": "boys_beware",
+      "title": "Boys Beware",
+      "creator": "Sid Davis",
+      "remoteFile": "boys_beware.mp4",
+      "detailsUrl": "https://archive.org/details/boys_beware",
+      "downloadUrl": "https://archive.org/download/boys_beware/boys_beware.mp4",
+      "localFile": "assets/boys_beware_boys_beware.mp4",
+      "checksums": {
+        "bytes": 63743264,
+        "md5": "830d7933909600d4e677ed9e8f67f7ad",
+        "sha256": "15291bcdde0271821de63da48e55d72007735685bacb82da8726b26bf99679a6"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 612412,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "b45ab18a16c03d06a6b96f5fc6c1c8c75f84eab48750bb138715126c9e2b77c0",
+        "checkedAt": "2026-10-24T20:08:18.480Z"
+      },
+      "retrievedAt": "2026-10-24T18:17:20.749Z",
+      "kind": "original"
+    },
+    {
+      "id": "FireandP1947-554a3bd97465",
+      "identifier": "FireandP1947",
+      "title": "Fire and Police Service",
+      "creator": "Holmes (Burton) Films, Inc.",
+      "remoteFile": "FireandP1947.mp4",
+      "detailsUrl": "https://archive.org/details/FireandP1947",
+      "downloadUrl": "https://archive.org/download/FireandP1947/FireandP1947.mp4",
+      "localFile": "assets/originals/FireandP1947-554a3bd97465.mp4",
+      "checksums": {
+        "bytes": 64424106,
+        "md5": "16db5d71a9181ec498edc0eeadbbbd49",
+        "sha256": "beeced31f0ee8f2e6da06bd60e2d50434701da0f2803a2088f3ab24e41937eb0"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 619619,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+        "checkedAt": "2026-10-24T20:09:01.356Z",
+        "review": {
+          "reviewer": "GPT-5.6 Sol",
+          "evidenceUrls": [
+            "https://archive.org/details/FireandP1947",
+            "http://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Reviewed the live item metadata, exact source file, uploader public-domain claim, and Prelinger collection context; approval is for clearly labeled illustrative use and is not a legal guarantee.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-24T20:14:20.928Z",
+          "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+          "credit": "Holmes (Burton) Films, Inc."
+        }
+      },
+      "retrievedAt": "2026-10-24T20:09:01.355Z",
+      "kind": "original"
+    },
+    {
+      "id": "s1-5715ba6690241b74",
+      "identifier": "FireandP1947",
+      "title": "Fire and Police Service",
+      "creator": "Holmes (Burton) Films, Inc.",
+      "remoteFile": "FireandP1947.mp4",
+      "detailsUrl": "https://archive.org/details/FireandP1947",
+      "downloadUrl": "https://archive.org/download/FireandP1947/FireandP1947.mp4",
+      "localFile": "assets/clips/s1-5715ba6690241b74.mp4",
+      "checksums": {
+        "bytes": 1151662,
+        "md5": "bdad90034aae05aa80275f0fc138114f",
+        "sha256": "92baeeaa99622182e09a938f7c9a60d1019d606e0d76577978e07295458e05d6"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 7307,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+        "checkedAt": "2026-10-24T20:09:01.356Z",
+        "review": {
+          "reviewer": "GPT-5.6 Sol",
+          "evidenceUrls": [
+            "https://archive.org/details/FireandP1947",
+            "http://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Reviewed the live item metadata, exact source file, uploader public-domain claim, and Prelinger collection context; approval is for clearly labeled illustrative use and is not a legal guarantee.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-24T20:14:20.928Z",
+          "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+          "credit": "Holmes (Burton) Films, Inc."
+        }
+      },
+      "retrievedAt": "2026-10-24T20:09:01.355Z",
+      "kind": "clip",
+      "parentId": "FireandP1947-554a3bd97465",
+      "transform": {
+        "startMs": 473800,
+        "endMs": 481100,
+        "createdAt": "2026-10-24T20:15:11.342Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "473.8",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/FireandP1947-554a3bd97465.mp4",
+          "-t",
+          "7.3",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s1-5715ba6690241b74.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s1",
+        "storyboardHash": "3bcdb0c5d2c0d9f84f777dc24710d29eb1e91b43c72f3fec6c7e129569d4814f",
+        "shotId": "shot-046",
+        "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
+        "reason": "Police radio office and telephone activity directly illustrate the narrated precinct night-shift call without depicting this fictional case.",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:15:11.343Z",
+        "illustrative": true,
+        "shotStartMs": 473690,
+        "shotEndMs": 481865,
+        "sampleTimesMs": [
+          473890,
+          477778,
+          481665
+        ],
+        "reviewImage": "media/reviews/s1-5715ba6690241b74.jpg",
+        "reviewImageHash": "4f911745890b80c1ba6dd92cb14d6c27b49b32799bbf4e556cac5a319bff9450"
+      }
+    },
+    {
+      "id": "s2-f430d32d69013513",
+      "identifier": "FireandP1947",
+      "title": "Fire and Police Service",
+      "creator": "Holmes (Burton) Films, Inc.",
+      "remoteFile": "FireandP1947.mp4",
+      "detailsUrl": "https://archive.org/details/FireandP1947",
+      "downloadUrl": "https://archive.org/download/FireandP1947/FireandP1947.mp4",
+      "localFile": "assets/clips/s2-f430d32d69013513.mp4",
+      "checksums": {
+        "bytes": 922625,
+        "md5": "cfc3bd32faa706b9cb0d0e8235eec89b",
+        "sha256": "97c31f331090e721952ec82d58af881753b553dae4781db920a3d388c0e9f6c2"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 4004,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+        "checkedAt": "2026-10-24T20:09:01.356Z",
+        "review": {
+          "reviewer": "GPT-5.6 Sol",
+          "evidenceUrls": [
+            "https://archive.org/details/FireandP1947",
+            "http://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Reviewed the live item metadata, exact source file, uploader public-domain claim, and Prelinger collection context; approval is for clearly labeled illustrative use and is not a legal guarantee.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-24T20:14:20.928Z",
+          "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+          "credit": "Holmes (Burton) Films, Inc."
+        }
+      },
+      "retrievedAt": "2026-10-24T20:09:01.355Z",
+      "kind": "clip",
+      "parentId": "FireandP1947-554a3bd97465",
+      "transform": {
+        "startMs": 233900,
+        "endMs": 237900,
+        "createdAt": "2026-10-24T20:15:12.630Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "233.9",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/FireandP1947-554a3bd97465.mp4",
+          "-t",
+          "4",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s2-f430d32d69013513.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s2",
+        "storyboardHash": "92ba6112fe6872a686e98dce37da3d5fa1bccffaed9e6917bac78e4779b734c1",
+        "shotId": "shot-020",
+        "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
+        "reason": "Exterior emergency response at an industrial-looking building provides a restrained establishing visual, not a depiction of the narrated crime.",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:15:12.630Z",
+        "illustrative": true,
+        "shotStartMs": 233750,
+        "shotEndMs": 238055,
+        "sampleTimesMs": [
+          233950,
+          235903,
+          237855
+        ],
+        "reviewImage": "media/reviews/s2-f430d32d69013513.jpg",
+        "reviewImageHash": "12c42af8c5e1bbd794b7aa1425332cac19c5be2d8bfb2a0594df33004158dd8a"
+      }
+    },
+    {
+      "id": "s4-2724c52eab1c42bc",
+      "identifier": "FireandP1947",
+      "title": "Fire and Police Service",
+      "creator": "Holmes (Burton) Films, Inc.",
+      "remoteFile": "FireandP1947.mp4",
+      "detailsUrl": "https://archive.org/details/FireandP1947",
+      "downloadUrl": "https://archive.org/download/FireandP1947/FireandP1947.mp4",
+      "localFile": "assets/clips/s4-2724c52eab1c42bc.mp4",
+      "checksums": {
+        "bytes": 1093783,
+        "md5": "02f45a440341aefb59a289fee6e90e35",
+        "sha256": "50618dd58cf9096a0bb9ea996d5ffb054095392239d73bc9f888bcee5d5658c1"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 6707,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+        "checkedAt": "2026-10-24T20:09:01.356Z",
+        "review": {
+          "reviewer": "GPT-5.6 Sol",
+          "evidenceUrls": [
+            "https://archive.org/details/FireandP1947",
+            "http://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Reviewed the live item metadata, exact source file, uploader public-domain claim, and Prelinger collection context; approval is for clearly labeled illustrative use and is not a legal guarantee.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-24T20:14:20.928Z",
+          "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+          "credit": "Holmes (Burton) Films, Inc."
+        }
+      },
+      "retrievedAt": "2026-10-24T20:09:01.355Z",
+      "kind": "clip",
+      "parentId": "FireandP1947-554a3bd97465",
+      "transform": {
+        "startMs": 346500,
+        "endMs": 353200,
+        "createdAt": "2026-10-24T20:15:14.118Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "346.5",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/FireandP1947-554a3bd97465.mp4",
+          "-t",
+          "6.7",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s4-2724c52eab1c42bc.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s4",
+        "storyboardHash": "d9354808b06d55954fc4a13356a16ba75e5cc9be00f4d4e9f175b66b97204738",
+        "shotId": "shot-032",
+        "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
+        "reason": "Two investigators examining a building entrance visually support the detective-arrival narration while remaining clearly illustrative.",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:15:14.118Z",
+        "illustrative": true,
+        "shotStartMs": 346296,
+        "shotEndMs": 355505,
+        "sampleTimesMs": [
+          346496,
+          350901,
+          355305
+        ],
+        "reviewImage": "media/reviews/s4-2724c52eab1c42bc.jpg",
+        "reviewImageHash": "45523bfec2633cc867f3de9c3ef00ba5d7dd158ebc573416c58bf3ef4793fb36"
+      }
+    },
+    {
+      "id": "s7-a2e20edae28ca62a",
+      "identifier": "FireandP1947",
+      "title": "Fire and Police Service",
+      "creator": "Holmes (Burton) Films, Inc.",
+      "remoteFile": "FireandP1947.mp4",
+      "detailsUrl": "https://archive.org/details/FireandP1947",
+      "downloadUrl": "https://archive.org/download/FireandP1947/FireandP1947.mp4",
+      "localFile": "assets/clips/s7-a2e20edae28ca62a.mp4",
+      "checksums": {
+        "bytes": 764543,
+        "md5": "b107ef289bae1ce8ac4e30b5e0e2c6f1",
+        "sha256": "e25d6b34277286e63654c33b647d3754b06e9832f2f2ac14f4bce4256ca16b1f"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 5973,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+        "checkedAt": "2026-10-24T20:09:01.356Z",
+        "review": {
+          "reviewer": "GPT-5.6 Sol",
+          "evidenceUrls": [
+            "https://archive.org/details/FireandP1947",
+            "http://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Reviewed the live item metadata, exact source file, uploader public-domain claim, and Prelinger collection context; approval is for clearly labeled illustrative use and is not a legal guarantee.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-24T20:14:20.928Z",
+          "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+          "credit": "Holmes (Burton) Films, Inc."
+        }
+      },
+      "retrievedAt": "2026-10-24T20:09:01.355Z",
+      "kind": "clip",
+      "parentId": "FireandP1947-554a3bd97465",
+      "transform": {
+        "startMs": 466200,
+        "endMs": 472200,
+        "createdAt": "2026-10-24T20:15:57.082Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "466.2",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/FireandP1947-554a3bd97465.mp4",
+          "-t",
+          "6",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s7-a2e20edae28ca62a.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s7",
+        "storyboardHash": "07350ed4f3d7510171fbdfac1bcd0663d4b83ff89f40462b70b8f986d871376d",
+        "shotId": "shot-045",
+        "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
+        "reason": "A police report being typed illustrates documentation of a time-of-death estimate and replaces the unrelated opening credits.",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:15:57.083Z",
+        "illustrative": true,
+        "shotStartMs": 466049,
+        "shotEndMs": 473390,
+        "sampleTimesMs": [
+          466249,
+          469720,
+          473190
+        ],
+        "reviewImage": "media/reviews/s7-a2e20edae28ca62a.jpg",
+        "reviewImageHash": "78c0e49e957b6deebffd8d914c7b9dacc4fb6bf45b15cbedb271db660f2a8690"
+      }
+    },
+    {
+      "id": "s9-fc116c29939614ae",
+      "identifier": "FireandP1947",
+      "title": "Fire and Police Service",
+      "creator": "Holmes (Burton) Films, Inc.",
+      "remoteFile": "FireandP1947.mp4",
+      "detailsUrl": "https://archive.org/details/FireandP1947",
+      "downloadUrl": "https://archive.org/download/FireandP1947/FireandP1947.mp4",
+      "localFile": "assets/clips/s9-fc116c29939614ae.mp4",
+      "checksums": {
+        "bytes": 1469251,
+        "md5": "17987d8339082b778635d85ef44f0bb4",
+        "sha256": "6d19ad97b9e53a66104034ab4f8a9ca60844d8a1792c1709d78563214daaa9ca"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 9343,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+        "checkedAt": "2026-10-24T20:09:01.356Z",
+        "review": {
+          "reviewer": "GPT-5.6 Sol",
+          "evidenceUrls": [
+            "https://archive.org/details/FireandP1947",
+            "http://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Reviewed the live item metadata, exact source file, uploader public-domain claim, and Prelinger collection context; approval is for clearly labeled illustrative use and is not a legal guarantee.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-24T20:14:20.928Z",
+          "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+          "credit": "Holmes (Burton) Films, Inc."
+        }
+      },
+      "retrievedAt": "2026-10-24T20:09:01.355Z",
+      "kind": "clip",
+      "parentId": "FireandP1947-554a3bd97465",
+      "transform": {
+        "startMs": 533300,
+        "endMs": 542650,
+        "createdAt": "2026-10-24T20:15:58.835Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "533.3",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/FireandP1947-554a3bd97465.mp4",
+          "-t",
+          "9.35",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s9-fc116c29939614ae.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s9",
+        "storyboardHash": "95794ddbed0f14e646679e1b7ed021ae973bbcc1a913b0b411020594c20bfda9",
+        "shotId": "shot-051",
+        "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
+        "reason": "A wide office workforce shot provides contextual imagery for the coworker account without inventing a specific missing person.",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:15:58.835Z",
+        "illustrative": true,
+        "shotStartMs": 533283,
+        "shotEndMs": 542659,
+        "sampleTimesMs": [
+          533483,
+          537971,
+          542459
+        ],
+        "reviewImage": "media/reviews/s9-fc116c29939614ae.jpg",
+        "reviewImageHash": "eb8c9bfc4383aa53ee559e3242d6112695e82de8c8ecd16ffcfdb2b522581cc1"
+      }
+    },
+    {
+      "id": "s10-4c61e3c952389d04",
+      "identifier": "FireandP1947",
+      "title": "Fire and Police Service",
+      "creator": "Holmes (Burton) Films, Inc.",
+      "remoteFile": "FireandP1947.mp4",
+      "detailsUrl": "https://archive.org/details/FireandP1947",
+      "downloadUrl": "https://archive.org/download/FireandP1947/FireandP1947.mp4",
+      "localFile": "assets/clips/s10-4c61e3c952389d04.mp4",
+      "checksums": {
+        "bytes": 984766,
+        "md5": "18fd9f8f372942a924cff73a1a549283",
+        "sha256": "b8e356118887359115c86bd20cc09c48b8367344bb393e771fe83b79974af7d1"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 8909,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+        "checkedAt": "2026-10-24T20:09:01.356Z",
+        "review": {
+          "reviewer": "GPT-5.6 Sol",
+          "evidenceUrls": [
+            "https://archive.org/details/FireandP1947",
+            "http://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Reviewed the live item metadata, exact source file, uploader public-domain claim, and Prelinger collection context; approval is for clearly labeled illustrative use and is not a legal guarantee.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-24T20:14:20.928Z",
+          "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+          "credit": "Holmes (Burton) Films, Inc."
+        }
+      },
+      "retrievedAt": "2026-10-24T20:09:01.355Z",
+      "kind": "clip",
+      "parentId": "FireandP1947-554a3bd97465",
+      "transform": {
+        "startMs": 205600,
+        "endMs": 214500,
+        "createdAt": "2026-10-24T20:16:00.498Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "205.6",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/FireandP1947-554a3bd97465.mp4",
+          "-t",
+          "8.9",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s10-4c61e3c952389d04.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s10",
+        "storyboardHash": "6c2c807396044914e8c78b4a37bd1ed76a3f156cb47f4e996ae5e59914ebe3ad",
+        "shotId": "shot-018",
+        "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
+        "reason": "An official case conference illustrates continued institutional case work without presenting the archival participants as this story’s investigators.",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:16:00.499Z",
+        "illustrative": true,
+        "shotStartMs": 205488,
+        "shotEndMs": 217488,
+        "sampleTimesMs": [
+          205688,
+          211488,
+          217288
+        ],
+        "reviewImage": "media/reviews/s10-4c61e3c952389d04.jpg",
+        "reviewImageHash": "92fcdbf37bdbe56853503669ccdcc9503772b1d784e998c682decb442a8968dd"
+      }
+    }
+  ]
+}

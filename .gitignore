@@ -16,3 +16,8 @@ projects/*/renders/
 *.log
 .env
 .env.*
+
+# reproducible footage previews / request cache / transient locks
+projects/*/media/previews/
+.cache/
+*.part
