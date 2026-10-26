@@ -117,6 +117,17 @@ export const assertApproved = (asset: Asset) => {
   const rule = itemLicense(asset.rights.licenseUrls);
   if (!rule || (rule.shareAlike && !asset.rights.review.shareAlikePlan)) throw new Error("Rights policy not satisfied");
 };
+// Schema-level checks cover presence; this covers claim-dependent credit and
+// is the single gate used by render, patch, and verify.
+export const assertLicenseComplete = (license: License) => {
+  const missing: string[] = [];
+  if (!license.licenseUrl?.trim()) missing.push("licenseUrl");
+  if (!license.attribution?.trim()) missing.push("attribution");
+  if (!license.modifications?.trim()) missing.push("modifications");
+  const rule = license.licenseUrl ? itemLicense([license.licenseUrl]) : undefined;
+  if (rule?.attribution && !license.credit?.trim()) missing.push("credit");
+  if (missing.length) throw new Error(`Incomplete media attribution: missing ${missing.join(", ")}`);
+};
 export const refreshRights = async (asset: Asset): Promise<Asset> => {
   const item = await getItem(asset.identifier, true);
   assertPublicItem(item);
@@ -276,8 +287,18 @@ export const verifyStoryboardMedia = async (projectDir: string, storyboard: Stor
   let manifest: Manifest | undefined;
   const checked = new Set<string>();
   for (const scene of storyboard.scenes) {
+    if (scene.template === "image_zoom") {
+      assertLicenseComplete(scene.props.license);
+      continue;
+    }
+    if (scene.template === "quote_cutout" && scene.props.imageFile) {
+      if (!scene.props.license) throw new Error(`Licensed image requires attribution: ${scene.id}`);
+      assertLicenseComplete(scene.props.license);
+      continue;
+    }
     if (scene.template !== "video_clip") continue;
     const p = scene.props;
+    assertLicenseComplete(p.license);
     if (!/^https?:\/\//.test(p.videoFile)) {
       const video = probeVideo(localPath(projectDir, p.videoFile));
       if (video.durationMs < p.startFromMs + scene.endMs - scene.startMs) throw new Error(`Clip too short: ${scene.id}`);

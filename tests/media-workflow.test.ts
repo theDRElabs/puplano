@@ -1,12 +1,13 @@
 import assert from "node:assert/strict";
-import { mkdtemp, mkdir, rm } from "node:fs/promises";
+import { appendFile, mkdtemp, mkdir, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { execFileSync } from "node:child_process";
 import { Storyboard } from "../schemas/storyboard";
 import { approveRights, assertApproved, createPreview, originalAsset, probeVideo,
-  licenseFor, patchScene, sceneHash, shotWindows, validateSelection, type Asset } from "../scripts/media-workflow";
+  licenseFor, patchScene, sceneHash, shotWindows, validateSelection, saveManifest,
+  selectClip, verifyStoryboardMedia, type Asset } from "../scripts/media-workflow";
 import { parseArgs } from "../scripts/source-media";
 import { checksumFile, type ItemMetadata } from "../providers/archive-org";
 
@@ -93,5 +94,41 @@ test("synthetic video preview creates timestamped contact sheets", async () => {
     const preview = await createPreview(project, asset, 0, 10);
     assert.ok(preview.shots.length >= 1);
     assert.ok(preview.shots.every(shot => shot.imageHash.length === 64));
+  } finally { await rm(project, { recursive: true, force: true }); }
+});
+
+test("render-time verification rejects tampered provenance and incomplete attribution", async () => {
+  const project = await mkdtemp(path.join(tmpdir(), "puplano-verify-test-"));
+  try {
+    await mkdir(path.join(project, "assets"), { recursive: true });
+    const file = path.join(project, "assets/source.mp4");
+    execFileSync("ffmpeg", ["-v", "error", "-f", "lavfi", "-i", "color=c=red:s=320x180:d=6:r=30",
+      "-c:v", "libx264", "-pix_fmt", "yuv420p", "-y", file]);
+    const checks = await checksumFile(file);
+    const item: ItemMetadata = { identifier: "source", title: "Synthetic", creator: "Test", description: "",
+      licenseUrls: ["https://creativecommons.org/publicdomain/zero/1.0/"], rights: [], collections: [], isDark: false,
+      restricted: false, noDownload: false, files: [{ name: "source.mp4", size: String(checks.bytes), md5: checks.md5 }] };
+    const original = approveRights(originalAsset(item, "source.mp4", "assets/source.mp4", checks, probeVideo(file)), {
+      reviewer: "tester", evidenceUrls: ["https://archive.org/details/source"],
+      note: "Uploader claim reviewed for this exact source.", jurisdiction: "US", credit: "Creator" });
+    const preview = await createPreview(project, original, 0, 10);
+    const shot = preview.shots.find(candidate => candidate.endMs - candidate.startMs >= 5000);
+    assert.ok(shot, "preview must produce a shot long enough for the scene");
+    const clip = await selectClip(project, original, preview, scene, { shotId: shot.id,
+      startMs: shot.startMs + 100, endMs: shot.endMs - 100,
+      reason: "Reviewed shot directly supports this scene.", reviewer: "tester" });
+    await saveManifest(project, { version: 2, entries: [original, clip] });
+    const storyboard = patchScene(Storyboard.parse({ title: "Test", audioFile: "voice.mp3", durationMs: 5000,
+      scenes: [scene] }), clip);
+    await verifyStoryboardMedia(project, storyboard);
+
+    const broken = structuredClone(storyboard);
+    const brokenScene = broken.scenes[0];
+    if (brokenScene.template !== "video_clip") assert.fail("expected video scene");
+    brokenScene.props.license.attribution = "";
+    await assert.rejects(verifyStoryboardMedia(project, broken), /Incomplete media attribution/);
+
+    await appendFile(path.join(project, clip.localFile), "tampered");
+    await assert.rejects(verifyStoryboardMedia(project, storyboard), /changed\/corrupted/);
   } finally { await rm(project, { recursive: true, force: true }); }
 });

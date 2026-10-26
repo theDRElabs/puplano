@@ -181,11 +181,19 @@ Licensed footage uses the `video_clip` template:
     "license": {
       "type": "Pexels license",
       "sourceUrl": "https://www.pexels.com/video/example",
-      "credit": "Creator name"
+      "credit": "Creator name",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "attribution": "Example clip — Creator name, Pexels license. Source: https://www.pexels.com/video/example",
+      "modifications": "Excerpt 12.0–20.0s; trimmed, audio removed, re-encoded."
     }
   }
 }
 ```
+
+Every media license must carry `licenseUrl`, `attribution`, and
+`modifications`; claims that require attribution also require `credit`.
+Validation, rendering, and `source-media verify` reject incomplete attribution
+before staging assets.
 
 The clip must be long enough for the scene after `startFromMs`; clips are not
 looped. `image_zoom` follows the same license requirement. HTTPS media URLs are

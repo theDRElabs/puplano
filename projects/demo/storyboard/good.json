@@ -3,13 +3,93 @@
   "audioFile": "voice/demo.mp3",
   "durationMs": 20000,
   "scenes": [
-    {"id":"s1","chapter":1,"startMs":0,"endMs":4000,"layout":1,"template":"kinetic_title","props":{"text":"Where does money go?"}},
-    {"id":"s2","chapter":1,"startMs":4000,"endMs":9000,"layout":2,"transitionIn":{"type":"fade","durationMs":500},"template":"stat_counter","props":{"label":"Average monthly rent","from":0,"to":1700,"prefix":"$"},"source":{"label":"Example source"}},
-    {"id":"s3","chapter":1,"startMs":9000,"endMs":15000,"layout":1,"template":"chart","props":{"kind":"bar","title":"Spending","data":[{"label":"Rent","value":1700},{"label":"Food","value":600}]}},
-    {"id":"s4","chapter":2,"startMs":15000,"endMs":20000,"layout":3,"template":"image_zoom","props":{"imageFile":"assets/photo1.jpg","license":{"type":"CC BY-SA 4.0","sourceUrl":"https://commons.wikimedia.org/wiki/File:Example.jpg"}}}
+    {
+      "id": "s1",
+      "chapter": 1,
+      "startMs": 0,
+      "endMs": 4000,
+      "layout": 1,
+      "template": "kinetic_title",
+      "props": {
+        "text": "Where does money go?"
+      }
+    },
+    {
+      "id": "s2",
+      "chapter": 1,
+      "startMs": 4000,
+      "endMs": 9000,
+      "layout": 2,
+      "transitionIn": {
+        "type": "fade",
+        "durationMs": 500
+      },
+      "template": "stat_counter",
+      "props": {
+        "label": "Average monthly rent",
+        "from": 0,
+        "to": 1700,
+        "prefix": "$"
+      },
+      "source": {
+        "label": "Example source"
+      }
+    },
+    {
+      "id": "s3",
+      "chapter": 1,
+      "startMs": 9000,
+      "endMs": 15000,
+      "layout": 1,
+      "template": "chart",
+      "props": {
+        "kind": "bar",
+        "title": "Spending",
+        "data": [
+          {
+            "label": "Rent",
+            "value": 1700
+          },
+          {
+            "label": "Food",
+            "value": 600
+          }
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "chapter": 2,
+      "startMs": 15000,
+      "endMs": 20000,
+      "layout": 3,
+      "template": "image_zoom",
+      "props": {
+        "imageFile": "assets/photo1.jpg",
+        "license": {
+          "type": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Example.jpg",
+          "credit": "Example Author",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "attribution": "Example.jpg \u2014 Example Author, CC BY-SA 4.0, via Wikimedia Commons.",
+          "modifications": "Cropped and zoomed; no other changes."
+        }
+      }
+    }
   ],
   "overlays": [
-    {"id":"o1","kind":"source_caption","text":"Source: Example source","startMs":4000,"endMs":9000}
+    {
+      "id": "o1",
+      "kind": "source_caption",
+      "text": "Source: Example source",
+      "startMs": 4000,
+      "endMs": 9000
+    }
   ],
-  "music": {"file":"assets/music/track.mp3","baseVolume":0.3,"duckedVolume":0.1,"fadeMs":500}
+  "music": {
+    "file": "assets/music/track.mp3",
+    "baseVolume": 0.3,
+    "duckedVolume": 0.1,
+    "fadeMs": 500
+  }
 }

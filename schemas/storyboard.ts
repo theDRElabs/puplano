@@ -5,13 +5,17 @@ const Source = z.object({
   url: z.string().url().optional(),
 });
 
+// Attribution evidence is mandatory: a media license without a resolvable
+// claim URL, a complete attribution line, and a modification note is not
+// publishable. `credit` is additionally required when the claim needs it,
+// which is enforced by verifyStoryboardMedia because it depends on the claim.
 export const License = z.object({
   type: z.string().min(1),
   sourceUrl: z.string().url(),
-  credit: z.string().optional(),
-  licenseUrl: z.string().url().optional(),
-  attribution: z.string().optional(),
-  modifications: z.string().optional(),
+  credit: z.string().min(1).optional(),
+  licenseUrl: z.string().url(),
+  attribution: z.string().min(1),
+  modifications: z.string().min(1),
 });
 
 // How a scene enters (the change from the previous scene)
