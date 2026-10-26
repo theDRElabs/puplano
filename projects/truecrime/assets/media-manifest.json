@@ -202,9 +202,6 @@
         "shotId": "shot-046",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "Police radio office and telephone activity directly illustrate the narrated precinct night-shift call without depicting this fictional case.",
-        "reviewer": "GPT-5.6 Sol",
-        "reviewedAt": "2026-10-24T20:15:11.343Z",
-        "illustrative": true,
         "shotStartMs": 473690,
         "shotEndMs": 481865,
         "sampleTimesMs": [
@@ -213,7 +210,10 @@
           481665
         ],
         "reviewImage": "media/reviews/s1-5715ba6690241b74.jpg",
-        "reviewImageHash": "4f911745890b80c1ba6dd92cb14d6c27b49b32799bbf4e556cac5a319bff9450"
+        "reviewImageHash": "4f911745890b80c1ba6dd92cb14d6c27b49b32799bbf4e556cac5a319bff9450",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:15:11.343Z",
+        "illustrative": true
       }
     },
     {
@@ -298,9 +298,6 @@
         "shotId": "shot-020",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "Exterior emergency response at an industrial-looking building provides a restrained establishing visual, not a depiction of the narrated crime.",
-        "reviewer": "GPT-5.6 Sol",
-        "reviewedAt": "2026-10-24T20:15:12.630Z",
-        "illustrative": true,
         "shotStartMs": 233750,
         "shotEndMs": 238055,
         "sampleTimesMs": [
@@ -309,7 +306,10 @@
           237855
         ],
         "reviewImage": "media/reviews/s2-f430d32d69013513.jpg",
-        "reviewImageHash": "12c42af8c5e1bbd794b7aa1425332cac19c5be2d8bfb2a0594df33004158dd8a"
+        "reviewImageHash": "12c42af8c5e1bbd794b7aa1425332cac19c5be2d8bfb2a0594df33004158dd8a",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:15:12.630Z",
+        "illustrative": true
       }
     },
     {
@@ -394,9 +394,6 @@
         "shotId": "shot-032",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "Two investigators examining a building entrance visually support the detective-arrival narration while remaining clearly illustrative.",
-        "reviewer": "GPT-5.6 Sol",
-        "reviewedAt": "2026-10-24T20:15:14.118Z",
-        "illustrative": true,
         "shotStartMs": 346296,
         "shotEndMs": 355505,
         "sampleTimesMs": [
@@ -405,7 +402,10 @@
           355305
         ],
         "reviewImage": "media/reviews/s4-2724c52eab1c42bc.jpg",
-        "reviewImageHash": "45523bfec2633cc867f3de9c3ef00ba5d7dd158ebc573416c58bf3ef4793fb36"
+        "reviewImageHash": "45523bfec2633cc867f3de9c3ef00ba5d7dd158ebc573416c58bf3ef4793fb36",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:15:14.118Z",
+        "illustrative": true
       }
     },
     {
@@ -490,9 +490,6 @@
         "shotId": "shot-045",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "A police report being typed illustrates documentation of a time-of-death estimate and replaces the unrelated opening credits.",
-        "reviewer": "GPT-5.6 Sol",
-        "reviewedAt": "2026-10-24T20:15:57.083Z",
-        "illustrative": true,
         "shotStartMs": 466049,
         "shotEndMs": 473390,
         "sampleTimesMs": [
@@ -501,7 +498,10 @@
           473190
         ],
         "reviewImage": "media/reviews/s7-a2e20edae28ca62a.jpg",
-        "reviewImageHash": "78c0e49e957b6deebffd8d914c7b9dacc4fb6bf45b15cbedb271db660f2a8690"
+        "reviewImageHash": "78c0e49e957b6deebffd8d914c7b9dacc4fb6bf45b15cbedb271db660f2a8690",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:15:57.083Z",
+        "illustrative": true
       }
     },
     {
@@ -586,9 +586,6 @@
         "shotId": "shot-051",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "A wide office workforce shot provides contextual imagery for the coworker account without inventing a specific missing person.",
-        "reviewer": "GPT-5.6 Sol",
-        "reviewedAt": "2026-10-24T20:15:58.835Z",
-        "illustrative": true,
         "shotStartMs": 533283,
         "shotEndMs": 542659,
         "sampleTimesMs": [
@@ -597,7 +594,10 @@
           542459
         ],
         "reviewImage": "media/reviews/s9-fc116c29939614ae.jpg",
-        "reviewImageHash": "eb8c9bfc4383aa53ee559e3242d6112695e82de8c8ecd16ffcfdb2b522581cc1"
+        "reviewImageHash": "eb8c9bfc4383aa53ee559e3242d6112695e82de8c8ecd16ffcfdb2b522581cc1",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:15:58.835Z",
+        "illustrative": true
       }
     },
     {
@@ -682,9 +682,6 @@
         "shotId": "shot-018",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "An official case conference illustrates continued institutional case work without presenting the archival participants as this story’s investigators.",
-        "reviewer": "GPT-5.6 Sol",
-        "reviewedAt": "2026-10-24T20:16:00.499Z",
-        "illustrative": true,
         "shotStartMs": 205488,
         "shotEndMs": 217488,
         "sampleTimesMs": [
@@ -693,7 +690,392 @@
           217288
         ],
         "reviewImage": "media/reviews/s10-4c61e3c952389d04.jpg",
-        "reviewImageHash": "92fcdbf37bdbe56853503669ccdcc9503772b1d784e998c682decb442a8968dd"
+        "reviewImageHash": "92fcdbf37bdbe56853503669ccdcc9503772b1d784e998c682decb442a8968dd",
+        "reviewer": "GPT-5.6 Sol",
+        "reviewedAt": "2026-10-24T20:16:00.499Z",
+        "illustrative": true
+      }
+    },
+    {
+      "id": "HowTexti1948-c500871096cb",
+      "identifier": "HowTexti1948",
+      "title": "How Textile Mills Are Modernizing",
+      "creator": "Wolff (Raphael G.) Studios",
+      "remoteFile": "HowTexti1948.mp4",
+      "detailsUrl": "https://archive.org/details/HowTexti1948",
+      "downloadUrl": "https://archive.org/download/HowTexti1948/HowTexti1948.mp4",
+      "localFile": "assets/originals/HowTexti1948-c500871096cb.mp4",
+      "checksums": {
+        "bytes": 157222620,
+        "md5": "b8860024c3e9309e500b15b04be858dc",
+        "sha256": "fd42dfc8e6b58da7793f18b0fa662f1e84f9eaa6f437709df4988c2560196dc2"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 1509508,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "53e8bad11cbef7895827fe2e9799d385f03d57d0e5929fecb4974165214189eb",
+        "checkedAt": "2026-10-26T08:29:23.417Z",
+        "review": {
+          "reviewer": "opencode-deepseek-v4.1",
+          "evidenceUrls": [
+            "https://archive.org/details/HowTexti1948",
+            "https://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Prelinger uploader public-domain claim reviewed for this exact file; illustrative use only, no case-evidence implication.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-26T09:02:47.461Z",
+          "metadataHash": "53e8bad11cbef7895827fe2e9799d385f03d57d0e5929fecb4974165214189eb",
+          "credit": "Wolff (Raphael G.) Studios"
+        }
+      },
+      "retrievedAt": "2026-10-26T08:29:23.417Z",
+      "kind": "original"
+    },
+    {
+      "id": "ThisIsYo1951-9e909e78b7d1",
+      "identifier": "ThisIsYo1951",
+      "title": "This Is Your Police Department",
+      "creator": "Handy (Jam) Organization",
+      "remoteFile": "ThisIsYo1951.mp4",
+      "detailsUrl": "https://archive.org/details/ThisIsYo1951",
+      "downloadUrl": "https://archive.org/download/ThisIsYo1951/ThisIsYo1951.mp4",
+      "localFile": "assets/originals/ThisIsYo1951-9e909e78b7d1.mp4",
+      "checksums": {
+        "bytes": 153970068,
+        "md5": "c6f4f3c2f798e2235753661138987f73",
+        "sha256": "e5515a8fdc11f5540f844300efbb582b88a15ad5627f7d415cf92997890aca84"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 1480446,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "5476c619eccaff853068b21e1a11f39bf7ba2c70e23f848514eacc3f4d47af1d",
+        "checkedAt": "2026-10-26T08:30:03.811Z",
+        "review": {
+          "reviewer": "opencode-deepseek-v4.1",
+          "evidenceUrls": [
+            "https://archive.org/details/ThisIsYo1951",
+            "https://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Prelinger uploader public-domain claim reviewed for this exact file; illustrative use only, no case-evidence implication.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-26T09:03:27.258Z",
+          "metadataHash": "5476c619eccaff853068b21e1a11f39bf7ba2c70e23f848514eacc3f4d47af1d",
+          "credit": "Handy (Jam) Organization"
+        }
+      },
+      "retrievedAt": "2026-10-26T08:30:03.810Z",
+      "kind": "original"
+    },
+    {
+      "id": "s2-4293dcfacded9c11",
+      "identifier": "HowTexti1948",
+      "title": "How Textile Mills Are Modernizing",
+      "creator": "Wolff (Raphael G.) Studios",
+      "remoteFile": "HowTexti1948.mp4",
+      "detailsUrl": "https://archive.org/details/HowTexti1948",
+      "downloadUrl": "https://archive.org/download/HowTexti1948/HowTexti1948.mp4",
+      "localFile": "assets/clips/s2-4293dcfacded9c11.mp4",
+      "checksums": {
+        "bytes": 757416,
+        "md5": "f23850721c864ae6004be28855bfe550",
+        "sha256": "69965122b09700bae83e2cd065b3a9e1cc19072dc122d97b854c7f9ea0922e6d"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 5005,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "53e8bad11cbef7895827fe2e9799d385f03d57d0e5929fecb4974165214189eb",
+        "checkedAt": "2026-10-26T08:29:23.417Z",
+        "review": {
+          "reviewer": "opencode-deepseek-v4.1",
+          "evidenceUrls": [
+            "https://archive.org/details/HowTexti1948",
+            "https://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Prelinger uploader public-domain claim reviewed for this exact file; illustrative use only, no case-evidence implication.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-26T09:02:47.461Z",
+          "metadataHash": "53e8bad11cbef7895827fe2e9799d385f03d57d0e5929fecb4974165214189eb",
+          "credit": "Wolff (Raphael G.) Studios"
+        }
+      },
+      "retrievedAt": "2026-10-26T08:29:23.417Z",
+      "kind": "clip",
+      "parentId": "HowTexti1948-c500871096cb",
+      "transform": {
+        "startMs": 413500,
+        "endMs": 418500,
+        "createdAt": "2026-10-26T09:02:49.395Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "413.5",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/HowTexti1948-c500871096cb.mp4",
+          "-t",
+          "5",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s2-4293dcfacded9c11.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s2",
+        "storyboardHash": "92ba6112fe6872a686e98dce37da3d5fa1bccffaed9e6917bac78e4779b734c1",
+        "shotId": "shot-013",
+        "previewHash": "4ffa3784357982fe78cf79decf62cac769cd20a47fd979da29274db53ab46232",
+        "reason": "Exterior brick mill building with grounds; reads as the old textile mill on River Street.",
+        "shotStartMs": 407445,
+        "shotEndMs": 419445,
+        "sampleTimesMs": [
+          407645,
+          413445,
+          419245
+        ],
+        "reviewImage": "media/reviews/s2-4293dcfacded9c11.jpg",
+        "reviewImageHash": "ad27d436b753f9b1f7cf787bd342cf39936ecbed43019889530da8e4cae5105e",
+        "reviewer": "opencode-deepseek-v4.1",
+        "reviewedAt": "2026-10-26T09:02:49.395Z",
+        "illustrative": true
+      }
+    },
+    {
+      "id": "s9-2b24c1ac382b679f",
+      "identifier": "HowTexti1948",
+      "title": "How Textile Mills Are Modernizing",
+      "creator": "Wolff (Raphael G.) Studios",
+      "remoteFile": "HowTexti1948.mp4",
+      "detailsUrl": "https://archive.org/details/HowTexti1948",
+      "downloadUrl": "https://archive.org/download/HowTexti1948/HowTexti1948.mp4",
+      "localFile": "assets/clips/s9-2b24c1ac382b679f.mp4",
+      "checksums": {
+        "bytes": 1887132,
+        "md5": "74621d2b2c005029d40fb12af9b99aa8",
+        "sha256": "ac40757d769f49ba76a56b94a10f14d890b1dd1cce39909146ebd74386e3c682"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 10010,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "53e8bad11cbef7895827fe2e9799d385f03d57d0e5929fecb4974165214189eb",
+        "checkedAt": "2026-10-26T08:29:23.417Z",
+        "review": {
+          "reviewer": "opencode-deepseek-v4.1",
+          "evidenceUrls": [
+            "https://archive.org/details/HowTexti1948",
+            "https://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Prelinger uploader public-domain claim reviewed for this exact file; illustrative use only, no case-evidence implication.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-26T09:02:47.461Z",
+          "metadataHash": "53e8bad11cbef7895827fe2e9799d385f03d57d0e5929fecb4974165214189eb",
+          "credit": "Wolff (Raphael G.) Studios"
+        }
+      },
+      "retrievedAt": "2026-10-26T08:29:23.417Z",
+      "kind": "clip",
+      "parentId": "HowTexti1948-c500871096cb",
+      "transform": {
+        "startMs": 701000,
+        "endMs": 711000,
+        "createdAt": "2026-10-26T09:03:23.198Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "701",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/HowTexti1948-c500871096cb.mp4",
+          "-t",
+          "10",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s9-2b24c1ac382b679f.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s9",
+        "storyboardHash": "95794ddbed0f14e646679e1b7ed021ae973bbcc1a913b0b411020594c20bfda9",
+        "shotId": "shot-022",
+        "previewHash": "4ffa3784357982fe78cf79decf62cac769cd20a47fd979da29274db53ab46232",
+        "reason": "Worker feeding cloth through a textile machine; workplace context for a man who stopped coming to work.",
+        "shotStartMs": 700559,
+        "shotEndMs": 712559,
+        "sampleTimesMs": [
+          700759,
+          706559,
+          712359
+        ],
+        "reviewImage": "media/reviews/s9-2b24c1ac382b679f.jpg",
+        "reviewImageHash": "c6fd3db64ca1d4bec1f1f1ed23268a85a0628c9648c8b5ac8817de754c605cc3",
+        "reviewer": "opencode-deepseek-v4.1",
+        "reviewedAt": "2026-10-26T09:03:23.199Z",
+        "illustrative": true
+      }
+    },
+    {
+      "id": "s10-9bec3a6aa639b176",
+      "identifier": "ThisIsYo1951",
+      "title": "This Is Your Police Department",
+      "creator": "Handy (Jam) Organization",
+      "remoteFile": "ThisIsYo1951.mp4",
+      "detailsUrl": "https://archive.org/details/ThisIsYo1951",
+      "downloadUrl": "https://archive.org/download/ThisIsYo1951/ThisIsYo1951.mp4",
+      "localFile": "assets/clips/s10-9bec3a6aa639b176.mp4",
+      "checksums": {
+        "bytes": 1437609,
+        "md5": "1fb04b1f6ae535f125f4e7cae4717341",
+        "sha256": "93d33fca37d793922881e4bc6e325242a48139a62a09d8877420062989db8de1"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 9977,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "5476c619eccaff853068b21e1a11f39bf7ba2c70e23f848514eacc3f4d47af1d",
+        "checkedAt": "2026-10-26T08:30:03.811Z",
+        "review": {
+          "reviewer": "opencode-deepseek-v4.1",
+          "evidenceUrls": [
+            "https://archive.org/details/ThisIsYo1951",
+            "https://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Prelinger uploader public-domain claim reviewed for this exact file; illustrative use only, no case-evidence implication.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-26T09:03:27.258Z",
+          "metadataHash": "5476c619eccaff853068b21e1a11f39bf7ba2c70e23f848514eacc3f4d47af1d",
+          "credit": "Handy (Jam) Organization"
+        }
+      },
+      "retrievedAt": "2026-10-26T08:30:03.810Z",
+      "kind": "clip",
+      "parentId": "ThisIsYo1951-9e909e78b7d1",
+      "transform": {
+        "startMs": 529000,
+        "endMs": 539000,
+        "createdAt": "2026-10-26T09:03:29.831Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "529",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/ThisIsYo1951-9e909e78b7d1.mp4",
+          "-t",
+          "10",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s10-9bec3a6aa639b176.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s10",
+        "storyboardHash": "6c2c807396044914e8c78b4a37bd1ed76a3f156cb47f4e996ae5e59914ebe3ad",
+        "shotId": "shot-018",
+        "previewHash": "7e5ded557ce6acea5cfea680b10ef9ae5e85c477ec30cdf880f1d34ab4746179",
+        "reason": "Police car outside a brick station with barred windows; precinct exterior for the donation-bin reveal.",
+        "shotStartMs": 528308,
+        "shotEndMs": 540308,
+        "sampleTimesMs": [
+          528508,
+          534308,
+          540108
+        ],
+        "reviewImage": "media/reviews/s10-9bec3a6aa639b176.jpg",
+        "reviewImageHash": "5dbb4f274b0a2721bb28b970de8f8c324d3952eec21a4ca04109d581eb112dc4",
+        "reviewer": "opencode-deepseek-v4.1",
+        "reviewedAt": "2026-10-26T09:03:29.832Z",
+        "illustrative": true
       }
     }
   ]

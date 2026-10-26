@@ -1,0 +1,279 @@
+{
+  "query": "industrial AND (factory OR mill OR plant OR workers)",
+  "scene": {
+    "sceneId": "s2",
+    "storyboardHash": "92ba6112fe6872a686e98dce37da3d5fa1bccffaed9e6917bac78e4779b734c1",
+    "durationMs": 3796,
+    "narration": "A body was found behind the old textile mill on River Street.",
+    "visualIntent": "Industrial mill exterior deserted street establishing shot",
+    "queries": [
+      "industrial AND (mill OR factory)",
+      "city street night"
+    ],
+    "avoid": [
+      "opening titles",
+      "credits",
+      "commercials",
+      "unrelated faces",
+      "authentic-evidence implication"
+    ],
+    "status": "needs-discovery"
+  },
+  "flags": {
+    "scene": "s2",
+    "rows": "10",
+    "pages": "2",
+    "collection": "prelinger"
+  },
+  "candidates": [
+    {
+      "identifier": "Technico1949",
+      "title": "Technicolor for Industrial Films",
+      "creator": "Technicolor Corporation",
+      "runtime": "8:09",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Technico1949",
+      "thumbnailUrl": "https://archive.org/services/img/Technico1949",
+      "description": "Film promoting use of Technicolor process to industrial film producers.",
+      "subjects": [
+        "Motion pictures: History",
+        "Motion pictures: Production",
+        "Motion pictures: Industrial"
+      ],
+      "relevanceScore": 19,
+      "matchedTerms": [
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 54037
+    },
+    {
+      "identifier": "HowTexti1948",
+      "title": "How Textile Mills Are Modernizing",
+      "creator": "Wolff (Raphael G.) Studios",
+      "runtime": "25:09",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/HowTexti1948",
+      "thumbnailUrl": "https://archive.org/services/img/HowTexti1948",
+      "description": "How electricity can modernize textile mills. Great shots of cotton mills, processing and textile manufacturing; technical narration laced with industry jargon. In Technicolor.",
+      "subjects": [
+        "Electricity",
+        "Occupations: Textile workers",
+        "Textile industry"
+      ],
+      "relevanceScore": 14,
+      "matchedTerms": [
+        "mill",
+        "shot"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 33324
+    },
+    {
+      "identifier": "GermanyA1958",
+      "title": "Germany: A Family of the Industrial Ruhr",
+      "creator": "Audio Productions / Alfred Wagg Pictures",
+      "runtime": "16:00",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/GermanyA1958",
+      "thumbnailUrl": "https://archive.org/services/img/GermanyA1958",
+      "description": "Examines the varied activities in the life of an average working man's family in a German industrial city after World War II.",
+      "subjects": [
+        "Germany"
+      ],
+      "relevanceScore": 13,
+      "matchedTerms": [
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 21294
+    },
+    {
+      "identifier": "AlaskasS1936",
+      "title": "Alaska's Silver Millions (Part I)",
+      "creator": "Carousel Films",
+      "runtime": "16:37",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/AlaskasS1936",
+      "thumbnailUrl": "https://archive.org/services/img/AlaskasS1936",
+      "description": "Geography of Alaska, the life cycle of the salmon, the salmon industry, operation of the canneries and life of the fishermen's community. With commentary by Father Bernard Hubbard, the \"glacier priest.\" Directed by Beverly Jones.",
+      "subjects": [
+        "Alaska",
+        "Fish",
+        "Agriculture: Food industry: Canning"
+      ],
+      "relevanceScore": 12,
+      "matchedTerms": [
+        "mill"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 15428
+    },
+    {
+      "identifier": "FarmerMi1920",
+      "title": "Farmer Miller Goes Into High Gear (Part I)",
+      "creator": "Goodyear Tire & Rubber Company",
+      "runtime": "11:07",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/FarmerMi1920",
+      "thumbnailUrl": "https://archive.org/services/img/FarmerMi1920",
+      "description": "A farmer is convinced that his tractor will do more and better if it rolls on Goodyear tires rather than steel wheels. Includes scenes of tractor tire manufacturing.",
+      "subjects": [
+        "Tires",
+        "Agriculture: Farms and farming",
+        "Rural America"
+      ],
+      "relevanceScore": 12,
+      "matchedTerms": [
+        "mill"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 11277
+    },
+    {
+      "identifier": "Doctorin1946",
+      "title": "Doctor in Industry (Part I)",
+      "creator": "Handy (Jam) Organization",
+      "runtime": "18:47",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Doctorin1946",
+      "thumbnailUrl": "https://archive.org/services/img/Doctorin1946",
+      "description": "Epic history of industrial medicine in the first half of the 20th century, showing how manufacturers and the medical profession came to terms with one another and culminating in GM's rehabilitation program for returned World War II veterans. Directed by Haford Kerbawy.",
+      "subjects": [
+        "Medicine: Industrial medicine",
+        "Medicine: Occupational health",
+        "World War II: Postwar issues"
+      ],
+      "relevanceScore": 7,
+      "matchedTerms": [
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 13504241
+    },
+    {
+      "identifier": "Doctorin1946_2",
+      "title": "Doctor in Industry (Part II)",
+      "creator": "Handy (Jam) Organization",
+      "runtime": "18:47",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Doctorin1946_2",
+      "thumbnailUrl": "https://archive.org/services/img/Doctorin1946_2",
+      "description": "Epic history of industrial medicine in the first half of the 20th century, showing how manufacturers and the medical profession came to terms with one another and culminating in GM's rehabilitation program for returned World War II veterans. Directed by Haford Kerbawy.",
+      "subjects": [
+        "Medicine: Industrial medicine",
+        "Medicine: Occupational health",
+        "World War II: Postwar issues"
+      ],
+      "relevanceScore": 7,
+      "matchedTerms": [
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 6603
+    },
+    {
+      "identifier": "Manpower1943",
+      "title": "Manpower",
+      "creator": "U.S. Office of War Information",
+      "runtime": "8:32",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Manpower1943",
+      "thumbnailUrl": "https://archive.org/services/img/Manpower1943",
+      "description": "The battle for industrial production in World War II.",
+      "subjects": [
+        "World War II: Homefront",
+        "World War II: Industrial production"
+      ],
+      "relevanceScore": 7,
+      "matchedTerms": [
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 11472
+    },
+    {
+      "identifier": "Aluminum1956",
+      "title": "Aluminum on the March (Part I)",
+      "creator": "Handy (Jam) Organization",
+      "runtime": "13:35",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Aluminum1956",
+      "thumbnailUrl": "https://archive.org/services/img/Aluminum1956",
+      "description": "PLEASE NOTE: A one-part, higher-quality version of this film is now here.",
+      "subjects": [
+        "Metals: Aluminum",
+        "Animation: Stop-motion",
+        "Design: Industrial"
+      ],
+      "relevanceScore": 6,
+      "matchedTerms": [
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 20722
+    },
+    {
+      "identifier": "Aluminum1956_2",
+      "title": "Aluminum on the March (Part II)",
+      "creator": "Handy (Jam) Organization",
+      "runtime": "13:20",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Aluminum1956_2",
+      "thumbnailUrl": "https://archive.org/services/img/Aluminum1956_2",
+      "description": "How aluminum contributes to everyday living and national defense: appliances, packaging, airplanes, etc. With great stop-motion animation and excellent imagery of aluminum-enabled Fifties America.",
+      "subjects": [
+        "Metals: Aluminum",
+        "Animation: Stop-motion",
+        "Design: Industrial"
+      ],
+      "relevanceScore": 6,
+      "matchedTerms": [
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 21029
+    }
+  ],
+  "searchedAt": "2026-10-26T08:26:46.520Z"
+}

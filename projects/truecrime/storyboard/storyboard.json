@@ -43,21 +43,21 @@
       "narration": "A body was found behind the old textile mill on River Street.",
       "source": {
         "label": "Illustrative archival footage — not case evidence",
-        "url": "https://archive.org/details/FireandP1947"
+        "url": "https://archive.org/details/HowTexti1948"
       },
       "template": "video_clip",
       "props": {
-        "videoFile": "assets/clips/s2-f430d32d69013513.mp4",
+        "videoFile": "assets/clips/s2-4293dcfacded9c11.mp4",
         "caption": "Illustrative archival footage",
         "startFromMs": 0,
-        "mediaAssetId": "s2-f430d32d69013513",
+        "mediaAssetId": "s2-4293dcfacded9c11",
         "license": {
           "type": "Public domain",
-          "sourceUrl": "https://archive.org/details/FireandP1947",
-          "credit": "Holmes (Burton) Films, Inc.",
+          "sourceUrl": "https://archive.org/details/HowTexti1948",
+          "credit": "Wolff (Raphael G.) Studios",
           "licenseUrl": "https://creativecommons.org/licenses/publicdomain/",
-          "attribution": "Fire and Police Service — Holmes (Burton) Films, Inc.. Source: https://archive.org/details/FireandP1947. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 233.900–237.900s; trimmed, audio removed, re-encoded; illustrative use.",
-          "modifications": "Excerpt 233.900–237.900s; trimmed, audio removed, re-encoded; illustrative use"
+          "attribution": "How Textile Mills Are Modernizing — Wolff (Raphael G.) Studios. Source: https://archive.org/details/HowTexti1948. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 413.500–418.500s; trimmed, audio removed, re-encoded; illustrative use.",
+          "modifications": "Excerpt 413.500–418.500s; trimmed, audio removed, re-encoded; illustrative use"
         }
       }
     },
@@ -209,21 +209,21 @@
       "narration": "A man with no known enemies. A man who, according to his coworkers, simply stopped coming to work one Tuesday and was never seen again.",
       "source": {
         "label": "Illustrative archival footage — not case evidence",
-        "url": "https://archive.org/details/FireandP1947"
+        "url": "https://archive.org/details/HowTexti1948"
       },
       "template": "video_clip",
       "props": {
-        "videoFile": "assets/clips/s9-fc116c29939614ae.mp4",
+        "videoFile": "assets/clips/s9-2b24c1ac382b679f.mp4",
         "caption": "Illustrative archival footage",
         "startFromMs": 0,
-        "mediaAssetId": "s9-fc116c29939614ae",
+        "mediaAssetId": "s9-2b24c1ac382b679f",
         "license": {
           "type": "Public domain",
-          "sourceUrl": "https://archive.org/details/FireandP1947",
-          "credit": "Holmes (Burton) Films, Inc.",
+          "sourceUrl": "https://archive.org/details/HowTexti1948",
+          "credit": "Wolff (Raphael G.) Studios",
           "licenseUrl": "https://creativecommons.org/licenses/publicdomain/",
-          "attribution": "Fire and Police Service — Holmes (Burton) Films, Inc.. Source: https://archive.org/details/FireandP1947. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 533.300–542.650s; trimmed, audio removed, re-encoded; illustrative use.",
-          "modifications": "Excerpt 533.300–542.650s; trimmed, audio removed, re-encoded; illustrative use"
+          "attribution": "How Textile Mills Are Modernizing — Wolff (Raphael G.) Studios. Source: https://archive.org/details/HowTexti1948. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 701.000–711.000s; trimmed, audio removed, re-encoded; illustrative use.",
+          "modifications": "Excerpt 701.000–711.000s; trimmed, audio removed, re-encoded; illustrative use"
         }
       }
     },
@@ -240,21 +240,21 @@
       "narration": "The case went cold. Until last week, when an identical red scarf turned up in a donation bin outside the precinct.",
       "source": {
         "label": "Illustrative archival footage — not case evidence",
-        "url": "https://archive.org/details/FireandP1947"
+        "url": "https://archive.org/details/ThisIsYo1951"
       },
       "template": "video_clip",
       "props": {
-        "videoFile": "assets/clips/s10-4c61e3c952389d04.mp4",
+        "videoFile": "assets/clips/s10-9bec3a6aa639b176.mp4",
         "caption": "Illustrative archival footage",
         "startFromMs": 0,
-        "mediaAssetId": "s10-4c61e3c952389d04",
+        "mediaAssetId": "s10-9bec3a6aa639b176",
         "license": {
           "type": "Public domain",
-          "sourceUrl": "https://archive.org/details/FireandP1947",
-          "credit": "Holmes (Burton) Films, Inc.",
+          "sourceUrl": "https://archive.org/details/ThisIsYo1951",
+          "credit": "Handy (Jam) Organization",
           "licenseUrl": "https://creativecommons.org/licenses/publicdomain/",
-          "attribution": "Fire and Police Service — Holmes (Burton) Films, Inc.. Source: https://archive.org/details/FireandP1947. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 205.600–214.500s; trimmed, audio removed, re-encoded; illustrative use.",
-          "modifications": "Excerpt 205.600–214.500s; trimmed, audio removed, re-encoded; illustrative use"
+          "attribution": "This Is Your Police Department — Handy (Jam) Organization. Source: https://archive.org/details/ThisIsYo1951. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 529.000–539.000s; trimmed, audio removed, re-encoded; illustrative use.",
+          "modifications": "Excerpt 529.000–539.000s; trimmed, audio removed, re-encoded; illustrative use"
         }
       }
     },

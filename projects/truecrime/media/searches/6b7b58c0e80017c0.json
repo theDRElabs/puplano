@@ -1,0 +1,254 @@
+{
+  "query": "police AND (station OR precinct)",
+  "scene": {
+    "sceneId": "s10",
+    "storyboardHash": "6c2c807396044914e8c78b4a37bd1ed76a3f156cb47f4e996ae5e59914ebe3ad",
+    "durationMs": 8754,
+    "narration": "The case went cold. Until last week, when an identical red scarf turned up in a donation bin outside the precinct.",
+    "visualIntent": "Police station dispatch desk officers telephone at night",
+    "queries": [
+      "police AND (station OR dispatch OR telephone)",
+      "police patrol night"
+    ],
+    "avoid": [
+      "opening titles",
+      "credits",
+      "commercials",
+      "unrelated faces",
+      "authentic-evidence implication"
+    ],
+    "status": "keep-graphic"
+  },
+  "flags": {
+    "scene": "s10",
+    "rows": "10",
+    "pages": "2",
+    "collection": "prelinger"
+  },
+  "candidates": [
+    {
+      "identifier": "WeLearnA1965",
+      "title": "We Learn About the Telephone I",
+      "creator": "Fairbanks (Jerry) Productions",
+      "runtime": "22:32",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/WeLearnA1965",
+      "thumbnailUrl": "https://archive.org/services/img/WeLearnA1965",
+      "description": "A young man sketches a generic human (ÂMr. ManÂ) who takes us back through history to show us how humans developed a need to communicate and the devices to do so. Then shows us how telephones enable the modern mid-Sixties world. Part-animated by the master John Hubley. Directed by Jean Yarbrough. Educational Research and Story: W.H. Schneider. Animation: John Hubley. With Wright King (Uncle Bill); Pat Cardi (Jimmy); Pam Ferden (Susie); Richard Webb (Police Captain).",
+      "subjects": [
+        "Communication: Telephone",
+        "Animation",
+        "1960s"
+      ],
+      "relevanceScore": 20,
+      "matchedTerms": [
+        "police",
+        "telephone"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 43098
+    },
+    {
+      "identifier": "ThisIsYo1951",
+      "title": "This Is Your Police Department",
+      "creator": "Handy (Jam) Organization",
+      "runtime": "23:04",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/ThisIsYo1951",
+      "thumbnailUrl": "https://archive.org/services/img/ThisIsYo1951",
+      "description": "Operations and ceremonies of the Detroit Police Department.",
+      "subjects": [
+        "Police",
+        "Detroit, Michigan"
+      ],
+      "relevanceScore": 19,
+      "matchedTerms": [
+        "police"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 38551
+    },
+    {
+      "identifier": "ADTWhenE1958",
+      "title": "ADT: When Every Minute Counts",
+      "creator": "Fairbanks (Jerry) Productions",
+      "runtime": "20:51",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/ADTWhenE1958",
+      "thumbnailUrl": "https://archive.org/services/img/ADTWhenE1958",
+      "description": "How ADT alarm systems secure property, with elaborate coverage of alarm and communications technology in the analog era.",
+      "subjects": [
+        "Crime and criminals",
+        "Fires and firefighting",
+        "Police"
+      ],
+      "relevanceScore": 6,
+      "matchedTerms": [
+        "police"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 15887
+    },
+    {
+      "identifier": "boys_beware",
+      "title": "Boys Beware",
+      "creator": "Sid Davis",
+      "runtime": "0:10:12",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/boys_beware",
+      "thumbnailUrl": "https://archive.org/services/img/boys_beware",
+      "description": "Anti-homosexual film targeted at teenage boys, urging them to avoid encounters with potential molesters.",
+      "subjects": [
+        "Homosexualities",
+        "Crime and criminals (Molestation)",
+        "Los Angeles"
+      ],
+      "relevanceScore": 6,
+      "matchedTerms": [
+        "station"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 437705
+    },
+    {
+      "identifier": "strange_ones",
+      "title": "Strange Ones, The",
+      "runtime": "0:10:14",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/strange_ones",
+      "thumbnailUrl": "https://archive.org/services/img/strange_ones",
+      "description": "Communicates through a child's eyes the problem of molestation. A little girl is rescued by the police who explain to her how to avoid dangerous situations and how to deal with them when they arise.",
+      "subjects": [],
+      "relevanceScore": 2,
+      "matchedTerms": [
+        "police",
+        "station"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 32033
+    },
+    {
+      "identifier": "bicycle_today_automobile_tomorrow",
+      "title": "Bicycle Today, Automobile Tomorrow",
+      "runtime": "0:10:03",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/bicycle_today_automobile_tomorrow",
+      "thumbnailUrl": "https://archive.org/services/img/bicycle_today_automobile_tomorrow",
+      "description": "0700 PA8753 Bicycle Today, Automobile Tomorrow",
+      "subjects": [],
+      "relevanceScore": 0,
+      "matchedTerms": [],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 7557
+    },
+    {
+      "identifier": "BicycleToday",
+      "title": "Bicycle Today - Automobile Tomorrow",
+      "runtime": "10:00",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/BicycleToday",
+      "thumbnailUrl": "https://archive.org/services/img/BicycleToday",
+      "description": "Shows graphically how one should check his bike for mechanical soundness and how to keep it in good running condition. Pictures a boy and a girl demonstrating the importance of knowing the correct bicycle rules and regulations before riding in traffic and how to ride safely.",
+      "subjects": [
+        "need keyword"
+      ],
+      "relevanceScore": 0,
+      "matchedTerms": [],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 11597
+    },
+    {
+      "identifier": "Chevrole1937_4",
+      "title": "Chevrolet Leader News (Vol. 3, No. 4)",
+      "creator": "Handy (Jam) Organization",
+      "runtime": "6:17",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Chevrole1937_4",
+      "thumbnailUrl": "https://archive.org/services/img/Chevrole1937_4",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories.",
+      "subjects": [
+        "Car culture: Newsreels",
+        "Automobiles: Advertising"
+      ],
+      "relevanceScore": 0,
+      "matchedTerms": [],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 10981
+    },
+    {
+      "identifier": "Chevrole1939_3",
+      "title": "Chevrolet Leader News (Vol. 5, No. 2)",
+      "creator": "Handy (Jam) Organization",
+      "runtime": "8:32",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Chevrole1939_3",
+      "thumbnailUrl": "https://archive.org/services/img/Chevrole1939_3",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories.",
+      "subjects": [
+        "Car culture: Newsreels",
+        "Automobiles: Advertising",
+        "Agriculture: Poultry"
+      ],
+      "relevanceScore": 0,
+      "matchedTerms": [],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 11053
+    },
+    {
+      "identifier": "CoolHotRodA",
+      "title": "Cool Hot Rod A",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/CoolHotRodA",
+      "thumbnailUrl": "https://archive.org/services/img/CoolHotRodA",
+      "description": "Uses narration by a teen-ager to show how a hot-rod club contributes to safe driving through its strict membership rules and restriction of speed runs to 'DRAG STRIPS.'.",
+      "subjects": [
+        "need keyword"
+      ],
+      "relevanceScore": 0,
+      "matchedTerms": [],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 31576
+    }
+  ],
+  "searchedAt": "2026-10-26T08:26:48.532Z"
+}

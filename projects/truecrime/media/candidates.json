@@ -1,26 +1,53 @@
 [
   {
-    "identifier": "FireandP1947",
-    "title": "Fire and Police Service",
-    "creator": "Holmes (Burton) Films, Inc.",
-    "runtime": "10:18",
+    "identifier": "WeLearnA1965",
+    "title": "We Learn About the Telephone I",
+    "creator": "Fairbanks (Jerry) Productions",
+    "runtime": "22:32",
     "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
     "license": "Public domain",
     "attributionRequired": false,
-    "detailsUrl": "https://archive.org/details/FireandP1947",
-    "thumbnailUrl": "https://archive.org/services/img/FireandP1947",
-    "description": "Vocational film showing the work of emergency service personnel.",
+    "detailsUrl": "https://archive.org/details/WeLearnA1965",
+    "thumbnailUrl": "https://archive.org/services/img/WeLearnA1965",
+    "description": "A young man sketches a generic human (ÂMr. ManÂ) who takes us back through history to show us how humans developed a need to communicate and the devices to do so. Then shows us how telephones enable the modern mid-Sixties world. Part-animated by the master John Hubley. Directed by Jean Yarbrough. Educational Research and Story: W.H. Schneider. Animation: John Hubley. With Wright King (Uncle Bill); Pat Cardi (Jimmy); Pam Ferden (Susie); Richard Webb (Police Captain).",
     "subjects": [
-      "Occupations: Public safety"
+      "Communication: Telephone",
+      "Animation",
+      "1960s"
     ],
-    "relevanceScore": 12,
+    "relevanceScore": 20,
+    "matchedTerms": [
+      "police",
+      "telephone"
+    ],
+    "warnings": [
+      "Metadata match only: inspect actual shots before selection"
+    ],
+    "downloads": 43098
+  },
+  {
+    "identifier": "ThisIsYo1951",
+    "title": "This Is Your Police Department",
+    "creator": "Handy (Jam) Organization",
+    "runtime": "23:04",
+    "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+    "license": "Public domain",
+    "attributionRequired": false,
+    "detailsUrl": "https://archive.org/details/ThisIsYo1951",
+    "thumbnailUrl": "https://archive.org/services/img/ThisIsYo1951",
+    "description": "Operations and ceremonies of the Detroit Police Department.",
+    "subjects": [
+      "Police",
+      "Detroit, Michigan"
+    ],
+    "relevanceScore": 19,
     "matchedTerms": [
       "police"
     ],
     "warnings": [
       "Metadata match only: inspect actual shots before selection"
     ],
-    "downloads": 7707
+    "downloads": 38551
   },
   {
     "identifier": "ADTWhenE1958",
@@ -48,6 +75,31 @@
     "downloads": 15887
   },
   {
+    "identifier": "boys_beware",
+    "title": "Boys Beware",
+    "creator": "Sid Davis",
+    "runtime": "0:10:12",
+    "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+    "license": "Public domain",
+    "attributionRequired": false,
+    "detailsUrl": "https://archive.org/details/boys_beware",
+    "thumbnailUrl": "https://archive.org/services/img/boys_beware",
+    "description": "Anti-homosexual film targeted at teenage boys, urging them to avoid encounters with potential molesters.",
+    "subjects": [
+      "Homosexualities",
+      "Crime and criminals (Molestation)",
+      "Los Angeles"
+    ],
+    "relevanceScore": 6,
+    "matchedTerms": [
+      "station"
+    ],
+    "warnings": [
+      "Metadata match only: inspect actual shots before selection"
+    ],
+    "downloads": 437705
+  },
+  {
     "identifier": "strange_ones",
     "title": "Strange Ones, The",
     "runtime": "0:10:14",
@@ -58,39 +110,15 @@
     "thumbnailUrl": "https://archive.org/services/img/strange_ones",
     "description": "Communicates through a child's eyes the problem of molestation. A little girl is rescued by the police who explain to her how to avoid dangerous situations and how to deal with them when they arise.",
     "subjects": [],
-    "relevanceScore": 1,
+    "relevanceScore": 2,
     "matchedTerms": [
-      "police"
+      "police",
+      "station"
     ],
     "warnings": [
       "Metadata match only: inspect actual shots before selection"
     ],
     "downloads": 32033
-  },
-  {
-    "identifier": "WeLearnA1965",
-    "title": "We Learn About the Telephone I",
-    "creator": "Fairbanks (Jerry) Productions",
-    "runtime": "22:32",
-    "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
-    "license": "Public domain",
-    "attributionRequired": false,
-    "detailsUrl": "https://archive.org/details/WeLearnA1965",
-    "thumbnailUrl": "https://archive.org/services/img/WeLearnA1965",
-    "description": "A young man sketches a generic human (ÂMr. ManÂ) who takes us back through history to show us how humans developed a need to communicate and the devices to do so. Then shows us how telephones enable the modern mid-Sixties world. Part-animated by the master John Hubley. Directed by Jean Yarbrough. Educational Research and Story: W.H. Schneider. Animation: John Hubley. With Wright King (Uncle Bill); Pat Cardi (Jimmy); Pam Ferden (Susie); Richard Webb (Police Captain).",
-    "subjects": [
-      "Communication: Telephone",
-      "Animation",
-      "1960s"
-    ],
-    "relevanceScore": 1,
-    "matchedTerms": [
-      "police"
-    ],
-    "warnings": [
-      "Metadata match only: inspect actual shots before selection"
-    ],
-    "downloads": 43098
   },
   {
     "identifier": "bicycle_today_automobile_tomorrow",
@@ -129,50 +157,6 @@
       "Metadata match only: inspect actual shots before selection"
     ],
     "downloads": 11597
-  },
-  {
-    "identifier": "boys_beware",
-    "title": "Boys Beware",
-    "creator": "Sid Davis",
-    "runtime": "0:10:12",
-    "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
-    "license": "Public domain",
-    "attributionRequired": false,
-    "detailsUrl": "https://archive.org/details/boys_beware",
-    "thumbnailUrl": "https://archive.org/services/img/boys_beware",
-    "description": "Anti-homosexual film targeted at teenage boys, urging them to avoid encounters with potential molesters.",
-    "subjects": [
-      "Homosexualities",
-      "Crime and criminals (Molestation)",
-      "Los Angeles"
-    ],
-    "relevanceScore": 0,
-    "matchedTerms": [],
-    "warnings": [
-      "Metadata match only: inspect actual shots before selection"
-    ],
-    "downloads": 437705
-  },
-  {
-    "identifier": "Challeng1944",
-    "title": "Challenge to Democracy, A",
-    "creator": "U.S. War Relocation Authority",
-    "runtime": "17:13",
-    "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
-    "license": "Public domain",
-    "attributionRequired": false,
-    "detailsUrl": "https://archive.org/details/Challeng1944",
-    "thumbnailUrl": "https://archive.org/services/img/Challeng1944",
-    "description": "Government-produced film attempting to defend the massive internment of Japanese Americans in concentration camps during World War II.",
-    "subjects": [
-      "World War II: Japanese Americans: Internment"
-    ],
-    "relevanceScore": 0,
-    "matchedTerms": [],
-    "warnings": [
-      "Metadata match only: inspect actual shots before selection"
-    ],
-    "downloads": 86058
   },
   {
     "identifier": "Chevrole1937_4",
@@ -237,95 +221,5 @@
       "Metadata match only: inspect actual shots before selection"
     ],
     "downloads": 31576
-  },
-  {
-    "identifier": "Corvairi1960",
-    "title": "Corvair in Action, The",
-    "creator": "Handy (Jam) Organization",
-    "runtime": "6:25",
-    "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
-    "license": "Public domain",
-    "attributionRequired": false,
-    "detailsUrl": "https://archive.org/details/Corvairi1960",
-    "thumbnailUrl": "https://archive.org/services/img/Corvairi1960",
-    "description": "Promotional film for the controversial Chevrolet Corvair.",
-    "subjects": [
-      "Automobiles: Advertising"
-    ],
-    "relevanceScore": 0,
-    "matchedTerms": [],
-    "warnings": [
-      "Metadata match only: inspect actual shots before selection"
-    ],
-    "downloads": 165614
-  },
-  {
-    "identifier": "DayCalle1955",
-    "title": "Day Called X, A (Part I)",
-    "creator": "CBS Television Network",
-    "runtime": "11:46",
-    "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
-    "license": "Public domain",
-    "attributionRequired": false,
-    "detailsUrl": "https://archive.org/details/DayCalle1955",
-    "thumbnailUrl": "https://archive.org/services/img/DayCalle1955",
-    "description": "Dramatized atomic evacuation of Portland, Oregon.",
-    "subjects": [
-      "Atomic-nuclear: Civil defense",
-      "Cold War",
-      "Oregon"
-    ],
-    "relevanceScore": 0,
-    "matchedTerms": [],
-    "warnings": [
-      "Metadata match only: inspect actual shots before selection"
-    ],
-    "downloads": 48215
-  },
-  {
-    "identifier": "DayCalle1955_2",
-    "title": "Day Called X, A (Part II)",
-    "creator": "CBS Television Network",
-    "runtime": "15:25",
-    "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
-    "license": "Public domain",
-    "attributionRequired": false,
-    "detailsUrl": "https://archive.org/details/DayCalle1955_2",
-    "thumbnailUrl": "https://archive.org/services/img/DayCalle1955_2",
-    "description": "Dramatized atomic evacuation of Portland, Oregon.",
-    "subjects": [
-      "Atomic-nuclear: Civil defense",
-      "Cold War",
-      "Oregon"
-    ],
-    "relevanceScore": 0,
-    "matchedTerms": [],
-    "warnings": [
-      "Metadata match only: inspect actual shots before selection"
-    ],
-    "downloads": 26859
-  },
-  {
-    "identifier": "DetroitC1965",
-    "title": "Detroit: City on the Move",
-    "creator": "Handy (Jam) Organization",
-    "runtime": "18:12",
-    "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
-    "license": "Public domain",
-    "attributionRequired": false,
-    "detailsUrl": "https://archive.org/details/DetroitC1965",
-    "thumbnailUrl": "https://archive.org/services/img/DetroitC1965",
-    "description": "Promotional film made for the City of Detroit, an unsuccessful bidder for the Olympic Games. With views of city highways, automobile manufacturing, a diverse population, and social activities, all shot prior to the city's economic decline.",
-    "subjects": [
-      "Detroit, Michigan",
-      "City planning",
-      "Race relations"
-    ],
-    "relevanceScore": 0,
-    "matchedTerms": [],
-    "warnings": [
-      "Metadata match only: inspect actual shots before selection"
-    ],
-    "downloads": 107540
   }
 ]

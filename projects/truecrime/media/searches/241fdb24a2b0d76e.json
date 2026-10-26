@@ -1,0 +1,281 @@
+{
+  "query": "workers AND factory",
+  "scene": {
+    "sceneId": "s9",
+    "storyboardHash": "95794ddbed0f14e646679e1b7ed021ae973bbcc1a913b0b411020594c20bfda9",
+    "durationMs": 9288,
+    "narration": "A man with no known enemies. A man who, according to his coworkers, simply stopped coming to work one Tuesday and was never seen again.",
+    "visualIntent": "Worker leaving an industrial workplace lonely pedestrian",
+    "queries": [
+      "workers factory",
+      "pedestrian street"
+    ],
+    "avoid": [
+      "opening titles",
+      "credits",
+      "commercials",
+      "unrelated faces",
+      "authentic-evidence implication"
+    ],
+    "status": "needs-discovery"
+  },
+  "flags": {
+    "scene": "s9",
+    "rows": "10",
+    "pages": "2",
+    "collection": "prelinger"
+  },
+  "candidates": [
+    {
+      "identifier": "Technico1949",
+      "title": "Technicolor for Industrial Films",
+      "creator": "Technicolor Corporation",
+      "runtime": "8:09",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Technico1949",
+      "thumbnailUrl": "https://archive.org/services/img/Technico1949",
+      "description": "Film promoting use of Technicolor process to industrial film producers.",
+      "subjects": [
+        "Motion pictures: History",
+        "Motion pictures: Production",
+        "Motion pictures: Industrial"
+      ],
+      "relevanceScore": 19,
+      "matchedTerms": [
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 54037
+    },
+    {
+      "identifier": "Supervis1944",
+      "title": "Supervising Women Workers",
+      "creator": "Kerkow (Herbert) Productions",
+      "runtime": "10:10",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Supervis1944",
+      "thumbnailUrl": "https://archive.org/services/img/Supervis1944",
+      "description": "Management addresses the special problems of women workers with concern and a heavy dose of sexism.",
+      "subjects": [
+        "World War II: Homefront"
+      ],
+      "relevanceScore": 13,
+      "matchedTerms": [
+        "worker"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 61965
+    },
+    {
+      "identifier": "SheetMet1942",
+      "title": "Sheet Metal Worker, The",
+      "creator": "Holmes (Burton) Films, Inc.",
+      "runtime": "10:33",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/SheetMet1942",
+      "thumbnailUrl": "https://archive.org/services/img/SheetMet1942",
+      "description": "Vocational guidance and training film.",
+      "subjects": [
+        "Occupations: Metalworking"
+      ],
+      "relevanceScore": 12,
+      "matchedTerms": [
+        "worker"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 9568
+    },
+    {
+      "identifier": "Unfinish1948",
+      "title": "Unfinished Business",
+      "creator": "Handy (Jam) Organization",
+      "runtime": "19:40",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Unfinish1948",
+      "thumbnailUrl": "https://archive.org/services/img/Unfinish1948",
+      "description": "Postwar adjustment is easy for a young World War II veteran who is welcomed back to his job at U.S. Steel with a position, training courses, and counseling.",
+      "subjects": [
+        "World War II: Postwar issues",
+        "Occupations: Steelworkers",
+        "World War II: Industrial production"
+      ],
+      "relevanceScore": 12,
+      "matchedTerms": [
+        "worker",
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 9695
+    },
+    {
+      "identifier": "GreaterG1953",
+      "title": "Greater Goal: Human Dividends from American Industry, The",
+      "creator": "Louft (Louis L.)",
+      "runtime": "23:22",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/GreaterG1953",
+      "thumbnailUrl": "https://archive.org/services/img/GreaterG1953",
+      "description": "The Southern textile industry as a hotbed of enlightened industrial progress.",
+      "subjects": [
+        "Geography: U.S.: Southeastern states",
+        "Textile industry",
+        "Occupations: Textile workers"
+      ],
+      "relevanceScore": 7,
+      "matchedTerms": [
+        "worker",
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 12407
+    },
+    {
+      "identifier": "Speaking1951",
+      "title": "Speaking of Rubber (Part I)",
+      "creator": "Roush (Leslie) Productions, Inc.",
+      "runtime": "13:44",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Speaking1951",
+      "thumbnailUrl": "https://archive.org/services/img/Speaking1951",
+      "description": "Narrated by a retired \"rubber man,\" this classic industrial film shows the uses and manufacturing of rubber products. With excellent images of making boots, tire manufacturing, traction tests, and innovative uses of rubber.",
+      "subjects": [
+        "Rubber",
+        "Occupations: Rubber workers",
+        "Chemistry"
+      ],
+      "relevanceScore": 7,
+      "matchedTerms": [
+        "worker",
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 7975
+    },
+    {
+      "identifier": "Speaking1951_2",
+      "title": "Speaking of Rubber (Part II)",
+      "creator": "Roush (Leslie) Productions, Inc.",
+      "runtime": "14:25",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Speaking1951_2",
+      "thumbnailUrl": "https://archive.org/services/img/Speaking1951_2",
+      "description": "Narrated by a retired \"rubber man,\" this classic industrial film shows the uses and manufacturing of rubber products. With excellent images of making boots, tire manufacturing, traction tests, and innovative uses of rubber.",
+      "subjects": [
+        "Rubber",
+        "Occupations: Rubber workers",
+        "Chemistry"
+      ],
+      "relevanceScore": 7,
+      "matchedTerms": [
+        "worker",
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 6058
+    },
+    {
+      "identifier": "Aluminum1956",
+      "title": "Aluminum on the March (Part I)",
+      "creator": "Handy (Jam) Organization",
+      "runtime": "13:35",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Aluminum1956",
+      "thumbnailUrl": "https://archive.org/services/img/Aluminum1956",
+      "description": "PLEASE NOTE: A one-part, higher-quality version of this film is now here.",
+      "subjects": [
+        "Metals: Aluminum",
+        "Animation: Stop-motion",
+        "Design: Industrial"
+      ],
+      "relevanceScore": 6,
+      "matchedTerms": [
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 20722
+    },
+    {
+      "identifier": "Aluminum1956_2",
+      "title": "Aluminum on the March (Part II)",
+      "creator": "Handy (Jam) Organization",
+      "runtime": "13:20",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/Aluminum1956_2",
+      "thumbnailUrl": "https://archive.org/services/img/Aluminum1956_2",
+      "description": "How aluminum contributes to everyday living and national defense: appliances, packaging, airplanes, etc. With great stop-motion animation and excellent imagery of aluminum-enabled Fifties America.",
+      "subjects": [
+        "Metals: Aluminum",
+        "Animation: Stop-motion",
+        "Design: Industrial"
+      ],
+      "relevanceScore": 6,
+      "matchedTerms": [
+        "industrial"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 21029
+    },
+    {
+      "identifier": "ValleyTo1940",
+      "title": "Valley Town",
+      "creator": "Educational Film Institute of New York University and Documentary Film Producers, Inc.",
+      "runtime": "24:32",
+      "licenseUrl": "http://creativecommons.org/licenses/publicdomain/",
+      "license": "Public domain",
+      "attributionRequired": false,
+      "detailsUrl": "https://archive.org/details/ValleyTo1940",
+      "thumbnailUrl": "https://archive.org/services/img/ValleyTo1940",
+      "description": "Social documentary showing the damage visited on the people of a Pennsylvania steel town by the deployment of new technology. Director: Willard Van Dyke. Script: Spencer Pollard, Willard Van Dyke. Photography: Roger Barlow and Bob Churchill. Music: Marc Blitzstein.",
+      "subjects": [
+        "Labor: Unemployment",
+        "Great Depression (1930s)",
+        "Occupations: Steelworkers"
+      ],
+      "relevanceScore": 6,
+      "matchedTerms": [
+        "worker"
+      ],
+      "warnings": [
+        "Metadata match only: inspect actual shots before selection"
+      ],
+      "downloads": 35395
+    }
+  ],
+  "searchedAt": "2026-10-26T08:26:47.596Z"
+}
