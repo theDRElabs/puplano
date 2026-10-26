@@ -1,0 +1,122 @@
+{
+  "cacheKey": "e13e9acd9180485d956662f678e9788b5826560ed4fa19b47605b58b2b4befe7",
+  "text": "Security footage from a bodega two blocks away showed a figure in a dark coat, limping, heading west at exactly 1:44 a.m.",
+  "voiceName": "Alice",
+  "modelId": "eleven_multilingual_v2",
+  "speed": 0.95,
+  "result": {
+    "words": [
+      {
+        "word": "Security",
+        "startMs": 0,
+        "endMs": 534
+      },
+      {
+        "word": "footage",
+        "startMs": 580,
+        "endMs": 929
+      },
+      {
+        "word": "from",
+        "startMs": 964,
+        "endMs": 1103
+      },
+      {
+        "word": "a",
+        "startMs": 1161,
+        "endMs": 1184
+      },
+      {
+        "word": "bodega",
+        "startMs": 1242,
+        "endMs": 1823
+      },
+      {
+        "word": "two",
+        "startMs": 1892,
+        "endMs": 2101
+      },
+      {
+        "word": "blocks",
+        "startMs": 2159,
+        "endMs": 2450
+      },
+      {
+        "word": "away",
+        "startMs": 2485,
+        "endMs": 2914
+      },
+      {
+        "word": "showed",
+        "startMs": 3170,
+        "endMs": 3437
+      },
+      {
+        "word": "a",
+        "startMs": 3471,
+        "endMs": 3495
+      },
+      {
+        "word": "figure",
+        "startMs": 3576,
+        "endMs": 3889
+      },
+      {
+        "word": "in",
+        "startMs": 3947,
+        "endMs": 4063
+      },
+      {
+        "word": "a",
+        "startMs": 4122,
+        "endMs": 4145
+      },
+      {
+        "word": "dark",
+        "startMs": 4272,
+        "endMs": 4621
+      },
+      {
+        "word": "coat,",
+        "startMs": 4702,
+        "endMs": 5178
+      },
+      {
+        "word": "limping,",
+        "startMs": 5341,
+        "endMs": 5991
+      },
+      {
+        "word": "heading",
+        "startMs": 6177,
+        "endMs": 6467
+      },
+      {
+        "word": "west",
+        "startMs": 6560,
+        "endMs": 6920
+      },
+      {
+        "word": "at",
+        "startMs": 6989,
+        "endMs": 7117
+      },
+      {
+        "word": "exactly",
+        "startMs": 7187,
+        "endMs": 7651
+      },
+      {
+        "word": "1:44",
+        "startMs": 7732,
+        "endMs": 8731
+      },
+      {
+        "word": "a.m.",
+        "startMs": 8812,
+        "endMs": 9985
+      }
+    ],
+    "durationMs": 10031
+  }
+}

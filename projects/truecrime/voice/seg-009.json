@@ -1,0 +1,107 @@
+{
+  "cacheKey": "ee6d104215e25a521c74f2622cf19a97dcfe2f788a238f033a5094665ecdda8e",
+  "text": "A man who, according to his coworkers, simply stopped coming to work one Tuesday and was never seen again.",
+  "voiceName": "Alice",
+  "modelId": "eleven_multilingual_v2",
+  "speed": 0.95,
+  "result": {
+    "words": [
+      {
+        "word": "A",
+        "startMs": 0,
+        "endMs": 104
+      },
+      {
+        "word": "man",
+        "startMs": 186,
+        "endMs": 337
+      },
+      {
+        "word": "who,",
+        "startMs": 395,
+        "endMs": 627
+      },
+      {
+        "word": "according",
+        "startMs": 650,
+        "endMs": 1033
+      },
+      {
+        "word": "to",
+        "startMs": 1068,
+        "endMs": 1115
+      },
+      {
+        "word": "his",
+        "startMs": 1173,
+        "endMs": 1265
+      },
+      {
+        "word": "coworkers,",
+        "startMs": 1324,
+        "endMs": 2090
+      },
+      {
+        "word": "simply",
+        "startMs": 2276,
+        "endMs": 2612
+      },
+      {
+        "word": "stopped",
+        "startMs": 2682,
+        "endMs": 3042
+      },
+      {
+        "word": "coming",
+        "startMs": 3088,
+        "endMs": 3332
+      },
+      {
+        "word": "to",
+        "startMs": 3379,
+        "endMs": 3425
+      },
+      {
+        "word": "work",
+        "startMs": 3495,
+        "endMs": 3704
+      },
+      {
+        "word": "one",
+        "startMs": 3785,
+        "endMs": 3936
+      },
+      {
+        "word": "Tuesday",
+        "startMs": 3971,
+        "endMs": 4470
+      },
+      {
+        "word": "and",
+        "startMs": 4598,
+        "endMs": 4760
+      },
+      {
+        "word": "was",
+        "startMs": 4807,
+        "endMs": 4923
+      },
+      {
+        "word": "never",
+        "startMs": 5050,
+        "endMs": 5306
+      },
+      {
+        "word": "seen",
+        "startMs": 5364,
+        "endMs": 5584
+      },
+      {
+        "word": "again.",
+        "startMs": 5631,
+        "endMs": 6780
+      }
+    ],
+    "durationMs": 6818
+  }
+}

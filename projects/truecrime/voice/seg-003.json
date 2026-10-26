@@ -1,0 +1,77 @@
+{
+  "cacheKey": "971c3cbac3a906e74aa6e81d71ea1c52c2bee16798fa14680bcc86682e1f265d",
+  "text": "Just a single red scarf tied in a bow around the victim's neck.",
+  "voiceName": "Alice",
+  "modelId": "eleven_multilingual_v2",
+  "speed": 0.95,
+  "result": {
+    "words": [
+      {
+        "word": "Just",
+        "startMs": 0,
+        "endMs": 244
+      },
+      {
+        "word": "a",
+        "startMs": 290,
+        "endMs": 313
+      },
+      {
+        "word": "single",
+        "startMs": 406,
+        "endMs": 778
+      },
+      {
+        "word": "red",
+        "startMs": 836,
+        "endMs": 1022
+      },
+      {
+        "word": "scarf",
+        "startMs": 1080,
+        "endMs": 1463
+      },
+      {
+        "word": "tied",
+        "startMs": 1521,
+        "endMs": 1800
+      },
+      {
+        "word": "in",
+        "startMs": 1834,
+        "endMs": 1892
+      },
+      {
+        "word": "a",
+        "startMs": 1939,
+        "endMs": 1962
+      },
+      {
+        "word": "bow",
+        "startMs": 2043,
+        "endMs": 2322
+      },
+      {
+        "word": "around",
+        "startMs": 2450,
+        "endMs": 2798
+      },
+      {
+        "word": "the",
+        "startMs": 2833,
+        "endMs": 2902
+      },
+      {
+        "word": "victim's",
+        "startMs": 2961,
+        "endMs": 3448
+      },
+      {
+        "word": "neck.",
+        "startMs": 3529,
+        "endMs": 4598
+      }
+    ],
+    "durationMs": 4624
+  }
+}

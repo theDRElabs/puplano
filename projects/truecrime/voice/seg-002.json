@@ -1,0 +1,92 @@
+{
+  "cacheKey": "3960c3cc31280b04d46bef0d1547700f9aa9c6eff4eab06194895a7c5232837d",
+  "text": "A body was found behind the old textile mill on River Street. No wallet. No phone.",
+  "voiceName": "Alice",
+  "modelId": "eleven_multilingual_v2",
+  "speed": 0.95,
+  "result": {
+    "words": [
+      {
+        "word": "A",
+        "startMs": 0,
+        "endMs": 128
+      },
+      {
+        "word": "body",
+        "startMs": 221,
+        "endMs": 522
+      },
+      {
+        "word": "was",
+        "startMs": 604,
+        "endMs": 731
+      },
+      {
+        "word": "found",
+        "startMs": 801,
+        "endMs": 1045
+      },
+      {
+        "word": "behind",
+        "startMs": 1103,
+        "endMs": 1393
+      },
+      {
+        "word": "the",
+        "startMs": 1451,
+        "endMs": 1533
+      },
+      {
+        "word": "old",
+        "startMs": 1614,
+        "endMs": 1869
+      },
+      {
+        "word": "textile",
+        "startMs": 1927,
+        "endMs": 2508
+      },
+      {
+        "word": "mill",
+        "startMs": 2543,
+        "endMs": 2694
+      },
+      {
+        "word": "on",
+        "startMs": 2752,
+        "endMs": 2833
+      },
+      {
+        "word": "River",
+        "startMs": 2961,
+        "endMs": 3216
+      },
+      {
+        "word": "Street.",
+        "startMs": 3262,
+        "endMs": 3808
+      },
+      {
+        "word": "No",
+        "startMs": 3994,
+        "endMs": 4168
+      },
+      {
+        "word": "wallet.",
+        "startMs": 4249,
+        "endMs": 4818
+      },
+      {
+        "word": "No",
+        "startMs": 4946,
+        "endMs": 5120
+      },
+      {
+        "word": "phone.",
+        "startMs": 5201,
+        "endMs": 6037
+      }
+    ],
+    "durationMs": 6087
+  }
+}

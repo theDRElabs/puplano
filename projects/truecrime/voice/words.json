@@ -1,6 +1,6 @@
 {
   "voiceName": "Alice",
-  "durationMs": 69329,
+  "durationMs": 81006,
   "words": [
     {
       "word": "The",
@@ -10,872 +10,872 @@
     {
       "word": "night",
       "startMs": 221,
-      "endMs": 430
+      "endMs": 418
     },
     {
       "word": "shift",
-      "startMs": 464,
-      "endMs": 720
+      "startMs": 453,
+      "endMs": 697
     },
     {
       "word": "at",
-      "startMs": 766,
-      "endMs": 824
+      "startMs": 731,
+      "endMs": 789
     },
     {
       "word": "the",
-      "startMs": 859,
-      "endMs": 929
+      "startMs": 824,
+      "endMs": 894
     },
     {
       "word": "downtown",
-      "startMs": 975,
-      "endMs": 1451
+      "startMs": 940,
+      "endMs": 1393
     },
     {
       "word": "precinct",
-      "startMs": 1521,
-      "endMs": 2009
+      "startMs": 1463,
+      "endMs": 1939
     },
     {
       "word": "began",
-      "startMs": 2067,
-      "endMs": 2415
+      "startMs": 1997,
+      "endMs": 2357
     },
     {
       "word": "like",
-      "startMs": 2496,
-      "endMs": 2705
+      "startMs": 2426,
+      "endMs": 2635
     },
     {
       "word": "any",
-      "startMs": 2752,
-      "endMs": 2926
+      "startMs": 2682,
+      "endMs": 2995
     },
     {
       "word": "other,",
-      "startMs": 2995,
-      "endMs": 3471
+      "startMs": 3077,
+      "endMs": 3518
     },
     {
       "word": "until",
-      "startMs": 3680,
-      "endMs": 3959
+      "startMs": 3808,
+      "endMs": 4052
     },
     {
       "word": "the",
-      "startMs": 4005,
-      "endMs": 4075
+      "startMs": 4098,
+      "endMs": 4168
     },
     {
       "word": "call",
-      "startMs": 4133,
-      "endMs": 4342
+      "startMs": 4214,
+      "endMs": 4423
     },
     {
       "word": "came",
-      "startMs": 4400,
-      "endMs": 4609
+      "startMs": 4493,
+      "endMs": 4690
     },
     {
       "word": "in",
-      "startMs": 4656,
-      "endMs": 4760
+      "startMs": 4725,
+      "endMs": 4807
     },
     {
       "word": "at",
       "startMs": 4853,
-      "endMs": 5016
+      "endMs": 4934
     },
     {
       "word": "2:17",
-      "startMs": 5085,
-      "endMs": 6014
+      "startMs": 5027,
+      "endMs": 6037
     },
     {
       "word": "a.m.",
-      "startMs": 6130,
-      "endMs": 6803
+      "startMs": 6177,
+      "endMs": 7430
     },
     {
       "word": "A",
-      "startMs": 7187,
-      "endMs": 7268
+      "startMs": 8670,
+      "endMs": 8798
     },
     {
       "word": "body",
-      "startMs": 7361,
-      "endMs": 7651
+      "startMs": 8891,
+      "endMs": 9192
     },
     {
       "word": "was",
-      "startMs": 7721,
-      "endMs": 7860
+      "startMs": 9274,
+      "endMs": 9401
     },
     {
       "word": "found",
-      "startMs": 7930,
-      "endMs": 8185
+      "startMs": 9471,
+      "endMs": 9715
     },
     {
       "word": "behind",
-      "startMs": 8255,
-      "endMs": 8533
+      "startMs": 9773,
+      "endMs": 10063
     },
     {
       "word": "the",
-      "startMs": 8580,
-      "endMs": 8649
+      "startMs": 10121,
+      "endMs": 10203
     },
     {
       "word": "old",
-      "startMs": 8707,
-      "endMs": 8858
+      "startMs": 10284,
+      "endMs": 10539
     },
     {
       "word": "textile",
-      "startMs": 8905,
-      "endMs": 9451
+      "startMs": 10597,
+      "endMs": 11178
     },
     {
       "word": "mill",
-      "startMs": 9485,
-      "endMs": 9671
+      "startMs": 11213,
+      "endMs": 11364
     },
     {
       "word": "on",
-      "startMs": 9764,
-      "endMs": 9880
+      "startMs": 11422,
+      "endMs": 11503
     },
     {
       "word": "River",
-      "startMs": 9973,
-      "endMs": 10205
+      "startMs": 11631,
+      "endMs": 11886
     },
     {
       "word": "Street.",
-      "startMs": 10263,
-      "endMs": 10809
+      "startMs": 11932,
+      "endMs": 12478
     },
     {
       "word": "No",
-      "startMs": 10983,
-      "endMs": 11134
+      "startMs": 12664,
+      "endMs": 12838
     },
     {
       "word": "wallet.",
-      "startMs": 11215,
-      "endMs": 11703
+      "startMs": 12919,
+      "endMs": 13488
     },
     {
       "word": "No",
-      "startMs": 11773,
-      "endMs": 11947
+      "startMs": 13616,
+      "endMs": 13790
     },
     {
       "word": "phone.",
-      "startMs": 12016,
-      "endMs": 12527
+      "startMs": 13871,
+      "endMs": 14707
     },
     {
       "word": "Just",
-      "startMs": 12910,
-      "endMs": 13142
+      "startMs": 15207,
+      "endMs": 15451
     },
     {
       "word": "a",
-      "startMs": 13201,
-      "endMs": 13224
+      "startMs": 15497,
+      "endMs": 15520
     },
     {
       "word": "single",
-      "startMs": 13317,
-      "endMs": 13688
+      "startMs": 15613,
+      "endMs": 15985
     },
     {
       "word": "red",
-      "startMs": 13758,
-      "endMs": 13955
+      "startMs": 16043,
+      "endMs": 16229
     },
     {
       "word": "scarf",
-      "startMs": 14025,
-      "endMs": 14536
+      "startMs": 16287,
+      "endMs": 16670
     },
     {
       "word": "tied",
-      "startMs": 14605,
-      "endMs": 14896
+      "startMs": 16728,
+      "endMs": 17007
     },
     {
       "word": "in",
-      "startMs": 14942,
-      "endMs": 15000
+      "startMs": 17041,
+      "endMs": 17099
     },
     {
       "word": "a",
-      "startMs": 15058,
-      "endMs": 15081
+      "startMs": 17146,
+      "endMs": 17169
     },
     {
       "word": "bow",
-      "startMs": 15163,
-      "endMs": 15453
+      "startMs": 17250,
+      "endMs": 17529
     },
     {
       "word": "around",
-      "startMs": 15604,
-      "endMs": 15905
+      "startMs": 17657,
+      "endMs": 18005
     },
     {
       "word": "the",
-      "startMs": 15952,
-      "endMs": 16021
+      "startMs": 18040,
+      "endMs": 18109
     },
     {
       "word": "victim's",
-      "startMs": 16091,
-      "endMs": 16579
+      "startMs": 18168,
+      "endMs": 18655
     },
     {
       "word": "neck.",
-      "startMs": 16660,
-      "endMs": 17206
+      "startMs": 18736,
+      "endMs": 19805
     },
     {
       "word": "Detective",
-      "startMs": 17716,
-      "endMs": 18285
+      "startMs": 21035,
+      "endMs": 21604
     },
     {
       "word": "Mara",
-      "startMs": 18355,
-      "endMs": 18645
+      "startMs": 21650,
+      "endMs": 21894
     },
     {
       "word": "Voss",
-      "startMs": 18726,
-      "endMs": 19110
+      "startMs": 21964,
+      "endMs": 22219
     },
     {
       "word": "arrived",
-      "startMs": 19168,
-      "endMs": 19655
+      "startMs": 22266,
+      "endMs": 22614
     },
     {
       "word": "first.",
-      "startMs": 19737,
-      "endMs": 20352
+      "startMs": 22672,
+      "endMs": 23276
     },
     {
       "word": "She",
-      "startMs": 20677,
-      "endMs": 20805
+      "startMs": 23496,
+      "endMs": 23636
     },
     {
       "word": "walked",
-      "startMs": 20863,
-      "endMs": 21106
+      "startMs": 23682,
+      "endMs": 23926
     },
     {
       "word": "the",
-      "startMs": 21141,
-      "endMs": 21211
+      "startMs": 23961,
+      "endMs": 24030
     },
     {
       "word": "scene",
-      "startMs": 21257,
-      "endMs": 21524
+      "startMs": 24077,
+      "endMs": 24321
     },
     {
       "word": "once,",
-      "startMs": 21582,
-      "endMs": 22082
+      "startMs": 24379,
+      "endMs": 24843
     },
     {
       "word": "slowly,",
-      "startMs": 22198,
-      "endMs": 22767
+      "startMs": 25029,
+      "endMs": 25679
     },
     {
       "word": "and",
-      "startMs": 22790,
-      "endMs": 22964
+      "startMs": 25725,
+      "endMs": 25923
     },
     {
       "word": "said",
-      "startMs": 23057,
-      "endMs": 23266
+      "startMs": 26004,
+      "endMs": 26225
     },
     {
       "word": "nothing.",
-      "startMs": 23324,
-      "endMs": 23916
+      "startMs": 26294,
+      "endMs": 27351
     },
     {
       "word": "The",
-      "startMs": 24241,
-      "endMs": 24357
+      "startMs": 27851,
+      "endMs": 27990
     },
     {
       "word": "rain",
-      "startMs": 24415,
-      "endMs": 24624
+      "startMs": 28060,
+      "endMs": 28292
     },
     {
       "word": "had",
-      "startMs": 24682,
-      "endMs": 24775
+      "startMs": 28362,
+      "endMs": 28455
     },
     {
       "word": "washed",
-      "startMs": 24822,
-      "endMs": 25054
+      "startMs": 28501,
+      "endMs": 28757
     },
     {
       "word": "away",
-      "startMs": 25077,
-      "endMs": 25286
+      "startMs": 28791,
+      "endMs": 29024
     },
     {
       "word": "most",
-      "startMs": 25367,
-      "endMs": 25600
+      "startMs": 29116,
+      "endMs": 29337
     },
     {
       "word": "of",
-      "startMs": 25646,
-      "endMs": 25704
+      "startMs": 29384,
+      "endMs": 29442
     },
     {
       "word": "the",
-      "startMs": 25750,
-      "endMs": 25820
+      "startMs": 29476,
+      "endMs": 29546
     },
     {
       "word": "evidence,",
-      "startMs": 25890,
-      "endMs": 26377
+      "startMs": 29604,
+      "endMs": 30185
     },
     {
       "word": "but",
-      "startMs": 26435,
-      "endMs": 26586
+      "startMs": 30370,
+      "endMs": 30510
     },
     {
       "word": "not",
-      "startMs": 26644,
-      "endMs": 26819
+      "startMs": 30568,
+      "endMs": 30742
     },
     {
       "word": "everything.",
-      "startMs": 26888,
-      "endMs": 27643
+      "startMs": 30812,
+      "endMs": 32077
     },
     {
       "word": "Security",
-      "startMs": 28084,
-      "endMs": 28583
+      "startMs": 33307,
+      "endMs": 33841
     },
     {
       "word": "footage",
-      "startMs": 28630,
-      "endMs": 28990
+      "startMs": 33887,
+      "endMs": 34236
     },
     {
       "word": "from",
-      "startMs": 29024,
-      "endMs": 29164
+      "startMs": 34271,
+      "endMs": 34410
     },
     {
       "word": "a",
-      "startMs": 29222,
-      "endMs": 29245
+      "startMs": 34468,
+      "endMs": 34491
     },
     {
       "word": "bodega",
-      "startMs": 29303,
-      "endMs": 29837
+      "startMs": 34549,
+      "endMs": 35130
     },
     {
       "word": "two",
-      "startMs": 29918,
-      "endMs": 30139
+      "startMs": 35199,
+      "endMs": 35408
     },
     {
       "word": "blocks",
-      "startMs": 30209,
-      "endMs": 30511
+      "startMs": 35466,
+      "endMs": 35757
     },
     {
       "word": "away",
-      "startMs": 30557,
-      "endMs": 30952
+      "startMs": 35792,
+      "endMs": 36221
     },
     {
       "word": "showed",
-      "startMs": 31126,
-      "endMs": 31393
+      "startMs": 36477,
+      "endMs": 36744
     },
     {
       "word": "a",
-      "startMs": 31428,
-      "endMs": 31451
+      "startMs": 36778,
+      "endMs": 36802
     },
     {
       "word": "figure",
-      "startMs": 31521,
-      "endMs": 31834
+      "startMs": 36883,
+      "endMs": 37196
     },
     {
       "word": "in",
-      "startMs": 31892,
-      "endMs": 31997
+      "startMs": 37254,
+      "endMs": 37370
     },
     {
       "word": "a",
-      "startMs": 32043,
-      "endMs": 32078
+      "startMs": 37429,
+      "endMs": 37452
     },
     {
       "word": "dark",
-      "startMs": 32171,
-      "endMs": 32473
+      "startMs": 37579,
+      "endMs": 37928
     },
     {
       "word": "coat,",
-      "startMs": 32542,
-      "endMs": 33042
+      "startMs": 38009,
+      "endMs": 38485
     },
     {
       "word": "limping,",
-      "startMs": 33193,
-      "endMs": 33866
+      "startMs": 38648,
+      "endMs": 39298
     },
     {
       "word": "heading",
-      "startMs": 33994,
-      "endMs": 34284
+      "startMs": 39484,
+      "endMs": 39774
     },
     {
       "word": "west",
-      "startMs": 34365,
-      "endMs": 34690
+      "startMs": 39867,
+      "endMs": 40227
     },
     {
       "word": "at",
-      "startMs": 34748,
-      "endMs": 34818
+      "startMs": 40296,
+      "endMs": 40424
     },
     {
       "word": "exactly",
-      "startMs": 34876,
-      "endMs": 35340
+      "startMs": 40494,
+      "endMs": 40958
     },
     {
       "word": "1:44",
-      "startMs": 35422,
-      "endMs": 36397
+      "startMs": 41039,
+      "endMs": 42038
     },
     {
       "word": "a.m.",
-      "startMs": 36467,
-      "endMs": 37152
+      "startMs": 42119,
+      "endMs": 43292
     },
     {
       "word": "The",
-      "startMs": 37535,
-      "endMs": 37651
+      "startMs": 43792,
+      "endMs": 43920
     },
     {
       "word": "timestamp",
-      "startMs": 37697,
-      "endMs": 38266
+      "startMs": 43966,
+      "endMs": 44523
     },
     {
       "word": "matched",
-      "startMs": 38359,
-      "endMs": 38684
-    },
-    {
-      "word": "the",
-      "startMs": 38719,
-      "endMs": 38812
-    },
-    {
-      "word": "estimated",
-      "startMs": 38928,
-      "endMs": 39555
-    },
-    {
-      "word": "time",
-      "startMs": 39624,
-      "endMs": 39938
-    },
-    {
-      "word": "of",
-      "startMs": 39973,
-      "endMs": 40042
-    },
-    {
-      "word": "death.",
-      "startMs": 40159,
-      "endMs": 40739
-    },
-    {
-      "word": "Forensics",
-      "startMs": 41250,
-      "endMs": 41807
-    },
-    {
-      "word": "recovered",
-      "startMs": 41865,
-      "endMs": 42306
-    },
-    {
-      "word": "one",
-      "startMs": 42388,
-      "endMs": 42643
-    },
-    {
-      "word": "partial",
-      "startMs": 42713,
-      "endMs": 43119
-    },
-    {
-      "word": "print.",
-      "startMs": 43189,
-      "endMs": 43734
-    },
-    {
-      "word": "It",
-      "startMs": 44059,
-      "endMs": 44187
-    },
-    {
-      "word": "belonged",
-      "startMs": 44234,
-      "endMs": 44559
-    },
-    {
-      "word": "to",
-      "startMs": 44582,
-      "endMs": 44628
-    },
-    {
-      "word": "a",
-      "startMs": 44710,
-      "endMs": 44733
-    },
-    {
-      "word": "man",
-      "startMs": 44791,
+      "startMs": 44651,
       "endMs": 44965
     },
     {
-      "word": "reported",
-      "startMs": 45046,
-      "endMs": 45534
+      "word": "the",
+      "startMs": 44999,
+      "endMs": 45081
     },
     {
-      "word": "missing",
-      "startMs": 45592,
-      "endMs": 45929
+      "word": "estimated",
+      "startMs": 45162,
+      "endMs": 45719
     },
     {
-      "word": "three",
-      "startMs": 46022,
-      "endMs": 46300
+      "word": "time",
+      "startMs": 45766,
+      "endMs": 46068
     },
     {
-      "word": "weeks",
-      "startMs": 46347,
-      "endMs": 46648
+      "word": "of",
+      "startMs": 46102,
+      "endMs": 46172
     },
     {
-      "word": "earlier.",
-      "startMs": 46730,
-      "endMs": 47368
+      "word": "death.",
+      "startMs": 46300,
+      "endMs": 47229
     },
     {
-      "word": "A",
-      "startMs": 47693,
-      "endMs": 47775
+      "word": "Forensics",
+      "startMs": 48469,
+      "endMs": 49073
     },
     {
-      "word": "man",
-      "startMs": 47856,
-      "endMs": 48053
-    },
-    {
-      "word": "with",
-      "startMs": 48123,
-      "endMs": 48308
-    },
-    {
-      "word": "no",
-      "startMs": 48401,
-      "endMs": 48587
-    },
-    {
-      "word": "known",
-      "startMs": 48668,
-      "endMs": 48935
-    },
-    {
-      "word": "enemies.",
-      "startMs": 49017,
-      "endMs": 49760
-    },
-    {
-      "word": "A",
-      "startMs": 50085,
-      "endMs": 50154
-    },
-    {
-      "word": "man",
-      "startMs": 50224,
-      "endMs": 50421
-    },
-    {
-      "word": "who,",
-      "startMs": 50468,
-      "endMs": 50747
-    },
-    {
-      "word": "according",
-      "startMs": 50770,
-      "endMs": 51176
-    },
-    {
-      "word": "to",
-      "startMs": 51223,
-      "endMs": 51269
-    },
-    {
-      "word": "his",
-      "startMs": 51339,
-      "endMs": 51432
-    },
-    {
-      "word": "coworkers,",
-      "startMs": 51490,
-      "endMs": 52279
-    },
-    {
-      "word": "simply",
-      "startMs": 52488,
-      "endMs": 52848
-    },
-    {
-      "word": "stopped",
-      "startMs": 52918,
-      "endMs": 53266
-    },
-    {
-      "word": "coming",
-      "startMs": 53312,
-      "endMs": 53568
-    },
-    {
-      "word": "to",
-      "startMs": 53626,
-      "endMs": 53684
-    },
-    {
-      "word": "work",
-      "startMs": 53754,
-      "endMs": 54009
+      "word": "recovered",
+      "startMs": 49131,
+      "endMs": 49572
     },
     {
       "word": "one",
-      "startMs": 54090,
-      "endMs": 54241
+      "startMs": 49653,
+      "endMs": 49909
     },
     {
-      "word": "Tuesday",
-      "startMs": 54276,
-      "endMs": 54798
+      "word": "partial",
+      "startMs": 49978,
+      "endMs": 50454
     },
     {
-      "word": "and",
-      "startMs": 54915,
-      "endMs": 55077
+      "word": "print.",
+      "startMs": 50547,
+      "endMs": 51151
     },
     {
-      "word": "was",
-      "startMs": 55135,
-      "endMs": 55263
+      "word": "It",
+      "startMs": 51488,
+      "endMs": 51615
     },
     {
-      "word": "never",
-      "startMs": 55379,
-      "endMs": 55658
+      "word": "belonged",
+      "startMs": 51662,
+      "endMs": 52033
     },
     {
-      "word": "seen",
-      "startMs": 55727,
-      "endMs": 55959
-    },
-    {
-      "word": "again.",
-      "startMs": 56006,
-      "endMs": 56656
-    },
-    {
-      "word": "The",
-      "startMs": 56981,
-      "endMs": 57109
-    },
-    {
-      "word": "case",
-      "startMs": 57178,
-      "endMs": 57504
-    },
-    {
-      "word": "went",
-      "startMs": 57550,
-      "endMs": 57771
-    },
-    {
-      "word": "cold.",
-      "startMs": 57887,
-      "endMs": 58606
-    },
-    {
-      "word": "Until",
-      "startMs": 58932,
-      "endMs": 59257
-    },
-    {
-      "word": "last",
-      "startMs": 59326,
-      "endMs": 59593
-    },
-    {
-      "word": "week,",
-      "startMs": 59651,
-      "endMs": 60139
-    },
-    {
-      "word": "when",
-      "startMs": 60255,
-      "endMs": 60429
-    },
-    {
-      "word": "an",
-      "startMs": 60476,
-      "endMs": 60534
-    },
-    {
-      "word": "identical",
-      "startMs": 60592,
-      "endMs": 61219
-    },
-    {
-      "word": "red",
-      "startMs": 61335,
-      "endMs": 61555
-    },
-    {
-      "word": "scarf",
-      "startMs": 61637,
-      "endMs": 62089
-    },
-    {
-      "word": "turned",
-      "startMs": 62148,
-      "endMs": 62415
-    },
-    {
-      "word": "up",
-      "startMs": 62473,
-      "endMs": 62577
-    },
-    {
-      "word": "in",
-      "startMs": 62647,
-      "endMs": 62716
+      "word": "to",
+      "startMs": 52080,
+      "endMs": 52173
     },
     {
       "word": "a",
-      "startMs": 62763,
-      "endMs": 62786
+      "startMs": 52265,
+      "endMs": 52289
+    },
+    {
+      "word": "man",
+      "startMs": 52370,
+      "endMs": 52614
+    },
+    {
+      "word": "reported",
+      "startMs": 52707,
+      "endMs": 53171
+    },
+    {
+      "word": "missing",
+      "startMs": 53241,
+      "endMs": 53601
+    },
+    {
+      "word": "three",
+      "startMs": 53682,
+      "endMs": 53961
+    },
+    {
+      "word": "weeks",
+      "startMs": 54007,
+      "endMs": 54320
+    },
+    {
+      "word": "earlier.",
+      "startMs": 54413,
+      "endMs": 55098
+    },
+    {
+      "word": "A",
+      "startMs": 55435,
+      "endMs": 55516
+    },
+    {
+      "word": "man",
+      "startMs": 55598,
+      "endMs": 55830
+    },
+    {
+      "word": "with",
+      "startMs": 55899,
+      "endMs": 56074
+    },
+    {
+      "word": "no",
+      "startMs": 56166,
+      "endMs": 56375
+    },
+    {
+      "word": "known",
+      "startMs": 56457,
+      "endMs": 56724
+    },
+    {
+      "word": "enemies.",
+      "startMs": 56805,
+      "endMs": 57989
+    },
+    {
+      "word": "A",
+      "startMs": 58489,
+      "endMs": 58593
+    },
+    {
+      "word": "man",
+      "startMs": 58675,
+      "endMs": 58826
+    },
+    {
+      "word": "who,",
+      "startMs": 58884,
+      "endMs": 59116
+    },
+    {
+      "word": "according",
+      "startMs": 59139,
+      "endMs": 59522
+    },
+    {
+      "word": "to",
+      "startMs": 59557,
+      "endMs": 59604
+    },
+    {
+      "word": "his",
+      "startMs": 59662,
+      "endMs": 59754
+    },
+    {
+      "word": "coworkers,",
+      "startMs": 59813,
+      "endMs": 60579
+    },
+    {
+      "word": "simply",
+      "startMs": 60765,
+      "endMs": 61101
+    },
+    {
+      "word": "stopped",
+      "startMs": 61171,
+      "endMs": 61531
+    },
+    {
+      "word": "coming",
+      "startMs": 61577,
+      "endMs": 61821
+    },
+    {
+      "word": "to",
+      "startMs": 61868,
+      "endMs": 61914
+    },
+    {
+      "word": "work",
+      "startMs": 61984,
+      "endMs": 62193
+    },
+    {
+      "word": "one",
+      "startMs": 62274,
+      "endMs": 62425
+    },
+    {
+      "word": "Tuesday",
+      "startMs": 62460,
+      "endMs": 62959
+    },
+    {
+      "word": "and",
+      "startMs": 63087,
+      "endMs": 63249
+    },
+    {
+      "word": "was",
+      "startMs": 63296,
+      "endMs": 63412
+    },
+    {
+      "word": "never",
+      "startMs": 63539,
+      "endMs": 63795
+    },
+    {
+      "word": "seen",
+      "startMs": 63853,
+      "endMs": 64073
+    },
+    {
+      "word": "again.",
+      "startMs": 64120,
+      "endMs": 65269
+    },
+    {
+      "word": "The",
+      "startMs": 66499,
+      "endMs": 66662
+    },
+    {
+      "word": "case",
+      "startMs": 66708,
+      "endMs": 67010
+    },
+    {
+      "word": "went",
+      "startMs": 67056,
+      "endMs": 67265
+    },
+    {
+      "word": "cold.",
+      "startMs": 67335,
+      "endMs": 68032
+    },
+    {
+      "word": "Until",
+      "startMs": 68496,
+      "endMs": 68821
+    },
+    {
+      "word": "last",
+      "startMs": 68891,
+      "endMs": 69146
+    },
+    {
+      "word": "week,",
+      "startMs": 69204,
+      "endMs": 69669
+    },
+    {
+      "word": "when",
+      "startMs": 69738,
+      "endMs": 69924
+    },
+    {
+      "word": "an",
+      "startMs": 69959,
+      "endMs": 70028
+    },
+    {
+      "word": "identical",
+      "startMs": 70075,
+      "endMs": 70713
+    },
+    {
+      "word": "red",
+      "startMs": 70806,
+      "endMs": 70992
+    },
+    {
+      "word": "scarf",
+      "startMs": 71050,
+      "endMs": 71480
+    },
+    {
+      "word": "turned",
+      "startMs": 71526,
+      "endMs": 71793
+    },
+    {
+      "word": "up",
+      "startMs": 71840,
+      "endMs": 71932
+    },
+    {
+      "word": "in",
+      "startMs": 71991,
+      "endMs": 72049
+    },
+    {
+      "word": "a",
+      "startMs": 72095,
+      "endMs": 72118
     },
     {
       "word": "donation",
-      "startMs": 62844,
-      "endMs": 63436
+      "startMs": 72165,
+      "endMs": 72734
     },
     {
       "word": "bin",
-      "startMs": 63506,
-      "endMs": 63715
+      "startMs": 72792,
+      "endMs": 73047
     },
     {
       "word": "outside",
-      "startMs": 63808,
-      "endMs": 64365
+      "startMs": 73175,
+      "endMs": 73825
     },
     {
       "word": "the",
-      "startMs": 64400,
-      "endMs": 64469
+      "startMs": 73860,
+      "endMs": 73929
     },
     {
       "word": "precinct.",
-      "startMs": 64528,
-      "endMs": 65294
+      "startMs": 73976,
+      "endMs": 75276
     },
     {
       "word": "Someone",
-      "startMs": 65735,
-      "endMs": 66130
+      "startMs": 76506,
+      "endMs": 76889
     },
     {
       "word": "knows",
-      "startMs": 66153,
-      "endMs": 66397
+      "startMs": 76924,
+      "endMs": 77145
     },
     {
       "word": "what",
-      "startMs": 66443,
-      "endMs": 66583
+      "startMs": 77179,
+      "endMs": 77319
     },
     {
       "word": "happened",
-      "startMs": 66641,
-      "endMs": 66977
+      "startMs": 77377,
+      "endMs": 77702
     },
     {
       "word": "that",
-      "startMs": 67012,
-      "endMs": 67151
+      "startMs": 77737,
+      "endMs": 77888
     },
     {
       "word": "night.",
-      "startMs": 67221,
-      "endMs": 67651
+      "startMs": 77957,
+      "endMs": 78445
     },
     {
       "word": "And",
-      "startMs": 67767,
-      "endMs": 67929
+      "startMs": 78665,
+      "endMs": 78828
     },
     {
       "word": "they",
-      "startMs": 67987,
-      "endMs": 68138
+      "startMs": 78886,
+      "endMs": 79049
     },
     {
       "word": "are",
-      "startMs": 68173,
-      "endMs": 68301
+      "startMs": 79118,
+      "endMs": 79258
     },
     {
       "word": "watching.",
-      "startMs": 68359,
-      "endMs": 69288
+      "startMs": 79316,
+      "endMs": 80221
     }
   ]
 }

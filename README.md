@@ -48,8 +48,29 @@ Storyboard media paths are relative to the project directory. For example,
 npm run voice -- <project>
 ```
 
-The voice script caches unchanged ElevenLabs chunks, joins them into
+The voice script caches unchanged ElevenLabs segments, joins them into
 `voice/narration.mp3`, and writes exact timings to `voice/words.json`.
+
+### Voice pacing
+
+Narration is synthesized in short sentence/paragraph segments at the speed in
+`config.json` (0.95 by default). A deterministic pause plan inserts measured
+silence at segment seams and after the final word. The join uses decoded WAV
+durations, so `voice/words.json` stays aligned with the final MP3.
+
+```bash
+npm run voice -- <project> --style network-truecrime
+npm run voice -- <project> --style network-truecrime --speed 0.95
+npm run voice -- <project> --style network-truecrime --dry-run
+```
+
+`--dry-run` writes `voice/pacing-plan.json` without calling ElevenLabs and
+prints the segment count, pause budget, estimate, and silence ratio. A real run
+writes `voice/pacing-report.json` with the style targets, measured values, pass
+flags, and per-seam pause plan. `--strict` exits nonzero when a target misses;
+without it the run warns and still writes the report. A voice run leaves the
+storyboard untouched, so re-time the storyboard after any voice or script
+change.
 
 ### 2. Create the storyboard
 

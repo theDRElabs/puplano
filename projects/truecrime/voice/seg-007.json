@@ -1,0 +1,52 @@
+{
+  "cacheKey": "4b1b1df2be17cf64f8eb7c615eb1b6b93fc4ddaa9c3479dcd21949ea53fb6b34",
+  "text": "The timestamp matched the estimated time of death.",
+  "voiceName": "Alice",
+  "modelId": "eleven_multilingual_v2",
+  "speed": 0.95,
+  "result": {
+    "words": [
+      {
+        "word": "The",
+        "startMs": 0,
+        "endMs": 128
+      },
+      {
+        "word": "timestamp",
+        "startMs": 174,
+        "endMs": 731
+      },
+      {
+        "word": "matched",
+        "startMs": 859,
+        "endMs": 1173
+      },
+      {
+        "word": "the",
+        "startMs": 1207,
+        "endMs": 1289
+      },
+      {
+        "word": "estimated",
+        "startMs": 1370,
+        "endMs": 1927
+      },
+      {
+        "word": "time",
+        "startMs": 1974,
+        "endMs": 2276
+      },
+      {
+        "word": "of",
+        "startMs": 2310,
+        "endMs": 2380
+      },
+      {
+        "word": "death.",
+        "startMs": 2508,
+        "endMs": 3437
+      }
+    ],
+    "durationMs": 3474
+  }
+}

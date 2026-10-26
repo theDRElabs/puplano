@@ -1,0 +1,72 @@
+{
+  "cacheKey": "2ff7f37c481b438a3e5b94ad084f2eb72df1d566b8b9aeaa636acc9c62397e53",
+  "text": "The rain had washed away most of the evidence, but not everything.",
+  "voiceName": "Alice",
+  "modelId": "eleven_multilingual_v2",
+  "speed": 0.95,
+  "result": {
+    "words": [
+      {
+        "word": "The",
+        "startMs": 0,
+        "endMs": 139
+      },
+      {
+        "word": "rain",
+        "startMs": 209,
+        "endMs": 441
+      },
+      {
+        "word": "had",
+        "startMs": 511,
+        "endMs": 604
+      },
+      {
+        "word": "washed",
+        "startMs": 650,
+        "endMs": 906
+      },
+      {
+        "word": "away",
+        "startMs": 940,
+        "endMs": 1173
+      },
+      {
+        "word": "most",
+        "startMs": 1265,
+        "endMs": 1486
+      },
+      {
+        "word": "of",
+        "startMs": 1533,
+        "endMs": 1591
+      },
+      {
+        "word": "the",
+        "startMs": 1625,
+        "endMs": 1695
+      },
+      {
+        "word": "evidence,",
+        "startMs": 1753,
+        "endMs": 2334
+      },
+      {
+        "word": "but",
+        "startMs": 2519,
+        "endMs": 2659
+      },
+      {
+        "word": "not",
+        "startMs": 2717,
+        "endMs": 2891
+      },
+      {
+        "word": "everything.",
+        "startMs": 2961,
+        "endMs": 4226
+      }
+    ],
+    "durationMs": 4258
+  }
+}

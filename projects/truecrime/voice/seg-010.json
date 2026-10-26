@@ -1,0 +1,117 @@
+{
+  "cacheKey": "b0ecad77e5f860940c4b14e5de7790105ac477c5328cdb0f8a7393d24b1ded0a",
+  "text": "The case went cold. Until last week, when an identical red scarf turned up in a donation bin outside the precinct.",
+  "voiceName": "Alice",
+  "modelId": "eleven_multilingual_v2",
+  "speed": 0.95,
+  "result": {
+    "words": [
+      {
+        "word": "The",
+        "startMs": 0,
+        "endMs": 163
+      },
+      {
+        "word": "case",
+        "startMs": 209,
+        "endMs": 511
+      },
+      {
+        "word": "went",
+        "startMs": 557,
+        "endMs": 766
+      },
+      {
+        "word": "cold.",
+        "startMs": 836,
+        "endMs": 1533
+      },
+      {
+        "word": "Until",
+        "startMs": 1997,
+        "endMs": 2322
+      },
+      {
+        "word": "last",
+        "startMs": 2392,
+        "endMs": 2647
+      },
+      {
+        "word": "week,",
+        "startMs": 2705,
+        "endMs": 3170
+      },
+      {
+        "word": "when",
+        "startMs": 3239,
+        "endMs": 3425
+      },
+      {
+        "word": "an",
+        "startMs": 3460,
+        "endMs": 3529
+      },
+      {
+        "word": "identical",
+        "startMs": 3576,
+        "endMs": 4214
+      },
+      {
+        "word": "red",
+        "startMs": 4307,
+        "endMs": 4493
+      },
+      {
+        "word": "scarf",
+        "startMs": 4551,
+        "endMs": 4981
+      },
+      {
+        "word": "turned",
+        "startMs": 5027,
+        "endMs": 5294
+      },
+      {
+        "word": "up",
+        "startMs": 5341,
+        "endMs": 5433
+      },
+      {
+        "word": "in",
+        "startMs": 5492,
+        "endMs": 5550
+      },
+      {
+        "word": "a",
+        "startMs": 5596,
+        "endMs": 5619
+      },
+      {
+        "word": "donation",
+        "startMs": 5666,
+        "endMs": 6235
+      },
+      {
+        "word": "bin",
+        "startMs": 6293,
+        "endMs": 6548
+      },
+      {
+        "word": "outside",
+        "startMs": 6676,
+        "endMs": 7326
+      },
+      {
+        "word": "the",
+        "startMs": 7361,
+        "endMs": 7430
+      },
+      {
+        "word": "precinct.",
+        "startMs": 7477,
+        "endMs": 8777
+      }
+    ],
+    "durationMs": 8803
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "cacheKey": "1c3cf28bc0a6781d91440e53aa448ca7092a8f51f2ef139361290321cfb68a01",
+  "text": "The night shift at the downtown precinct began like any other, until the call came in at 2:17 a.m.",
+  "voiceName": "Alice",
+  "modelId": "eleven_multilingual_v2",
+  "speed": 0.95,
+  "result": {
+    "words": [
+      {
+        "word": "The",
+        "startMs": 0,
+        "endMs": 163
+      },
+      {
+        "word": "night",
+        "startMs": 221,
+        "endMs": 418
+      },
+      {
+        "word": "shift",
+        "startMs": 453,
+        "endMs": 697
+      },
+      {
+        "word": "at",
+        "startMs": 731,
+        "endMs": 789
+      },
+      {
+        "word": "the",
+        "startMs": 824,
+        "endMs": 894
+      },
+      {
+        "word": "downtown",
+        "startMs": 940,
+        "endMs": 1393
+      },
+      {
+        "word": "precinct",
+        "startMs": 1463,
+        "endMs": 1939
+      },
+      {
+        "word": "began",
+        "startMs": 1997,
+        "endMs": 2357
+      },
+      {
+        "word": "like",
+        "startMs": 2426,
+        "endMs": 2635
+      },
+      {
+        "word": "any",
+        "startMs": 2682,
+        "endMs": 2995
+      },
+      {
+        "word": "other,",
+        "startMs": 3077,
+        "endMs": 3518
+      },
+      {
+        "word": "until",
+        "startMs": 3808,
+        "endMs": 4052
+      },
+      {
+        "word": "the",
+        "startMs": 4098,
+        "endMs": 4168
+      },
+      {
+        "word": "call",
+        "startMs": 4214,
+        "endMs": 4423
+      },
+      {
+        "word": "came",
+        "startMs": 4493,
+        "endMs": 4690
+      },
+      {
+        "word": "in",
+        "startMs": 4725,
+        "endMs": 4807
+      },
+      {
+        "word": "at",
+        "startMs": 4853,
+        "endMs": 4934
+      },
+      {
+        "word": "2:17",
+        "startMs": 5027,
+        "endMs": 6037
+      },
+      {
+        "word": "a.m.",
+        "startMs": 6177,
+        "endMs": 7430
+      }
+    ],
+    "durationMs": 7471
+  }
+}
