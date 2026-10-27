@@ -1,7 +1,7 @@
 {
   "generatedBy": "scripts/compile-timing.ts",
   "words": {
-    "durationMs": 81006,
+    "durationMs": 77453,
     "wordCount": 175
   },
   "settings": {
@@ -18,19 +18,6 @@
     }
   },
   "before": {
-    "durationMs": 69329,
-    "sceneCount": 11,
-    "cuts": 10,
-    "cutsPerMinute": 8.65,
-    "medianShotMs": 6525,
-    "p90ShotMs": 8754,
-    "minShotMs": 3594,
-    "shortShotShare": 0.273,
-    "longShotShare": 0.636,
-    "sentenceEndCuts": 9,
-    "cutOnSentenceEnd": 0.9
-  },
-  "after": {
     "durationMs": 81006,
     "sceneCount": 11,
     "cuts": 10,
@@ -41,14 +28,27 @@
     "shortShotShare": 0.091,
     "longShotShare": 0.636,
     "sentenceEndCuts": 10,
+    "cutOnSentenceEnd": 1
+  },
+  "after": {
+    "durationMs": 77453,
+    "sceneCount": 11,
+    "cuts": 10,
+    "cutsPerMinute": 7.75,
+    "medianShotMs": 6800,
+    "p90ShotMs": 9667,
+    "minShotMs": 4333,
+    "shortShotShare": 0,
+    "longShotShare": 0.636,
+    "sentenceEndCuts": 10,
     "cutOnSentenceEnd": 1,
     "holds": {
       "count": 10,
       "requestedTotalMs": 850,
-      "effectiveTotalMs": 854,
+      "effectiveTotalMs": 849,
       "clampedCount": 3,
       "maxRequestedMs": 200,
-      "maxEffectiveMs": 195
+      "maxEffectiveMs": 207
     }
   },
   "targets": {
@@ -79,40 +79,40 @@
       "label": "open_high",
       "targetCutsPerMinute": 14,
       "sceneCount": 3,
-      "durationMs": 20067,
+      "durationMs": 19033,
       "cuts": 3,
-      "cutsPerMinute": 8.97,
-      "meanShotMs": 6689,
+      "cutsPerMinute": 9.46,
+      "meanShotMs": 6344,
       "pass": false
     },
     {
       "label": "mid_ease",
       "targetCutsPerMinute": 10,
       "sceneCount": 3,
-      "durationMs": 23500,
+      "durationMs": 21734,
       "cuts": 3,
-      "cutsPerMinute": 7.66,
-      "meanShotMs": 7833,
-      "pass": false
+      "cutsPerMinute": 8.28,
+      "meanShotMs": 7245,
+      "pass": true
     },
     {
       "label": "climax_accel",
       "targetCutsPerMinute": 12.5,
       "sceneCount": 3,
-      "durationMs": 21766,
+      "durationMs": 21400,
       "cuts": 3,
-      "cutsPerMinute": 8.27,
-      "meanShotMs": 7255,
+      "cutsPerMinute": 8.41,
+      "meanShotMs": 7133,
       "pass": false
     },
     {
       "label": "resolve_hold",
       "targetCutsPerMinute": 8,
       "sceneCount": 2,
-      "durationMs": 15673,
+      "durationMs": 15286,
       "cuts": 1,
-      "cutsPerMinute": 3.83,
-      "meanShotMs": 7837,
+      "cutsPerMinute": 3.93,
+      "meanShotMs": 7643,
       "pass": false
     }
   ],
@@ -123,88 +123,87 @@
       "lastWordId": "w0019",
       "holdRequestedMs": 0,
       "holdEffectiveMs": 0,
-      "gapMs": 1240
+      "gapMs": 1000
     },
     {
       "sceneId": "s2",
-      "boundaryMs": 12567,
+      "boundaryMs": 12233,
       "lastWordId": "w0031",
       "holdRequestedMs": 0,
-      "holdEffectiveMs": 9,
-      "gapMs": 186
+      "holdEffectiveMs": 0,
+      "gapMs": 163
     },
     {
       "sceneId": "s3",
-      "boundaryMs": 20067,
+      "boundaryMs": 19033,
       "lastWordId": "w0048",
       "holdRequestedMs": 180,
-      "holdEffectiveMs": 182,
-      "gapMs": 1230
+      "holdEffectiveMs": 167,
+      "gapMs": 650
     },
     {
       "sceneId": "s4",
-      "boundaryMs": 27433,
+      "boundaryMs": 25500,
       "lastWordId": "w0062",
       "holdRequestedMs": 0,
-      "holdEffectiveMs": 2,
+      "holdEffectiveMs": 0,
       "gapMs": 500
     },
     {
       "sceneId": "s5",
-      "boundaryMs": 32333,
+      "boundaryMs": 30067,
       "lastWordId": "w0074",
       "holdRequestedMs": 160,
-      "holdEffectiveMs": 176,
-      "gapMs": 1230
+      "holdEffectiveMs": 159,
+      "gapMs": 900
     },
     {
       "sceneId": "s6",
-      "boundaryMs": 43567,
+      "boundaryMs": 40767,
       "lastWordId": "w0096",
       "holdRequestedMs": 200,
-      "holdEffectiveMs": 195,
+      "holdEffectiveMs": 207,
       "gapMs": 500
     },
     {
       "sceneId": "s7",
-      "boundaryMs": 47433,
+      "boundaryMs": 45100,
       "lastWordId": "w0104",
       "holdRequestedMs": 140,
-      "holdEffectiveMs": 124,
-      "gapMs": 1240
+      "holdEffectiveMs": 139,
+      "gapMs": 900
     },
     {
       "sceneId": "s8",
-      "boundaryMs": 55333,
+      "boundaryMs": 52500,
       "lastWordId": "w0119",
       "holdRequestedMs": 170,
-      "holdEffectiveMs": 155,
-      "gapMs": 337
+      "holdEffectiveMs": 172,
+      "gapMs": 336
     },
     {
       "sceneId": "s9",
-      "boundaryMs": 65333,
+      "boundaryMs": 62167,
       "lastWordId": "w0144",
       "holdRequestedMs": 0,
-      "holdEffectiveMs": 0,
-      "gapMs": 1230
+      "holdEffectiveMs": 5,
+      "gapMs": 899
     },
     {
       "sceneId": "s10",
-      "boundaryMs": 75367,
+      "boundaryMs": 71467,
       "lastWordId": "w0165",
       "holdRequestedMs": 0,
-      "holdEffectiveMs": 11,
-      "gapMs": 1230
+      "holdEffectiveMs": 0,
+      "gapMs": 900
     }
   ],
   "warnings": [
-    "style cuts/min: 7.41 vs target 12",
-    "style median shot: 7500 ms vs target 3700 ms",
+    "style cuts/min: 7.75 vs target 12",
+    "style median shot: 6800 ms vs target 3700 ms",
     "style long-shot share: 0.636 vs target 0.27",
-    "arc open_high: 8.97 cuts/min vs target 14",
-    "arc mid_ease: 7.66 cuts/min vs target 10",
-    "arc climax_accel: 8.27 cuts/min vs target 12.5",
-    "arc resolve_hold: 3.83 cuts/min vs target 8"
+    "arc open_high: 9.46 cuts/min vs target 14",
+    "arc climax_accel: 8.41 cuts/min vs target 12.5",
+    "arc resolve_hold: 3.93 cuts/min vs target 8"
   ]
 }

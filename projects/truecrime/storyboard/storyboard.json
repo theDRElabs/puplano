@@ -1,7 +1,7 @@
 {
   "title": "The Red Scarf — A Fictional True-Crime Vignette",
   "audioFile": "voice/narration.mp3",
-  "durationMs": 81006,
+  "durationMs": 77453,
   "scenes": [
     {
       "id": "s1",
@@ -39,7 +39,7 @@
       "id": "s2",
       "chapter": 2,
       "startMs": 7500,
-      "endMs": 12567,
+      "endMs": 12233,
       "layout": 1,
       "transitionIn": {
         "type": "fade",
@@ -74,8 +74,8 @@
     {
       "id": "s3",
       "chapter": 3,
-      "startMs": 12567,
-      "endMs": 20067,
+      "startMs": 12233,
+      "endMs": 19033,
       "layout": 3,
       "transitionIn": {
         "type": "slide_up",
@@ -96,8 +96,8 @@
     {
       "id": "s4",
       "chapter": 4,
-      "startMs": 20067,
-      "endMs": 27433,
+      "startMs": 19033,
+      "endMs": 25500,
       "layout": 1,
       "transitionIn": {
         "type": "cut",
@@ -132,8 +132,8 @@
     {
       "id": "s5",
       "chapter": 5,
-      "startMs": 27433,
-      "endMs": 32333,
+      "startMs": 25500,
+      "endMs": 30067,
       "layout": 2,
       "transitionIn": {
         "type": "fade",
@@ -154,8 +154,8 @@
     {
       "id": "s6",
       "chapter": 6,
-      "startMs": 32333,
-      "endMs": 43567,
+      "startMs": 30067,
+      "endMs": 40767,
       "layout": 3,
       "transitionIn": {
         "type": "slide_up",
@@ -176,8 +176,8 @@
     {
       "id": "s7",
       "chapter": 7,
-      "startMs": 43567,
-      "endMs": 47433,
+      "startMs": 40767,
+      "endMs": 45100,
       "layout": 1,
       "transitionIn": {
         "type": "cut",
@@ -212,8 +212,8 @@
     {
       "id": "s8",
       "chapter": 8,
-      "startMs": 47433,
-      "endMs": 55333,
+      "startMs": 45100,
+      "endMs": 52500,
       "layout": 2,
       "transitionIn": {
         "type": "fade",
@@ -239,8 +239,8 @@
     {
       "id": "s9",
       "chapter": 9,
-      "startMs": 55333,
-      "endMs": 65333,
+      "startMs": 52500,
+      "endMs": 62167,
       "layout": 1,
       "transitionIn": {
         "type": "slide_up",
@@ -275,8 +275,8 @@
     {
       "id": "s10",
       "chapter": 10,
-      "startMs": 65333,
-      "endMs": 75367,
+      "startMs": 62167,
+      "endMs": 71467,
       "layout": 1,
       "transitionIn": {
         "type": "cut",
@@ -311,8 +311,8 @@
     {
       "id": "s11",
       "chapter": 11,
-      "startMs": 75367,
-      "endMs": 81006,
+      "startMs": 71467,
+      "endMs": 77453,
       "layout": 2,
       "transitionIn": {
         "type": "fade",
@@ -337,8 +337,8 @@
       "kind": "source_caption",
       "text": "Source: fictional script — not a documented case",
       "position": "bottom",
-      "startMs": 47433,
-      "endMs": 55333,
+      "startMs": 45100,
+      "endMs": 52500,
       "anchor": {
         "startSceneId": "s8",
         "endSceneId": "s8"
@@ -350,7 +350,7 @@
       "text": "FICTIONAL DRAMATIZATION · ARCHIVAL FOOTAGE IS ILLUSTRATIVE",
       "position": "top",
       "startMs": 0,
-      "endMs": 81006,
+      "endMs": 77453,
       "span": "full"
     }
   ]

@@ -3,7 +3,7 @@ export const MIN_SPEED = 0.7;
 export const MAX_SPEED = 1.2;
 export const PAUSE_GAP_MS = 350;
 
-export type SegmentKind = "sentence" | "paragraph";
+export type SegmentKind = "sentence" | "paragraph" | "directed" | "continuous";
 
 export interface Segment {
   text: string;
@@ -28,6 +28,25 @@ export interface PlanOptions {
   paragraphPauseMs: [number, number];
   tailMs: number;
   seed: number | string;
+}
+
+export interface ScriptSentence {
+  index: number;
+  paragraph: number;
+  text: string;
+  wordCount: number;
+  isParagraphEnd: boolean;
+}
+
+export interface DirectedPauseInput {
+  afterSentence: number;
+  targetGapMs: number;
+}
+
+export interface DirectedPlanOptions {
+  maxChars: number;
+  wpmSpoken: number;
+  tailMs: number;
 }
 
 export interface WordTiming {
@@ -105,7 +124,7 @@ export function readParagraphs(scriptText: string): string[] {
     .filter(Boolean);
 }
 
-function splitSentences(paragraph: string): string[] {
+export function splitSentences(paragraph: string): string[] {
   return paragraph
     .split(/(?<=[.!?]["')\]]?)\s+/)
     .map((sentence) => sentence.trim())
@@ -295,6 +314,133 @@ export function planSegments(
     tailMs: options.tailMs,
     estimatedSpeechMs,
     estimatedTotalMs: estimatedSpeechMs + pauseTotal + options.tailMs,
+  };
+}
+
+export function readSentences(paragraphs: string[]): ScriptSentence[] {
+  const sentences: ScriptSentence[] = [];
+  paragraphs.forEach((paragraph, paragraphIndex) => {
+    const normalized = paragraph.replace(/\s+/g, " ").trim();
+    if (!normalized) return;
+    const split = splitSentences(normalized);
+    split.forEach((text, sentenceIndex) => {
+      sentences.push({
+        index: sentences.length + 1,
+        paragraph: paragraphIndex + 1,
+        text,
+        wordCount: countWords(text),
+        isParagraphEnd: sentenceIndex === split.length - 1,
+      });
+    });
+  });
+  return sentences;
+}
+
+export function planDirectedSegments(
+  paragraphs: string[],
+  pauses: DirectedPauseInput[],
+  options: DirectedPlanOptions,
+): SegmentPlan {
+  const sentences = readSentences(paragraphs);
+  if (sentences.length < 2) {
+    throw new Error("Directed pause planning needs at least two sentences");
+  }
+  if (!Number.isFinite(options.maxChars) || options.maxChars <= 0) {
+    throw new Error(`Invalid maxChars: ${options.maxChars}`);
+  }
+  if (!Number.isFinite(options.wpmSpoken) || options.wpmSpoken <= 0) {
+    throw new Error(`Invalid wpmSpoken: ${options.wpmSpoken}`);
+  }
+  if (!Number.isFinite(options.tailMs) || options.tailMs < 0) {
+    throw new Error(`Invalid tailMs: ${options.tailMs}`);
+  }
+
+  const ordered = [...pauses].sort(
+    (left, right) => left.afterSentence - right.afterSentence,
+  );
+  const seen = new Set<number>();
+  for (const pause of ordered) {
+    if (
+      !Number.isInteger(pause.afterSentence) ||
+      pause.afterSentence < 1 ||
+      pause.afterSentence >= sentences.length
+    ) {
+      throw new Error(
+        `Directed pause afterSentence must be 1..${sentences.length - 1}, ` +
+          `received ${pause.afterSentence}`,
+      );
+    }
+    if (seen.has(pause.afterSentence)) {
+      throw new Error(
+        `Duplicate directed pause after sentence ${pause.afterSentence}`,
+      );
+    }
+    seen.add(pause.afterSentence);
+    if (
+      !Number.isFinite(pause.targetGapMs) ||
+      pause.targetGapMs < 0 ||
+      pause.targetGapMs > 5000
+    ) {
+      throw new Error(
+        `Invalid directed pause gap ${pause.targetGapMs}ms after sentence ` +
+          `${pause.afterSentence}`,
+      );
+    }
+  }
+
+  const segments: Segment[] = [];
+  const appendGroup = (group: ScriptSentence[], pauseAfterMs: number) => {
+    if (group.length === 0) {
+      throw new Error("Directed pause produced an empty speech segment");
+    }
+    let chunk: ScriptSentence[] = [];
+    const flush = (isLast: boolean) => {
+      if (chunk.length === 0) return;
+      const text = chunk.map((sentence) => sentence.text).join(" ");
+      segments.push({
+        text,
+        pauseAfterMs: isLast ? pauseAfterMs : 0,
+        kind: isLast && pauseAfterMs > 0 ? "directed" : "continuous",
+        words: countWords(text),
+      });
+      chunk = [];
+    };
+    for (const sentence of group) {
+      const candidate = [...chunk, sentence]
+        .map((entry) => entry.text)
+        .join(" ");
+      if (chunk.length > 0 && candidate.length > options.maxChars) {
+        flush(false);
+      }
+      chunk.push(sentence);
+    }
+    flush(true);
+  };
+
+  let cursor = 0;
+  for (const pause of ordered) {
+    appendGroup(
+      sentences.slice(cursor, pause.afterSentence),
+      pause.targetGapMs,
+    );
+    cursor = pause.afterSentence;
+  }
+  appendGroup(sentences.slice(cursor), 0);
+
+  const totalWords = segments.reduce((sum, segment) => sum + segment.words, 0);
+  const estimatedSpeechMs = Math.round(
+    (totalWords / (options.wpmSpoken / 60)) * 1000,
+  );
+  const pauseBudgetMs = ordered.reduce(
+    (sum, pause) => sum + pause.targetGapMs,
+    0,
+  );
+  return {
+    segments,
+    pauseBudgetMs,
+    tailMs: options.tailMs,
+    estimatedSpeechMs,
+    estimatedTotalMs: estimatedSpeechMs + pauseBudgetMs + options.tailMs,
   };
 }
 

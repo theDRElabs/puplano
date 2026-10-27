@@ -1,122 +1,52 @@
 {
-  "cacheKey": "e13e9acd9180485d956662f678e9788b5826560ed4fa19b47605b58b2b4befe7",
-  "text": "Security footage from a bodega two blocks away showed a figure in a dark coat, limping, heading west at exactly 1:44 a.m.",
+  "cacheKey": "4b1b1df2be17cf64f8eb7c615eb1b6b93fc4ddaa9c3479dcd21949ea53fb6b34",
+  "text": "The timestamp matched the estimated time of death.",
   "voiceName": "Alice",
   "modelId": "eleven_multilingual_v2",
   "speed": 0.95,
   "result": {
     "words": [
       {
-        "word": "Security",
+        "word": "The",
         "startMs": 0,
-        "endMs": 534
+        "endMs": 151
       },
       {
-        "word": "footage",
-        "startMs": 580,
-        "endMs": 929
+        "word": "timestamp",
+        "startMs": 209,
+        "endMs": 824
       },
       {
-        "word": "from",
-        "startMs": 964,
-        "endMs": 1103
+        "word": "matched",
+        "startMs": 917,
+        "endMs": 1231
       },
       {
-        "word": "a",
-        "startMs": 1161,
-        "endMs": 1184
+        "word": "the",
+        "startMs": 1265,
+        "endMs": 1370
       },
       {
-        "word": "bodega",
-        "startMs": 1242,
-        "endMs": 1823
+        "word": "estimated",
+        "startMs": 1498,
+        "endMs": 2148
       },
       {
-        "word": "two",
-        "startMs": 1892,
-        "endMs": 2101
+        "word": "time",
+        "startMs": 2206,
+        "endMs": 2554
       },
       {
-        "word": "blocks",
-        "startMs": 2159,
-        "endMs": 2450
+        "word": "of",
+        "startMs": 2589,
+        "endMs": 2659
       },
       {
-        "word": "away",
-        "startMs": 2485,
-        "endMs": 2914
-      },
-      {
-        "word": "showed",
-        "startMs": 3170,
-        "endMs": 3437
-      },
-      {
-        "word": "a",
-        "startMs": 3471,
-        "endMs": 3495
-      },
-      {
-        "word": "figure",
-        "startMs": 3576,
-        "endMs": 3889
-      },
-      {
-        "word": "in",
-        "startMs": 3947,
-        "endMs": 4063
-      },
-      {
-        "word": "a",
-        "startMs": 4122,
-        "endMs": 4145
-      },
-      {
-        "word": "dark",
-        "startMs": 4272,
-        "endMs": 4621
-      },
-      {
-        "word": "coat,",
-        "startMs": 4702,
-        "endMs": 5178
-      },
-      {
-        "word": "limping,",
-        "startMs": 5341,
-        "endMs": 5991
-      },
-      {
-        "word": "heading",
-        "startMs": 6177,
-        "endMs": 6467
-      },
-      {
-        "word": "west",
-        "startMs": 6560,
-        "endMs": 6920
-      },
-      {
-        "word": "at",
-        "startMs": 6989,
-        "endMs": 7117
-      },
-      {
-        "word": "exactly",
-        "startMs": 7187,
-        "endMs": 7651
-      },
-      {
-        "word": "1:44",
-        "startMs": 7732,
-        "endMs": 8731
-      },
-      {
-        "word": "a.m.",
-        "startMs": 8812,
-        "endMs": 9985
+        "word": "death.",
+        "startMs": 2798,
+        "endMs": 3901
       }
     ],
-    "durationMs": 10031
+    "durationMs": 3944
   }
 }

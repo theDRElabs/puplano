@@ -1,6 +1,6 @@
 {
-  "cacheKey": "3960c3cc31280b04d46bef0d1547700f9aa9c6eff4eab06194895a7c5232837d",
-  "text": "A body was found behind the old textile mill on River Street. No wallet. No phone.",
+  "cacheKey": "7360a3a9943e0af5c09f35dbd4d9fcf0f3909e17e5d291db312f789ed4542965",
+  "text": "A body was found behind the old textile mill on River Street. No wallet. No phone. Just a single red scarf tied in a bow around the victim's neck.",
   "voiceName": "Alice",
   "modelId": "eleven_multilingual_v2",
   "speed": 0.95,
@@ -9,84 +9,149 @@
       {
         "word": "A",
         "startMs": 0,
-        "endMs": 128
+        "endMs": 139
       },
       {
         "word": "body",
-        "startMs": 221,
-        "endMs": 522
+        "startMs": 232,
+        "endMs": 511
       },
       {
         "word": "was",
-        "startMs": 604,
-        "endMs": 731
+        "startMs": 580,
+        "endMs": 708
       },
       {
         "word": "found",
-        "startMs": 801,
-        "endMs": 1045
+        "startMs": 789,
+        "endMs": 1057
       },
       {
         "word": "behind",
-        "startMs": 1103,
-        "endMs": 1393
+        "startMs": 1126,
+        "endMs": 1405
       },
       {
         "word": "the",
-        "startMs": 1451,
+        "startMs": 1463,
         "endMs": 1533
       },
       {
         "word": "old",
         "startMs": 1614,
-        "endMs": 1869
+        "endMs": 1858
       },
       {
         "word": "textile",
-        "startMs": 1927,
-        "endMs": 2508
+        "startMs": 1916,
+        "endMs": 2473
       },
       {
         "word": "mill",
-        "startMs": 2543,
-        "endMs": 2694
+        "startMs": 2508,
+        "endMs": 2659
       },
       {
         "word": "on",
-        "startMs": 2752,
-        "endMs": 2833
+        "startMs": 2717,
+        "endMs": 2786
       },
       {
         "word": "River",
-        "startMs": 2961,
-        "endMs": 3216
+        "startMs": 2879,
+        "endMs": 3123
       },
       {
         "word": "Street.",
-        "startMs": 3262,
-        "endMs": 3808
+        "startMs": 3181,
+        "endMs": 3738
       },
       {
         "word": "No",
-        "startMs": 3994,
-        "endMs": 4168
+        "startMs": 3901,
+        "endMs": 4063
       },
       {
         "word": "wallet.",
-        "startMs": 4249,
-        "endMs": 4818
+        "startMs": 4145,
+        "endMs": 4667
       },
       {
         "word": "No",
-        "startMs": 4946,
-        "endMs": 5120
+        "startMs": 4737,
+        "endMs": 4911
       },
       {
         "word": "phone.",
-        "startMs": 5201,
-        "endMs": 6037
+        "startMs": 4981,
+        "endMs": 5515
+      },
+      {
+        "word": "Just",
+        "startMs": 5851,
+        "endMs": 6072
+      },
+      {
+        "word": "a",
+        "startMs": 6118,
+        "endMs": 6153
+      },
+      {
+        "word": "single",
+        "startMs": 6246,
+        "endMs": 6618
+      },
+      {
+        "word": "red",
+        "startMs": 6664,
+        "endMs": 6838
+      },
+      {
+        "word": "scarf",
+        "startMs": 6896,
+        "endMs": 7361
+      },
+      {
+        "word": "tied",
+        "startMs": 7419,
+        "endMs": 7697
+      },
+      {
+        "word": "in",
+        "startMs": 7732,
+        "endMs": 7790
+      },
+      {
+        "word": "a",
+        "startMs": 7837,
+        "endMs": 7872
+      },
+      {
+        "word": "bow",
+        "startMs": 7941,
+        "endMs": 8197
+      },
+      {
+        "word": "around",
+        "startMs": 8266,
+        "endMs": 8510
+      },
+      {
+        "word": "the",
+        "startMs": 8545,
+        "endMs": 8615
+      },
+      {
+        "word": "victim's",
+        "startMs": 8673,
+        "endMs": 9160
+      },
+      {
+        "word": "neck.",
+        "startMs": 9242,
+        "endMs": 10356
       }
     ],
-    "durationMs": 6087
+    "durationMs": 10397
   }
 }

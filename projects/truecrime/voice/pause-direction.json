@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "generatedBy": "scripts/pause-director.ts",
+  "sourceHash": "aa17b56522542de7a5f10ef10a6576983e12110c70498e745a681848bceb2ea5",
+  "pauses": [
+    {
+      "afterSentence": 1,
+      "afterWordId": "w0019",
+      "afterText": "The night shift at the downtown precinct began like any other, until the call came in at 2:17 a.m.",
+      "targetGapMs": 1000,
+      "kind": "act-break",
+      "reason": "paragraph close; scene cut s1; time stamp lands; reveal word; opening hook; The night shift at the downtown precinct began like any other, until the call came in at 2:17 a.m."
+    },
+    {
+      "afterSentence": 5,
+      "afterWordId": "w0048",
+      "afterText": "Just a single red scarf tied in a bow around the victim's neck.",
+      "targetGapMs": 650,
+      "kind": "act-break",
+      "reason": "paragraph close; scene cut s3; reveal word; Just a single red scarf tied in a bow around the victim's neck."
+    },
+    {
+      "afterSentence": 7,
+      "afterWordId": "w0062",
+      "afterText": "She walked the scene once, slowly, and said nothing.",
+      "targetGapMs": 500,
+      "kind": "beat",
+      "reason": "scene cut s4; reveal word; She walked the scene once, slowly, and said nothing."
+    },
+    {
+      "afterSentence": 8,
+      "afterWordId": "w0074",
+      "afterText": "The rain had washed away most of the evidence, but not everything.",
+      "targetGapMs": 900,
+      "kind": "act-break",
+      "reason": "paragraph close; scene cut s5; reveal word; The rain had washed away most of the evidence, but not everything."
+    },
+    {
+      "afterSentence": 9,
+      "afterWordId": "w0096",
+      "afterText": "Security footage from a bodega two blocks away showed a figure in a dark coat, limping, heading west at exactly 1:44 a.m.",
+      "targetGapMs": 500,
+      "kind": "beat",
+      "reason": "scene cut s6; time stamp lands; Security footage from a bodega two blocks away showed a figure in a dark coat, limping, heading west at exactly 1:44 a.m."
+    },
+    {
+      "afterSentence": 10,
+      "afterWordId": "w0104",
+      "afterText": "The timestamp matched the estimated time of death.",
+      "targetGapMs": 900,
+      "kind": "act-break",
+      "reason": "paragraph close; scene cut s7; reveal word; The timestamp matched the estimated time of death."
+    },
+    {
+      "afterSentence": 14,
+      "afterWordId": "w0144",
+      "afterText": "A man who, according to his coworkers, simply stopped coming to work one Tuesday and was never seen again.",
+      "targetGapMs": 900,
+      "kind": "act-break",
+      "reason": "paragraph close; scene cut s9; reveal word; A man who, according to his coworkers, simply stopped coming to work one Tuesday and was never seen again."
+    },
+    {
+      "afterSentence": 16,
+      "afterWordId": "w0165",
+      "afterText": "Until last week, when an identical red scarf turned up in a donation bin outside the precinct.",
+      "targetGapMs": 900,
+      "kind": "act-break",
+      "reason": "paragraph close; scene cut s10; reveal word; Until last week, when an identical red scarf turned up in a donation bin outside the precinct."
+    },
+    {
+      "afterSentence": 17,
+      "afterWordId": "w0171",
+      "afterText": "Someone knows what happened that night.",
+      "targetGapMs": 800,
+      "kind": "reveal",
+      "reason": "time stamp lands; sets up final line; next sentence continues a list; Someone knows what happened that night."
+    }
+  ],
+  "metrics": {
+    "sentenceCount": 18,
+    "pauseCount": 9,
+    "totalPauseMs": 7050,
+    "medianGapMs": 900,
+    "longBeats": 5
+  }
+}

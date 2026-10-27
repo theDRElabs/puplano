@@ -11,7 +11,8 @@
     "typecheck": "npm --prefix remotion run typecheck:all",
     "source-media": "tsx scripts/source-media.ts",
     "test": "tsx --test tests/*.test.ts",
-    "compile-timing": "tsx scripts/compile-timing.ts"
+    "compile-timing": "tsx scripts/compile-timing.ts",
+    "direct-pauses": "tsx scripts/pause-director.ts"
   },
   "keywords": [],
   "author": "",

@@ -9,14 +9,14 @@
   },
   "actuals": {
     "totalWords": 175,
-    "durationMs": 81006,
-    "wpmTotal": 129.6,
-    "wpmSpoken": 149.2,
-    "silenceRatio": 0.1218,
-    "pauseCount": 11,
-    "pausesPerMinute": 8.1,
-    "pauseMedianMs": 1230,
-    "pauseP90Ms": 1240
+    "durationMs": 77453,
+    "wpmTotal": 135.6,
+    "wpmSpoken": 150.8,
+    "silenceRatio": 0.091,
+    "pauseCount": 9,
+    "pausesPerMinute": 7,
+    "pauseMedianMs": 899,
+    "pauseP90Ms": 1000
   },
   "tolerances": {
     "wpmRelative": 0.1,
@@ -27,100 +27,189 @@
     "wpmSpoken": true,
     "wpmTotal": true,
     "silenceRatio": true,
-    "pausesPerMinute": true
+    "pausesPerMinute": false
   },
-  "passed": true,
+  "passed": false,
+  "direction": {
+    "version": 1,
+    "generatedBy": "scripts/pause-director.ts",
+    "sourceHash": "aa17b56522542de7a5f10ef10a6576983e12110c70498e745a681848bceb2ea5",
+    "pauses": [
+      {
+        "afterSentence": 1,
+        "afterWordId": "w0019",
+        "afterText": "The night shift at the downtown precinct began like any other, until the call came in at 2:17 a.m.",
+        "targetGapMs": 1000,
+        "kind": "act-break",
+        "reason": "paragraph close; scene cut s1; time stamp lands; reveal word; opening hook; The night shift at the downtown precinct began like any other, until the call came in at 2:17 a.m."
+      },
+      {
+        "afterSentence": 5,
+        "afterWordId": "w0048",
+        "afterText": "Just a single red scarf tied in a bow around the victim's neck.",
+        "targetGapMs": 650,
+        "kind": "act-break",
+        "reason": "paragraph close; scene cut s3; reveal word; Just a single red scarf tied in a bow around the victim's neck."
+      },
+      {
+        "afterSentence": 7,
+        "afterWordId": "w0062",
+        "afterText": "She walked the scene once, slowly, and said nothing.",
+        "targetGapMs": 500,
+        "kind": "beat",
+        "reason": "scene cut s4; reveal word; She walked the scene once, slowly, and said nothing."
+      },
+      {
+        "afterSentence": 8,
+        "afterWordId": "w0074",
+        "afterText": "The rain had washed away most of the evidence, but not everything.",
+        "targetGapMs": 900,
+        "kind": "act-break",
+        "reason": "paragraph close; scene cut s5; reveal word; The rain had washed away most of the evidence, but not everything."
+      },
+      {
+        "afterSentence": 9,
+        "afterWordId": "w0096",
+        "afterText": "Security footage from a bodega two blocks away showed a figure in a dark coat, limping, heading west at exactly 1:44 a.m.",
+        "targetGapMs": 500,
+        "kind": "beat",
+        "reason": "scene cut s6; time stamp lands; Security footage from a bodega two blocks away showed a figure in a dark coat, limping, heading west at exactly 1:44 a.m."
+      },
+      {
+        "afterSentence": 10,
+        "afterWordId": "w0104",
+        "afterText": "The timestamp matched the estimated time of death.",
+        "targetGapMs": 900,
+        "kind": "act-break",
+        "reason": "paragraph close; scene cut s7; reveal word; The timestamp matched the estimated time of death."
+      },
+      {
+        "afterSentence": 14,
+        "afterWordId": "w0144",
+        "afterText": "A man who, according to his coworkers, simply stopped coming to work one Tuesday and was never seen again.",
+        "targetGapMs": 900,
+        "kind": "act-break",
+        "reason": "paragraph close; scene cut s9; reveal word; A man who, according to his coworkers, simply stopped coming to work one Tuesday and was never seen again."
+      },
+      {
+        "afterSentence": 16,
+        "afterWordId": "w0165",
+        "afterText": "Until last week, when an identical red scarf turned up in a donation bin outside the precinct.",
+        "targetGapMs": 900,
+        "kind": "act-break",
+        "reason": "paragraph close; scene cut s10; reveal word; Until last week, when an identical red scarf turned up in a donation bin outside the precinct."
+      },
+      {
+        "afterSentence": 17,
+        "afterWordId": "w0171",
+        "afterText": "Someone knows what happened that night.",
+        "targetGapMs": 800,
+        "kind": "reveal",
+        "reason": "time stamp lands; sets up final line; next sentence continues a list; Someone knows what happened that night."
+      }
+    ],
+    "metrics": {
+      "sentenceCount": 18,
+      "pauseCount": 9,
+      "totalPauseMs": 7050,
+      "medianGapMs": 900,
+      "longBeats": 5
+    }
+  },
   "estimated": {
-    "durationMs": 79229,
+    "durationMs": 76879,
     "wpmSpoken": 152,
-    "wpmTotal": 132.5,
-    "silenceRatio": 0.1186,
-    "pauseCount": 10,
-    "pausesPerMinute": 7.6
+    "wpmTotal": 136.6,
+    "silenceRatio": 0.0917,
+    "pauseCount": 9,
+    "pausesPerMinute": 7
   },
   "plan": {
-    "pauseBudgetMs": 9420,
+    "pauseBudgetMs": 7050,
     "tailMs": 750,
     "estimatedSpeechMs": 69079,
-    "estimatedTotalMs": 79229,
-    "estimatedSilenceRatio": 0.1186434260182509,
+    "estimatedTotalMs": 76879,
+    "estimatedSilenceRatio": 0.09170254555860508,
     "segments": [
       {
         "index": 1,
         "text": "The night shift at the downtown precinct began like any other, until the call came in at 2:17 a.m.",
-        "kind": "paragraph",
+        "kind": "directed",
         "words": 19,
-        "pauseAfterMs": 1240
+        "pauseAfterMs": 1000,
+        "insertedPauseMs": 1000
       },
       {
         "index": 2,
-        "text": "A body was found behind the old textile mill on River Street. No wallet. No phone.",
-        "kind": "sentence",
-        "words": 16,
-        "pauseAfterMs": 500
+        "text": "A body was found behind the old textile mill on River Street. No wallet. No phone. Just a single red scarf tied in a bow around the victim's neck.",
+        "kind": "directed",
+        "words": 29,
+        "pauseAfterMs": 650,
+        "insertedPauseMs": 650
       },
       {
         "index": 3,
-        "text": "Just a single red scarf tied in a bow around the victim's neck.",
-        "kind": "paragraph",
-        "words": 13,
-        "pauseAfterMs": 1230
+        "text": "Detective Mara Voss arrived first. She walked the scene once, slowly, and said nothing.",
+        "kind": "directed",
+        "words": 14,
+        "pauseAfterMs": 500,
+        "insertedPauseMs": 500
       },
       {
         "index": 4,
-        "text": "Detective Mara Voss arrived first. She walked the scene once, slowly, and said nothing.",
-        "kind": "sentence",
-        "words": 14,
-        "pauseAfterMs": 500
+        "text": "The rain had washed away most of the evidence, but not everything.",
+        "kind": "directed",
+        "words": 12,
+        "pauseAfterMs": 900,
+        "insertedPauseMs": 900
       },
       {
         "index": 5,
-        "text": "The rain had washed away most of the evidence, but not everything.",
-        "kind": "paragraph",
-        "words": 12,
-        "pauseAfterMs": 1230
+        "text": "Security footage from a bodega two blocks away showed a figure in a dark coat, limping, heading west at exactly 1:44 a.m.",
+        "kind": "directed",
+        "words": 22,
+        "pauseAfterMs": 500,
+        "insertedPauseMs": 500
       },
       {
         "index": 6,
-        "text": "Security footage from a bodega two blocks away showed a figure in a dark coat, limping, heading west at exactly 1:44 a.m.",
-        "kind": "sentence",
-        "words": 22,
-        "pauseAfterMs": 500
+        "text": "The timestamp matched the estimated time of death.",
+        "kind": "directed",
+        "words": 8,
+        "pauseAfterMs": 900,
+        "insertedPauseMs": 900
       },
       {
         "index": 7,
-        "text": "The timestamp matched the estimated time of death.",
-        "kind": "paragraph",
-        "words": 8,
-        "pauseAfterMs": 1240
+        "text": "Forensics recovered one partial print. It belonged to a man reported missing three weeks earlier. A man with no known enemies. A man who, according to his coworkers, simply stopped coming to work one Tuesday and was never seen again.",
+        "kind": "directed",
+        "words": 40,
+        "pauseAfterMs": 900,
+        "insertedPauseMs": 900
       },
       {
         "index": 8,
-        "text": "Forensics recovered one partial print. It belonged to a man reported missing three weeks earlier. A man with no known enemies.",
-        "kind": "sentence",
+        "text": "The case went cold. Until last week, when an identical red scarf turned up in a donation bin outside the precinct.",
+        "kind": "directed",
         "words": 21,
-        "pauseAfterMs": 500
+        "pauseAfterMs": 900,
+        "insertedPauseMs": 900
       },
       {
         "index": 9,
-        "text": "A man who, according to his coworkers, simply stopped coming to work one Tuesday and was never seen again.",
-        "kind": "paragraph",
-        "words": 19,
-        "pauseAfterMs": 1230
+        "text": "Someone knows what happened that night.",
+        "kind": "directed",
+        "words": 6,
+        "pauseAfterMs": 800,
+        "insertedPauseMs": 800
       },
       {
         "index": 10,
-        "text": "The case went cold. Until last week, when an identical red scarf turned up in a donation bin outside the precinct.",
-        "kind": "paragraph",
-        "words": 21,
-        "pauseAfterMs": 1230
-      },
-      {
-        "index": 11,
-        "text": "Someone knows what happened that night. And they are watching.",
-        "kind": "paragraph",
-        "words": 10,
-        "pauseAfterMs": 0
+        "text": "And they are watching.",
+        "kind": "continuous",
+        "words": 4,
+        "pauseAfterMs": 0,
+        "insertedPauseMs": 0
       }
     ]
   }

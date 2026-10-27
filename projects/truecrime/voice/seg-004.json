@@ -1,82 +1,72 @@
 {
-  "cacheKey": "5aeefe9b3455a1c858245d337181180c1e4313fe9f10cc143d17170c3c19e920",
-  "text": "Detective Mara Voss arrived first. She walked the scene once, slowly, and said nothing.",
+  "cacheKey": "2ff7f37c481b438a3e5b94ad084f2eb72df1d566b8b9aeaa636acc9c62397e53",
+  "text": "The rain had washed away most of the evidence, but not everything.",
   "voiceName": "Alice",
   "modelId": "eleven_multilingual_v2",
   "speed": 0.95,
   "result": {
     "words": [
       {
-        "word": "Detective",
+        "word": "The",
         "startMs": 0,
+        "endMs": 139
+      },
+      {
+        "word": "rain",
+        "startMs": 209,
+        "endMs": 418
+      },
+      {
+        "word": "had",
+        "startMs": 476,
         "endMs": 569
       },
       {
-        "word": "Mara",
+        "word": "washed",
         "startMs": 615,
-        "endMs": 859
+        "endMs": 871
       },
       {
-        "word": "Voss",
-        "startMs": 929,
-        "endMs": 1184
+        "word": "away",
+        "startMs": 906,
+        "endMs": 1138
       },
       {
-        "word": "arrived",
+        "word": "most",
         "startMs": 1231,
-        "endMs": 1579
+        "endMs": 1474
       },
       {
-        "word": "first.",
-        "startMs": 1637,
-        "endMs": 2241
-      },
-      {
-        "word": "She",
-        "startMs": 2461,
-        "endMs": 2601
-      },
-      {
-        "word": "walked",
-        "startMs": 2647,
-        "endMs": 2891
+        "word": "of",
+        "startMs": 1521,
+        "endMs": 1567
       },
       {
         "word": "the",
-        "startMs": 2926,
-        "endMs": 2995
+        "startMs": 1614,
+        "endMs": 1683
       },
       {
-        "word": "scene",
-        "startMs": 3042,
-        "endMs": 3286
+        "word": "evidence,",
+        "startMs": 1741,
+        "endMs": 2287
       },
       {
-        "word": "once,",
-        "startMs": 3344,
-        "endMs": 3808
+        "word": "but",
+        "startMs": 2415,
+        "endMs": 2566
       },
       {
-        "word": "slowly,",
-        "startMs": 3994,
-        "endMs": 4644
+        "word": "not",
+        "startMs": 2624,
+        "endMs": 2810
       },
       {
-        "word": "and",
-        "startMs": 4690,
-        "endMs": 4888
-      },
-      {
-        "word": "said",
-        "startMs": 4969,
-        "endMs": 5190
-      },
-      {
-        "word": "nothing.",
-        "startMs": 5259,
-        "endMs": 6316
+        "word": "everything.",
+        "startMs": 2879,
+        "endMs": 3901
       }
     ],
-    "durationMs": 6348
+    "durationMs": 3944
   }
 }

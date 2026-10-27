@@ -11,13 +11,16 @@ import {
 import { homedir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { PauseDirection } from "../schemas/pause-direction";
 import { DEFAULT_STYLE_ID, loadStyle } from "./style";
 import {
   PAUSE_GAP_MS,
   applyOffsets,
   buildPacingReport,
+  planDirectedSegments,
   planSegments,
   readParagraphs,
+  readSentences,
   validateSpeed,
   type PacingTargets,
   type SegmentPlan,
@@ -27,6 +30,7 @@ import {
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const API = "https://api.elevenlabs.io/v1";
 const SEGMENT_MAX_CHARS = 150;
+const DIRECTED_SEGMENT_MAX_CHARS = 600;
 const TAIL_MS = 750;
 const SAMPLE_RATE = 44100;
 const AUDIO_CHANNELS = 2;
@@ -42,6 +46,7 @@ interface Cli {
   project: string;
   styleId: string;
   speed?: number;
+  direction?: string;
   dryRun: boolean;
   strict: boolean;
 }
@@ -52,7 +57,8 @@ interface SynthesisResult {
 }
 
 const USAGE =
-  "Usage: npm run voice -- <project> [--style <id>] [--speed <n>] [--dry-run] [--strict]";
+  "Usage: npm run voice -- <project> [--style <id>] [--speed <n>] " +
+  "[--direction <file>] [--dry-run] [--strict]";
 
 function parseCli(argv: string[]): Cli {
   const args = argv.slice(2);
@@ -63,6 +69,7 @@ function parseCli(argv: string[]): Cli {
 
   let styleId = DEFAULT_STYLE_ID;
   let speed: number | undefined;
+  let direction: string | undefined;
   let dryRun = false;
   let strict = false;
 
@@ -86,6 +93,11 @@ function parseCli(argv: string[]): Cli {
       index += 1;
     } else if (argument.startsWith("--speed=")) {
       speed = Number(argument.slice("--speed=".length));
+    } else if (argument === "--direction") {
+      direction = valueAfter(index, argument);
+      index += 1;
+    } else if (argument.startsWith("--direction=")) {
+      direction = argument.slice("--direction=".length);
     } else if (argument === "--dry-run") {
       dryRun = true;
     } else if (argument === "--strict") {
@@ -96,7 +108,7 @@ function parseCli(argv: string[]): Cli {
   }
 
   if (!styleId) throw new Error(`--style requires a value\n${USAGE}`);
-  return { project, styleId, speed, dryRun, strict };
+  return { project, styleId, speed, direction, dryRun, strict };
 }
 
 function loadKey(name: string): string {
@@ -344,6 +356,25 @@ function planForStyle(
   });
 }
 
+function planForDirection(
+  paragraphs: string[],
+  direction: PauseDirection,
+  style: ReturnType<typeof loadStyle>,
+): SegmentPlan {
+  return planDirectedSegments(
+    paragraphs,
+    direction.pauses.map((pause) => ({
+      afterSentence: pause.afterSentence,
+      targetGapMs: pause.targetGapMs,
+    })),
+    {
+      maxChars: DIRECTED_SEGMENT_MAX_CHARS,
+      wpmSpoken: style.pacing.wpmSpoken,
+      tailMs: TAIL_MS,
+    },
+  );
+}
+
 async function main(): Promise<void> {
   const cli = parseCli(process.argv);
   const config = JSON.parse(
@@ -370,8 +401,68 @@ async function main(): Promise<void> {
     throw new Error(`No narration text in ${path.join(projectDir, "script", "script.md")}`);
   }
 
-  const plan = planForStyle(paragraphs, style, speed);
+  const directionFile = cli.direction
+    ? path.resolve(ROOT, cli.direction)
+    : path.join(voiceDir, "pause-direction.json");
+  let direction: PauseDirection | undefined;
+  if (cli.direction && !existsSync(directionFile)) {
+    throw new Error(`Pause direction not found: ${directionFile}`);
+  }
+  if (existsSync(directionFile)) {
+    let raw: unknown;
+    try {
+      raw = JSON.parse(readFileSync(directionFile, "utf8"));
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      throw new Error(
+        `Could not read ${path.relative(ROOT, directionFile)}: ${message}`,
+      );
+    }
+    const parsed = PauseDirection.safeParse(raw);
+    if (!parsed.success) {
+      const issues = parsed.error.issues
+        .map((issue) => `- ${issue.path.join(".")}: ${issue.message}`)
+        .join("\n");
+      throw new Error(
+        `Pause direction ${path.relative(ROOT, directionFile)} is invalid:\n${issues}`,
+      );
+    }
+    direction = parsed.data;
+    const sourceHash = createHash("sha256").update(script).digest("hex");
+    if (direction.sourceHash !== sourceHash) {
+      throw new Error(
+        `Pause direction is stale: ${path.relative(ROOT, directionFile)} ` +
+          "was generated for different narration. Run npm run direct-pauses.",
+      );
+    }
+    const sentences = readSentences(paragraphs);
+    for (const pause of direction.pauses) {
+      const sentence = sentences[pause.afterSentence - 1];
+      if (!sentence) {
+        throw new Error(
+          `Pause direction references sentence ${pause.afterSentence}, ` +
+            `but the script has ${sentences.length}`,
+        );
+      }
+      if (sentence.text !== pause.afterText) {
+        throw new Error(
+          `Pause direction text mismatch after sentence ${pause.afterSentence}:\n` +
+            `  direction: ${pause.afterText}\n  script:    ${sentence.text}`,
+        );
+      }
+    }
+  }
+
+  const plan = direction
+    ? planForDirection(paragraphs, direction, style)
+    : planForStyle(paragraphs, style, speed);
   mkdirSync(voiceDir, { recursive: true });
+  if (direction) {
+    console.log(
+      `Pause direction: ${direction.pauses.length} pause(s) from ` +
+        `${path.relative(ROOT, directionFile)}`,
+    );
+  }
 
   const plannedWords = plan.segments.reduce(
     (sum, segment) => sum + segment.words,
@@ -406,6 +497,12 @@ async function main(): Promise<void> {
     speed,
     targets,
     estimated,
+    direction: direction
+      ? {
+          file: path.relative(ROOT, directionFile),
+          pauseCount: direction.pauses.length,
+        }
+      : null,
     ...plan,
     estimatedSilenceRatio,
   };
@@ -512,6 +609,7 @@ async function main(): Promise<void> {
 
   const concatFiles: string[] = [];
   const segmentDurationsMs: number[] = [];
+  const insertedPauses: number[] = [];
   for (let index = 0; index < plan.segments.length; index += 1) {
     const number = String(index + 1).padStart(3, "0");
     const audio = path.join(voiceDir, `seg-${number}.mp3`);
@@ -521,12 +619,25 @@ async function main(): Promise<void> {
     concatFiles.push(wav);
 
     if (index < plan.segments.length - 1) {
-      const pauseMs = plan.segments[index].pauseAfterMs;
-      if (pauseMs > 0) {
+      const requested = plan.segments[index].pauseAfterMs;
+      let insertMs = 0;
+      if (requested > 0) {
+        const lastWord = segmentWords[index].at(-1);
+        const nextWord = segmentWords[index + 1]?.[0];
+        const trailing = lastWord
+          ? Math.max(0, segmentDurationsMs[index] - lastWord.endMs)
+          : 0;
+        const leading = nextWord ? Math.max(0, nextWord.startMs) : 0;
+        insertMs = Math.max(0, requested - trailing - leading);
+      }
+      insertedPauses.push(insertMs);
+      if (insertMs > 0) {
         const silence = path.join(voiceDir, `silence-${number}.wav`);
-        writeSilenceWav(silence, pauseMs);
+        writeSilenceWav(silence, insertMs);
         concatFiles.push(silence);
       }
+    } else {
+      insertedPauses.push(0);
     }
   }
 
@@ -573,8 +684,11 @@ async function main(): Promise<void> {
   ]);
 
   const durationMs = probeDurationMs(narration);
-  const pauses = plan.segments.map((segment) => segment.pauseAfterMs);
-  const shifted = applyOffsets(segmentWords, segmentDurationsMs, pauses);
+  const shifted = applyOffsets(
+    segmentWords,
+    segmentDurationsMs,
+    insertedPauses,
+  );
   const words = shifted.map((word, index) => {
     const endMs = Math.min(word.endMs, durationMs);
     return {
@@ -631,6 +745,7 @@ async function main(): Promise<void> {
     tolerances: report.tolerances,
     pass: report.pass,
     passed: report.passed,
+    direction: direction ?? null,
     estimated,
     plan: {
       pauseBudgetMs: plan.pauseBudgetMs,
@@ -644,6 +759,7 @@ async function main(): Promise<void> {
         kind: segment.kind,
         words: segment.words,
         pauseAfterMs: segment.pauseAfterMs,
+        insertedPauseMs: insertedPauses[index],
       })),
     },
   };
