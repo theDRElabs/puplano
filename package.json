@@ -10,7 +10,8 @@
     "render": "tsx scripts/render.ts",
     "typecheck": "npm --prefix remotion run typecheck:all",
     "source-media": "tsx scripts/source-media.ts",
-    "test": "tsx --test tests/*.test.ts"
+    "test": "tsx --test tests/*.test.ts",
+    "compile-timing": "tsx scripts/compile-timing.ts"
   },
   "keywords": [],
   "author": "",

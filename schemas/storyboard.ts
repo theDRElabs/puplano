@@ -5,6 +5,22 @@ const Source = z.object({
   url: z.string().url().optional(),
 });
 
+const WordId = z
+  .string()
+  .regex(/^w\d{4,}$/, "must be a stable word id such as w0001");
+
+// A stable span over voice/words.json. Anchors are resolved by the timing
+// compiler, so punctuation and caption edits do not invalidate a storyboard.
+export const WordSpan = z.object({
+  startWordId: WordId,
+  endWordId: WordId,
+});
+
+const SceneSpan = z.object({
+  startSceneId: z.string().min(1),
+  endSceneId: z.string().min(1),
+});
+
 // Attribution evidence is mandatory: a media license without a resolvable
 // claim URL, a complete attribution line, and a modification note is not
 // publishable. `credit` is additionally required when the claim needs it,
@@ -33,6 +49,10 @@ const base = {
   transitionIn: Transition.optional(),
   narration: z.string().optional(),
   source: Source.optional(),
+  // Optional for legacy storyboards; the timing compiler requires anchors for
+  // projects that opt into compiled timing.
+  anchor: WordSpan.optional(),
+  holdMs: z.number().int().min(0).max(2000).optional(),
 };
 
 const KineticTitle = z.object({
@@ -126,8 +146,14 @@ export const Overlay = z.object({
   kind: z.enum(["source_caption", "lower_third", "label"]),
   text: z.string().min(1).max(120),
   position: z.enum(["top", "bottom"]).default("bottom"),
-  startMs: z.number().int().min(0),
-  endMs: z.number().int().positive(),
+  // Numeric timing is filled by the compiler. A storyboard may carry only an
+  // anchor or `span: "full"` before it is compiled.
+  startMs: z.number().int().min(0).optional(),
+  endMs: z.number().int().positive().optional(),
+  // Optional stable timing. `span: "full"` covers the whole audio track; a
+  // scene span follows compiled scene starts/ends.
+  anchor: z.union([WordSpan, SceneSpan]).optional(),
+  span: z.literal("full").optional(),
 });
 
 // Background music: normal volume, and a lower volume while narration plays
@@ -171,8 +197,14 @@ export const Storyboard = z
       bad(`last scene must end exactly at the audio length (${sb.durationMs} ms), it ends at ${prevEnd} ms`, ["scenes"]);
 
     sb.overlays.forEach((o, i) => {
-      if (o.endMs <= o.startMs) bad(`overlay ${o.id}: endMs must be after startMs`, ["overlays", i]);
-      if (o.endMs > sb.durationMs) bad(`overlay ${o.id}: runs past the end of the audio`, ["overlays", i]);
+      if ((o.startMs === undefined) !== (o.endMs === undefined))
+        bad(`overlay ${o.id}: startMs and endMs must be provided together`, ["overlays", i]);
+      if (o.startMs === undefined && !o.anchor && !o.span)
+        bad(`overlay ${o.id}: needs milliseconds, an anchor, or span "full"`, ["overlays", i]);
+      if (o.startMs !== undefined && o.endMs !== undefined) {
+        if (o.endMs <= o.startMs) bad(`overlay ${o.id}: endMs must be after startMs`, ["overlays", i]);
+        if (o.endMs > sb.durationMs) bad(`overlay ${o.id}: runs past the end of the audio`, ["overlays", i]);
+      }
     });
 
     if (sb.music && sb.music.duckedVolume > sb.music.baseVolume)
@@ -180,5 +212,7 @@ export const Storyboard = z
   });
 
 export type Scene = z.infer<typeof Scene>;
+export type Overlay = z.infer<typeof Overlay>;
+export type WordSpan = z.infer<typeof WordSpan>;
 export type License = z.infer<typeof License>;
 export type Storyboard = z.infer<typeof Storyboard>;

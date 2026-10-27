@@ -198,7 +198,7 @@
       },
       "selection": {
         "sceneId": "s1",
-        "storyboardHash": "3bcdb0c5d2c0d9f84f777dc24710d29eb1e91b43c72f3fec6c7e129569d4814f",
+        "storyboardHash": "5a331d2106e48fffccb624acb2dc68344202758894bb7d87af1a770662002316",
         "shotId": "shot-046",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "Police radio office and telephone activity directly illustrate the narrated precinct night-shift call without depicting this fictional case.",
@@ -294,7 +294,7 @@
       },
       "selection": {
         "sceneId": "s2",
-        "storyboardHash": "92ba6112fe6872a686e98dce37da3d5fa1bccffaed9e6917bac78e4779b734c1",
+        "storyboardHash": "135899998f070881aece1c70d1796ff753da6f305bb4ae66549391b18d54d7b8",
         "shotId": "shot-020",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "Exterior emergency response at an industrial-looking building provides a restrained establishing visual, not a depiction of the narrated crime.",
@@ -390,7 +390,7 @@
       },
       "selection": {
         "sceneId": "s4",
-        "storyboardHash": "d9354808b06d55954fc4a13356a16ba75e5cc9be00f4d4e9f175b66b97204738",
+        "storyboardHash": "42aeba06c4d01c1ea90b48ecbfa3da2f2f1abd3eb0d35ca53d2830caa99eeb94",
         "shotId": "shot-032",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "Two investigators examining a building entrance visually support the detective-arrival narration while remaining clearly illustrative.",
@@ -486,7 +486,7 @@
       },
       "selection": {
         "sceneId": "s7",
-        "storyboardHash": "07350ed4f3d7510171fbdfac1bcd0663d4b83ff89f40462b70b8f986d871376d",
+        "storyboardHash": "9ac8a4ca6d8a225afee63cd9171c4125544563d11c9f93e38e902caad5d4263b",
         "shotId": "shot-045",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "A police report being typed illustrates documentation of a time-of-death estimate and replaces the unrelated opening credits.",
@@ -582,7 +582,7 @@
       },
       "selection": {
         "sceneId": "s9",
-        "storyboardHash": "95794ddbed0f14e646679e1b7ed021ae973bbcc1a913b0b411020594c20bfda9",
+        "storyboardHash": "42218cf42107af60122a132b6794e382a60728c40b10d5da741611e0e2c14f77",
         "shotId": "shot-051",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "A wide office workforce shot provides contextual imagery for the coworker account without inventing a specific missing person.",
@@ -678,7 +678,7 @@
       },
       "selection": {
         "sceneId": "s10",
-        "storyboardHash": "6c2c807396044914e8c78b4a37bd1ed76a3f156cb47f4e996ae5e59914ebe3ad",
+        "storyboardHash": "b7146f9b79a479e5f27fac4e58e0452d8fd9962202d9180ab5b1151ee9492cf2",
         "shotId": "shot-018",
         "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
         "reason": "An official case conference illustrates continued institutional case work without presenting the archival participants as this story’s investigators.",
@@ -868,7 +868,7 @@
       },
       "selection": {
         "sceneId": "s2",
-        "storyboardHash": "92ba6112fe6872a686e98dce37da3d5fa1bccffaed9e6917bac78e4779b734c1",
+        "storyboardHash": "135899998f070881aece1c70d1796ff753da6f305bb4ae66549391b18d54d7b8",
         "shotId": "shot-013",
         "previewHash": "4ffa3784357982fe78cf79decf62cac769cd20a47fd979da29274db53ab46232",
         "reason": "Exterior brick mill building with grounds; reads as the old textile mill on River Street.",
@@ -964,7 +964,7 @@
       },
       "selection": {
         "sceneId": "s9",
-        "storyboardHash": "95794ddbed0f14e646679e1b7ed021ae973bbcc1a913b0b411020594c20bfda9",
+        "storyboardHash": "42218cf42107af60122a132b6794e382a60728c40b10d5da741611e0e2c14f77",
         "shotId": "shot-022",
         "previewHash": "4ffa3784357982fe78cf79decf62cac769cd20a47fd979da29274db53ab46232",
         "reason": "Worker feeding cloth through a textile machine; workplace context for a man who stopped coming to work.",
@@ -1060,7 +1060,7 @@
       },
       "selection": {
         "sceneId": "s10",
-        "storyboardHash": "6c2c807396044914e8c78b4a37bd1ed76a3f156cb47f4e996ae5e59914ebe3ad",
+        "storyboardHash": "b7146f9b79a479e5f27fac4e58e0452d8fd9962202d9180ab5b1151ee9492cf2",
         "shotId": "shot-018",
         "previewHash": "7e5ded557ce6acea5cfea680b10ef9ae5e85c477ec30cdf880f1d34ab4746179",
         "reason": "Police car outside a brick station with barred windows; precinct exterior for the donation-bin reveal.",
@@ -1075,6 +1075,390 @@
         "reviewImageHash": "5dbb4f274b0a2721bb28b970de8f8c324d3952eec21a4ca04109d581eb112dc4",
         "reviewer": "opencode-deepseek-v4.1",
         "reviewedAt": "2026-10-26T09:03:29.832Z",
+        "illustrative": true
+      }
+    },
+    {
+      "id": "s1-3664dd73d4a23597",
+      "identifier": "FireandP1947",
+      "title": "Fire and Police Service",
+      "creator": "Holmes (Burton) Films, Inc.",
+      "remoteFile": "FireandP1947.mp4",
+      "detailsUrl": "https://archive.org/details/FireandP1947",
+      "downloadUrl": "https://archive.org/download/FireandP1947/FireandP1947.mp4",
+      "localFile": "assets/clips/s1-3664dd73d4a23597.mp4",
+      "checksums": {
+        "bytes": 1208451,
+        "md5": "5bc7e4c9c55cd12516ef717efd0cc11c",
+        "sha256": "2d3eaddb610e83e2cc402a6cd3f54212783234ebc0093102a752a5a6a3fba171"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 7774,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+        "checkedAt": "2026-10-24T20:09:01.356Z",
+        "review": {
+          "reviewer": "GPT-5.6 Sol",
+          "evidenceUrls": [
+            "https://archive.org/details/FireandP1947",
+            "http://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Reviewed the live item metadata, exact source file, uploader public-domain claim, and Prelinger collection context; approval is for clearly labeled illustrative use and is not a legal guarantee.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-24T20:14:20.928Z",
+          "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+          "credit": "Holmes (Burton) Films, Inc."
+        }
+      },
+      "retrievedAt": "2026-10-24T20:09:01.355Z",
+      "kind": "clip",
+      "parentId": "FireandP1947-554a3bd97465",
+      "transform": {
+        "startMs": 473890,
+        "endMs": 481665,
+        "createdAt": "2026-10-27T14:54:00.256Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "473.89",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/FireandP1947-554a3bd97465.mp4",
+          "-t",
+          "7.775",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s1-3664dd73d4a23597.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s1",
+        "storyboardHash": "5a331d2106e48fffccb624acb2dc68344202758894bb7d87af1a770662002316",
+        "shotId": "shot-046",
+        "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
+        "reason": "Precinct radio room and night-shift phones illustrate the fictional 2:17 a.m. call; extended within the reviewed shot to cover the timed narration.",
+        "shotStartMs": 473690,
+        "shotEndMs": 481865,
+        "sampleTimesMs": [
+          473890,
+          477778,
+          481665
+        ],
+        "reviewImage": "media/reviews/s1-3664dd73d4a23597.jpg",
+        "reviewImageHash": "4f911745890b80c1ba6dd92cb14d6c27b49b32799bbf4e556cac5a319bff9450",
+        "reviewer": "opencode-deepseek-v4.1",
+        "reviewedAt": "2026-10-27T14:54:00.256Z",
+        "illustrative": true
+      }
+    },
+    {
+      "id": "s4-8776c18eb3f0d342",
+      "identifier": "FireandP1947",
+      "title": "Fire and Police Service",
+      "creator": "Holmes (Burton) Films, Inc.",
+      "remoteFile": "FireandP1947.mp4",
+      "detailsUrl": "https://archive.org/details/FireandP1947",
+      "downloadUrl": "https://archive.org/download/FireandP1947/FireandP1947.mp4",
+      "localFile": "assets/clips/s4-8776c18eb3f0d342.mp4",
+      "checksums": {
+        "bytes": 1448591,
+        "md5": "b70634445c91055cc98f885ad903f1ca",
+        "sha256": "6bdf747fcb3952c6db89200b111a211217a0155756ea345a3c402adaf71bcd14"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 9209,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+        "checkedAt": "2026-10-24T20:09:01.356Z",
+        "review": {
+          "reviewer": "GPT-5.6 Sol",
+          "evidenceUrls": [
+            "https://archive.org/details/FireandP1947",
+            "http://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Reviewed the live item metadata, exact source file, uploader public-domain claim, and Prelinger collection context; approval is for clearly labeled illustrative use and is not a legal guarantee.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-24T20:14:20.928Z",
+          "metadataHash": "68431e22ea6f05f8ccfc5933309789c050b4be4f11aaf361e86fe6fdf11160d2",
+          "credit": "Holmes (Burton) Films, Inc."
+        }
+      },
+      "retrievedAt": "2026-10-24T20:09:01.355Z",
+      "kind": "clip",
+      "parentId": "FireandP1947-554a3bd97465",
+      "transform": {
+        "startMs": 346296,
+        "endMs": 355505,
+        "createdAt": "2026-10-27T14:54:02.511Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "346.296",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/FireandP1947-554a3bd97465.mp4",
+          "-t",
+          "9.209",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s4-8776c18eb3f0d342.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s4",
+        "storyboardHash": "42aeba06c4d01c1ea90b48ecbfa3da2f2f1abd3eb0d35ca53d2830caa99eeb94",
+        "shotId": "shot-032",
+        "previewHash": "e3a0a0acfe1458c0702fc5be27d066ffb9c67a5e9fb0391ca4657c9629bc179b",
+        "reason": "Detectives and police activity illustrate Voss arriving at the mill; extended within the reviewed shot to cover the timed narration.",
+        "shotStartMs": 346296,
+        "shotEndMs": 355505,
+        "sampleTimesMs": [
+          346496,
+          350901,
+          355305
+        ],
+        "reviewImage": "media/reviews/s4-8776c18eb3f0d342.jpg",
+        "reviewImageHash": "45523bfec2633cc867f3de9c3ef00ba5d7dd158ebc573416c58bf3ef4793fb36",
+        "reviewer": "opencode-deepseek-v4.1",
+        "reviewedAt": "2026-10-27T14:54:02.512Z",
+        "illustrative": true
+      }
+    },
+    {
+      "id": "s10-a610a54bf8ffc284",
+      "identifier": "ThisIsYo1951",
+      "title": "This Is Your Police Department",
+      "creator": "Handy (Jam) Organization",
+      "remoteFile": "ThisIsYo1951.mp4",
+      "detailsUrl": "https://archive.org/details/ThisIsYo1951",
+      "downloadUrl": "https://archive.org/download/ThisIsYo1951/ThisIsYo1951.mp4",
+      "localFile": "assets/clips/s10-a610a54bf8ffc284.mp4",
+      "checksums": {
+        "bytes": 1738974,
+        "md5": "f6577fa8efe1bcb03f2d43ec32a370d6",
+        "sha256": "c9ca0162eff51330ff4dfa2a52050193c9d14c2f1b63c64eac449a1b14e99844"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 11979,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "5476c619eccaff853068b21e1a11f39bf7ba2c70e23f848514eacc3f4d47af1d",
+        "checkedAt": "2026-10-26T08:30:03.811Z",
+        "review": {
+          "reviewer": "opencode-deepseek-v4.1",
+          "evidenceUrls": [
+            "https://archive.org/details/ThisIsYo1951",
+            "https://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Prelinger uploader public-domain claim reviewed for this exact file; illustrative use only, no case-evidence implication.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-26T09:03:27.258Z",
+          "metadataHash": "5476c619eccaff853068b21e1a11f39bf7ba2c70e23f848514eacc3f4d47af1d",
+          "credit": "Handy (Jam) Organization"
+        }
+      },
+      "retrievedAt": "2026-10-26T08:30:03.810Z",
+      "kind": "clip",
+      "parentId": "ThisIsYo1951-9e909e78b7d1",
+      "transform": {
+        "startMs": 528308,
+        "endMs": 540308,
+        "createdAt": "2026-10-27T14:54:05.179Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "528.308",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/ThisIsYo1951-9e909e78b7d1.mp4",
+          "-t",
+          "12",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s10-a610a54bf8ffc284.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s10",
+        "storyboardHash": "b7146f9b79a479e5f27fac4e58e0452d8fd9962202d9180ab5b1151ee9492cf2",
+        "shotId": "shot-018",
+        "previewHash": "7e5ded557ce6acea5cfea680b10ef9ae5e85c477ec30cdf880f1d34ab4746179",
+        "reason": "Precinct exterior and paperwork illustrate the cold case and donation-bin turn; extended within the reviewed shot to cover the timed narration.",
+        "shotStartMs": 528308,
+        "shotEndMs": 540308,
+        "sampleTimesMs": [
+          528508,
+          534308,
+          540108
+        ],
+        "reviewImage": "media/reviews/s10-a610a54bf8ffc284.jpg",
+        "reviewImageHash": "5dbb4f274b0a2721bb28b970de8f8c324d3952eec21a4ca04109d581eb112dc4",
+        "reviewer": "opencode-deepseek-v4.1",
+        "reviewedAt": "2026-10-27T14:54:05.180Z",
+        "illustrative": true
+      }
+    },
+    {
+      "id": "s2-188359630ca5bae2",
+      "identifier": "HowTexti1948",
+      "title": "How Textile Mills Are Modernizing",
+      "creator": "Wolff (Raphael G.) Studios",
+      "remoteFile": "HowTexti1948.mp4",
+      "detailsUrl": "https://archive.org/details/HowTexti1948",
+      "downloadUrl": "https://archive.org/download/HowTexti1948/HowTexti1948.mp4",
+      "localFile": "assets/clips/s2-188359630ca5bae2.mp4",
+      "checksums": {
+        "bytes": 997950,
+        "md5": "542842002707e671ff4e0a98f8d36202",
+        "sha256": "b5ec50e2a0414f18b8f21c3406057e3600f63c997f55ddbb2f03304ca18f1699"
+      },
+      "probe": {
+        "width": 640,
+        "height": 480,
+        "durationMs": 6006,
+        "codec": "h264",
+        "fps": 29.97002997002997
+      },
+      "rights": {
+        "licenseUrls": [
+          "http://creativecommons.org/licenses/publicdomain/"
+        ],
+        "statements": [],
+        "collections": [
+          "prelinger"
+        ],
+        "metadataHash": "53e8bad11cbef7895827fe2e9799d385f03d57d0e5929fecb4974165214189eb",
+        "checkedAt": "2026-10-26T08:29:23.417Z",
+        "review": {
+          "reviewer": "opencode-deepseek-v4.1",
+          "evidenceUrls": [
+            "https://archive.org/details/HowTexti1948",
+            "https://creativecommons.org/licenses/publicdomain/"
+          ],
+          "note": "Prelinger uploader public-domain claim reviewed for this exact file; illustrative use only, no case-evidence implication.",
+          "jurisdiction": "US",
+          "reviewedAt": "2026-10-26T09:02:47.461Z",
+          "metadataHash": "53e8bad11cbef7895827fe2e9799d385f03d57d0e5929fecb4974165214189eb",
+          "credit": "Wolff (Raphael G.) Studios"
+        }
+      },
+      "retrievedAt": "2026-10-26T08:29:23.417Z",
+      "kind": "clip",
+      "parentId": "HowTexti1948-c500871096cb",
+      "transform": {
+        "startMs": 412000,
+        "endMs": 418000,
+        "createdAt": "2026-10-27T14:56:22.181Z",
+        "tool": "ffmpeg/libx264",
+        "args": [
+          "-v",
+          "error",
+          "-ss",
+          "412",
+          "-i",
+          "/data/home/puplano/projects/truecrime/assets/originals/HowTexti1948-c500871096cb.mp4",
+          "-t",
+          "6",
+          "-an",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "fast",
+          "-crf",
+          "18",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "-n",
+          "/data/home/puplano/projects/truecrime/assets/clips/s2-188359630ca5bae2.mp4"
+        ]
+      },
+      "selection": {
+        "sceneId": "s2",
+        "storyboardHash": "135899998f070881aece1c70d1796ff753da6f305bb4ae66549391b18d54d7b8",
+        "shotId": "shot-013",
+        "previewHash": "4ffa3784357982fe78cf79decf62cac769cd20a47fd979da29274db53ab46232",
+        "reason": "Exterior brick mill and grounds illustrate the body found behind the old textile mill; extended within the reviewed shot for the timed narration.",
+        "shotStartMs": 407445,
+        "shotEndMs": 419445,
+        "sampleTimesMs": [
+          407645,
+          413445,
+          419245
+        ],
+        "reviewImage": "media/reviews/s2-188359630ca5bae2.jpg",
+        "reviewImageHash": "ad27d436b753f9b1f7cf787bd342cf39936ecbed43019889530da8e4cae5105e",
+        "reviewer": "opencode-deepseek-v4.1",
+        "reviewedAt": "2026-10-27T14:56:22.181Z",
         "illustrative": true
       }
     }

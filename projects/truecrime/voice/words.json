@@ -3,876 +3,1051 @@
   "durationMs": 81006,
   "words": [
     {
+      "id": "w0001",
       "word": "The",
       "startMs": 0,
       "endMs": 163
     },
     {
+      "id": "w0002",
       "word": "night",
       "startMs": 221,
       "endMs": 418
     },
     {
+      "id": "w0003",
       "word": "shift",
       "startMs": 453,
       "endMs": 697
     },
     {
+      "id": "w0004",
       "word": "at",
       "startMs": 731,
       "endMs": 789
     },
     {
+      "id": "w0005",
       "word": "the",
       "startMs": 824,
       "endMs": 894
     },
     {
+      "id": "w0006",
       "word": "downtown",
       "startMs": 940,
       "endMs": 1393
     },
     {
+      "id": "w0007",
       "word": "precinct",
       "startMs": 1463,
       "endMs": 1939
     },
     {
+      "id": "w0008",
       "word": "began",
       "startMs": 1997,
       "endMs": 2357
     },
     {
+      "id": "w0009",
       "word": "like",
       "startMs": 2426,
       "endMs": 2635
     },
     {
+      "id": "w0010",
       "word": "any",
       "startMs": 2682,
       "endMs": 2995
     },
     {
+      "id": "w0011",
       "word": "other,",
       "startMs": 3077,
       "endMs": 3518
     },
     {
+      "id": "w0012",
       "word": "until",
       "startMs": 3808,
       "endMs": 4052
     },
     {
+      "id": "w0013",
       "word": "the",
       "startMs": 4098,
       "endMs": 4168
     },
     {
+      "id": "w0014",
       "word": "call",
       "startMs": 4214,
       "endMs": 4423
     },
     {
+      "id": "w0015",
       "word": "came",
       "startMs": 4493,
       "endMs": 4690
     },
     {
+      "id": "w0016",
       "word": "in",
       "startMs": 4725,
       "endMs": 4807
     },
     {
+      "id": "w0017",
       "word": "at",
       "startMs": 4853,
       "endMs": 4934
     },
     {
+      "id": "w0018",
       "word": "2:17",
       "startMs": 5027,
       "endMs": 6037
     },
     {
+      "id": "w0019",
       "word": "a.m.",
       "startMs": 6177,
       "endMs": 7430
     },
     {
+      "id": "w0020",
       "word": "A",
       "startMs": 8670,
       "endMs": 8798
     },
     {
+      "id": "w0021",
       "word": "body",
       "startMs": 8891,
       "endMs": 9192
     },
     {
+      "id": "w0022",
       "word": "was",
       "startMs": 9274,
       "endMs": 9401
     },
     {
+      "id": "w0023",
       "word": "found",
       "startMs": 9471,
       "endMs": 9715
     },
     {
+      "id": "w0024",
       "word": "behind",
       "startMs": 9773,
       "endMs": 10063
     },
     {
+      "id": "w0025",
       "word": "the",
       "startMs": 10121,
       "endMs": 10203
     },
     {
+      "id": "w0026",
       "word": "old",
       "startMs": 10284,
       "endMs": 10539
     },
     {
+      "id": "w0027",
       "word": "textile",
       "startMs": 10597,
       "endMs": 11178
     },
     {
+      "id": "w0028",
       "word": "mill",
       "startMs": 11213,
       "endMs": 11364
     },
     {
+      "id": "w0029",
       "word": "on",
       "startMs": 11422,
       "endMs": 11503
     },
     {
+      "id": "w0030",
       "word": "River",
       "startMs": 11631,
       "endMs": 11886
     },
     {
+      "id": "w0031",
       "word": "Street.",
       "startMs": 11932,
       "endMs": 12478
     },
     {
+      "id": "w0032",
       "word": "No",
       "startMs": 12664,
       "endMs": 12838
     },
     {
+      "id": "w0033",
       "word": "wallet.",
       "startMs": 12919,
       "endMs": 13488
     },
     {
+      "id": "w0034",
       "word": "No",
       "startMs": 13616,
       "endMs": 13790
     },
     {
+      "id": "w0035",
       "word": "phone.",
       "startMs": 13871,
       "endMs": 14707
     },
     {
+      "id": "w0036",
       "word": "Just",
       "startMs": 15207,
       "endMs": 15451
     },
     {
+      "id": "w0037",
       "word": "a",
       "startMs": 15497,
       "endMs": 15520
     },
     {
+      "id": "w0038",
       "word": "single",
       "startMs": 15613,
       "endMs": 15985
     },
     {
+      "id": "w0039",
       "word": "red",
       "startMs": 16043,
       "endMs": 16229
     },
     {
+      "id": "w0040",
       "word": "scarf",
       "startMs": 16287,
       "endMs": 16670
     },
     {
+      "id": "w0041",
       "word": "tied",
       "startMs": 16728,
       "endMs": 17007
     },
     {
+      "id": "w0042",
       "word": "in",
       "startMs": 17041,
       "endMs": 17099
     },
     {
+      "id": "w0043",
       "word": "a",
       "startMs": 17146,
       "endMs": 17169
     },
     {
+      "id": "w0044",
       "word": "bow",
       "startMs": 17250,
       "endMs": 17529
     },
     {
+      "id": "w0045",
       "word": "around",
       "startMs": 17657,
       "endMs": 18005
     },
     {
+      "id": "w0046",
       "word": "the",
       "startMs": 18040,
       "endMs": 18109
     },
     {
+      "id": "w0047",
       "word": "victim's",
       "startMs": 18168,
       "endMs": 18655
     },
     {
+      "id": "w0048",
       "word": "neck.",
       "startMs": 18736,
       "endMs": 19805
     },
     {
+      "id": "w0049",
       "word": "Detective",
       "startMs": 21035,
       "endMs": 21604
     },
     {
+      "id": "w0050",
       "word": "Mara",
       "startMs": 21650,
       "endMs": 21894
     },
     {
+      "id": "w0051",
       "word": "Voss",
       "startMs": 21964,
       "endMs": 22219
     },
     {
+      "id": "w0052",
       "word": "arrived",
       "startMs": 22266,
       "endMs": 22614
     },
     {
+      "id": "w0053",
       "word": "first.",
       "startMs": 22672,
       "endMs": 23276
     },
     {
+      "id": "w0054",
       "word": "She",
       "startMs": 23496,
       "endMs": 23636
     },
     {
+      "id": "w0055",
       "word": "walked",
       "startMs": 23682,
       "endMs": 23926
     },
     {
+      "id": "w0056",
       "word": "the",
       "startMs": 23961,
       "endMs": 24030
     },
     {
+      "id": "w0057",
       "word": "scene",
       "startMs": 24077,
       "endMs": 24321
     },
     {
+      "id": "w0058",
       "word": "once,",
       "startMs": 24379,
       "endMs": 24843
     },
     {
+      "id": "w0059",
       "word": "slowly,",
       "startMs": 25029,
       "endMs": 25679
     },
     {
+      "id": "w0060",
       "word": "and",
       "startMs": 25725,
       "endMs": 25923
     },
     {
+      "id": "w0061",
       "word": "said",
       "startMs": 26004,
       "endMs": 26225
     },
     {
+      "id": "w0062",
       "word": "nothing.",
       "startMs": 26294,
       "endMs": 27351
     },
     {
+      "id": "w0063",
       "word": "The",
       "startMs": 27851,
       "endMs": 27990
     },
     {
+      "id": "w0064",
       "word": "rain",
       "startMs": 28060,
       "endMs": 28292
     },
     {
+      "id": "w0065",
       "word": "had",
       "startMs": 28362,
       "endMs": 28455
     },
     {
+      "id": "w0066",
       "word": "washed",
       "startMs": 28501,
       "endMs": 28757
     },
     {
+      "id": "w0067",
       "word": "away",
       "startMs": 28791,
       "endMs": 29024
     },
     {
+      "id": "w0068",
       "word": "most",
       "startMs": 29116,
       "endMs": 29337
     },
     {
+      "id": "w0069",
       "word": "of",
       "startMs": 29384,
       "endMs": 29442
     },
     {
+      "id": "w0070",
       "word": "the",
       "startMs": 29476,
       "endMs": 29546
     },
     {
+      "id": "w0071",
       "word": "evidence,",
       "startMs": 29604,
       "endMs": 30185
     },
     {
+      "id": "w0072",
       "word": "but",
       "startMs": 30370,
       "endMs": 30510
     },
     {
+      "id": "w0073",
       "word": "not",
       "startMs": 30568,
       "endMs": 30742
     },
     {
+      "id": "w0074",
       "word": "everything.",
       "startMs": 30812,
       "endMs": 32077
     },
     {
+      "id": "w0075",
       "word": "Security",
       "startMs": 33307,
       "endMs": 33841
     },
     {
+      "id": "w0076",
       "word": "footage",
       "startMs": 33887,
       "endMs": 34236
     },
     {
+      "id": "w0077",
       "word": "from",
       "startMs": 34271,
       "endMs": 34410
     },
     {
+      "id": "w0078",
       "word": "a",
       "startMs": 34468,
       "endMs": 34491
     },
     {
+      "id": "w0079",
       "word": "bodega",
       "startMs": 34549,
       "endMs": 35130
     },
     {
+      "id": "w0080",
       "word": "two",
       "startMs": 35199,
       "endMs": 35408
     },
     {
+      "id": "w0081",
       "word": "blocks",
       "startMs": 35466,
       "endMs": 35757
     },
     {
+      "id": "w0082",
       "word": "away",
       "startMs": 35792,
       "endMs": 36221
     },
     {
+      "id": "w0083",
       "word": "showed",
       "startMs": 36477,
       "endMs": 36744
     },
     {
+      "id": "w0084",
       "word": "a",
       "startMs": 36778,
       "endMs": 36802
     },
     {
+      "id": "w0085",
       "word": "figure",
       "startMs": 36883,
       "endMs": 37196
     },
     {
+      "id": "w0086",
       "word": "in",
       "startMs": 37254,
       "endMs": 37370
     },
     {
+      "id": "w0087",
       "word": "a",
       "startMs": 37429,
       "endMs": 37452
     },
     {
+      "id": "w0088",
       "word": "dark",
       "startMs": 37579,
       "endMs": 37928
     },
     {
+      "id": "w0089",
       "word": "coat,",
       "startMs": 38009,
       "endMs": 38485
     },
     {
+      "id": "w0090",
       "word": "limping,",
       "startMs": 38648,
       "endMs": 39298
     },
     {
+      "id": "w0091",
       "word": "heading",
       "startMs": 39484,
       "endMs": 39774
     },
     {
+      "id": "w0092",
       "word": "west",
       "startMs": 39867,
       "endMs": 40227
     },
     {
+      "id": "w0093",
       "word": "at",
       "startMs": 40296,
       "endMs": 40424
     },
     {
+      "id": "w0094",
       "word": "exactly",
       "startMs": 40494,
       "endMs": 40958
     },
     {
+      "id": "w0095",
       "word": "1:44",
       "startMs": 41039,
       "endMs": 42038
     },
     {
+      "id": "w0096",
       "word": "a.m.",
       "startMs": 42119,
       "endMs": 43292
     },
     {
+      "id": "w0097",
       "word": "The",
       "startMs": 43792,
       "endMs": 43920
     },
     {
+      "id": "w0098",
       "word": "timestamp",
       "startMs": 43966,
       "endMs": 44523
     },
     {
+      "id": "w0099",
       "word": "matched",
       "startMs": 44651,
       "endMs": 44965
     },
     {
+      "id": "w0100",
       "word": "the",
       "startMs": 44999,
       "endMs": 45081
     },
     {
+      "id": "w0101",
       "word": "estimated",
       "startMs": 45162,
       "endMs": 45719
     },
     {
+      "id": "w0102",
       "word": "time",
       "startMs": 45766,
       "endMs": 46068
     },
     {
+      "id": "w0103",
       "word": "of",
       "startMs": 46102,
       "endMs": 46172
     },
     {
+      "id": "w0104",
       "word": "death.",
       "startMs": 46300,
       "endMs": 47229
     },
     {
+      "id": "w0105",
       "word": "Forensics",
       "startMs": 48469,
       "endMs": 49073
     },
     {
+      "id": "w0106",
       "word": "recovered",
       "startMs": 49131,
       "endMs": 49572
     },
     {
+      "id": "w0107",
       "word": "one",
       "startMs": 49653,
       "endMs": 49909
     },
     {
+      "id": "w0108",
       "word": "partial",
       "startMs": 49978,
       "endMs": 50454
     },
     {
+      "id": "w0109",
       "word": "print.",
       "startMs": 50547,
       "endMs": 51151
     },
     {
+      "id": "w0110",
       "word": "It",
       "startMs": 51488,
       "endMs": 51615
     },
     {
+      "id": "w0111",
       "word": "belonged",
       "startMs": 51662,
       "endMs": 52033
     },
     {
+      "id": "w0112",
       "word": "to",
       "startMs": 52080,
       "endMs": 52173
     },
     {
+      "id": "w0113",
       "word": "a",
       "startMs": 52265,
       "endMs": 52289
     },
     {
+      "id": "w0114",
       "word": "man",
       "startMs": 52370,
       "endMs": 52614
     },
     {
+      "id": "w0115",
       "word": "reported",
       "startMs": 52707,
       "endMs": 53171
     },
     {
+      "id": "w0116",
       "word": "missing",
       "startMs": 53241,
       "endMs": 53601
     },
     {
+      "id": "w0117",
       "word": "three",
       "startMs": 53682,
       "endMs": 53961
     },
     {
+      "id": "w0118",
       "word": "weeks",
       "startMs": 54007,
       "endMs": 54320
     },
     {
+      "id": "w0119",
       "word": "earlier.",
       "startMs": 54413,
       "endMs": 55098
     },
     {
+      "id": "w0120",
       "word": "A",
       "startMs": 55435,
       "endMs": 55516
     },
     {
+      "id": "w0121",
       "word": "man",
       "startMs": 55598,
       "endMs": 55830
     },
     {
+      "id": "w0122",
       "word": "with",
       "startMs": 55899,
       "endMs": 56074
     },
     {
+      "id": "w0123",
       "word": "no",
       "startMs": 56166,
       "endMs": 56375
     },
     {
+      "id": "w0124",
       "word": "known",
       "startMs": 56457,
       "endMs": 56724
     },
     {
+      "id": "w0125",
       "word": "enemies.",
       "startMs": 56805,
       "endMs": 57989
     },
     {
+      "id": "w0126",
       "word": "A",
       "startMs": 58489,
       "endMs": 58593
     },
     {
+      "id": "w0127",
       "word": "man",
       "startMs": 58675,
       "endMs": 58826
     },
     {
+      "id": "w0128",
       "word": "who,",
       "startMs": 58884,
       "endMs": 59116
     },
     {
+      "id": "w0129",
       "word": "according",
       "startMs": 59139,
       "endMs": 59522
     },
     {
+      "id": "w0130",
       "word": "to",
       "startMs": 59557,
       "endMs": 59604
     },
     {
+      "id": "w0131",
       "word": "his",
       "startMs": 59662,
       "endMs": 59754
     },
     {
+      "id": "w0132",
       "word": "coworkers,",
       "startMs": 59813,
       "endMs": 60579
     },
     {
+      "id": "w0133",
       "word": "simply",
       "startMs": 60765,
       "endMs": 61101
     },
     {
+      "id": "w0134",
       "word": "stopped",
       "startMs": 61171,
       "endMs": 61531
     },
     {
+      "id": "w0135",
       "word": "coming",
       "startMs": 61577,
       "endMs": 61821
     },
     {
+      "id": "w0136",
       "word": "to",
       "startMs": 61868,
       "endMs": 61914
     },
     {
+      "id": "w0137",
       "word": "work",
       "startMs": 61984,
       "endMs": 62193
     },
     {
+      "id": "w0138",
       "word": "one",
       "startMs": 62274,
       "endMs": 62425
     },
     {
+      "id": "w0139",
       "word": "Tuesday",
       "startMs": 62460,
       "endMs": 62959
     },
     {
+      "id": "w0140",
       "word": "and",
       "startMs": 63087,
       "endMs": 63249
     },
     {
+      "id": "w0141",
       "word": "was",
       "startMs": 63296,
       "endMs": 63412
     },
     {
+      "id": "w0142",
       "word": "never",
       "startMs": 63539,
       "endMs": 63795
     },
     {
+      "id": "w0143",
       "word": "seen",
       "startMs": 63853,
       "endMs": 64073
     },
     {
+      "id": "w0144",
       "word": "again.",
       "startMs": 64120,
       "endMs": 65269
     },
     {
+      "id": "w0145",
       "word": "The",
       "startMs": 66499,
       "endMs": 66662
     },
     {
+      "id": "w0146",
       "word": "case",
       "startMs": 66708,
       "endMs": 67010
     },
     {
+      "id": "w0147",
       "word": "went",
       "startMs": 67056,
       "endMs": 67265
     },
     {
+      "id": "w0148",
       "word": "cold.",
       "startMs": 67335,
       "endMs": 68032
     },
     {
+      "id": "w0149",
       "word": "Until",
       "startMs": 68496,
       "endMs": 68821
     },
     {
+      "id": "w0150",
       "word": "last",
       "startMs": 68891,
       "endMs": 69146
     },
     {
+      "id": "w0151",
       "word": "week,",
       "startMs": 69204,
       "endMs": 69669
     },
     {
+      "id": "w0152",
       "word": "when",
       "startMs": 69738,
       "endMs": 69924
     },
     {
+      "id": "w0153",
       "word": "an",
       "startMs": 69959,
       "endMs": 70028
     },
     {
+      "id": "w0154",
       "word": "identical",
       "startMs": 70075,
       "endMs": 70713
     },
     {
+      "id": "w0155",
       "word": "red",
       "startMs": 70806,
       "endMs": 70992
     },
     {
+      "id": "w0156",
       "word": "scarf",
       "startMs": 71050,
       "endMs": 71480
     },
     {
+      "id": "w0157",
       "word": "turned",
       "startMs": 71526,
       "endMs": 71793
     },
     {
+      "id": "w0158",
       "word": "up",
       "startMs": 71840,
       "endMs": 71932
     },
     {
+      "id": "w0159",
       "word": "in",
       "startMs": 71991,
       "endMs": 72049
     },
     {
+      "id": "w0160",
       "word": "a",
       "startMs": 72095,
       "endMs": 72118
     },
     {
+      "id": "w0161",
       "word": "donation",
       "startMs": 72165,
       "endMs": 72734
     },
     {
+      "id": "w0162",
       "word": "bin",
       "startMs": 72792,
       "endMs": 73047
     },
     {
+      "id": "w0163",
       "word": "outside",
       "startMs": 73175,
       "endMs": 73825
     },
     {
+      "id": "w0164",
       "word": "the",
       "startMs": 73860,
       "endMs": 73929
     },
     {
+      "id": "w0165",
       "word": "precinct.",
       "startMs": 73976,
       "endMs": 75276
     },
     {
+      "id": "w0166",
       "word": "Someone",
       "startMs": 76506,
       "endMs": 76889
     },
     {
+      "id": "w0167",
       "word": "knows",
       "startMs": 76924,
       "endMs": 77145
     },
     {
+      "id": "w0168",
       "word": "what",
       "startMs": 77179,
       "endMs": 77319
     },
     {
+      "id": "w0169",
       "word": "happened",
       "startMs": 77377,
       "endMs": 77702
     },
     {
+      "id": "w0170",
       "word": "that",
       "startMs": 77737,
       "endMs": 77888
     },
     {
+      "id": "w0171",
       "word": "night.",
       "startMs": 77957,
       "endMs": 78445
     },
     {
+      "id": "w0172",
       "word": "And",
       "startMs": 78665,
       "endMs": 78828
     },
     {
+      "id": "w0173",
       "word": "they",
       "startMs": 78886,
       "endMs": 79049
     },
     {
+      "id": "w0174",
       "word": "are",
       "startMs": 79118,
       "endMs": 79258
     },
     {
+      "id": "w0175",
       "word": "watching.",
       "startMs": 79316,
       "endMs": 80221

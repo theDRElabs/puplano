@@ -12,7 +12,7 @@ import { parseArgs } from "../scripts/source-media";
 import { checksumFile, type ItemMetadata } from "../providers/archive-org";
 
 const scene = Storyboard.parse({ title: "Test", audioFile: "voice.mp3", durationMs: 5000, scenes: [{
-  id: "s1", chapter: 1, startMs: 0, endMs: 5000, layout: 1, template: "kinetic_title",
+  id: "s1", chapter: 1, startMs: 0, endMs: 5000, layout: 1, holdMs: 120, anchor: { startWordId: "w0001", endWordId: "w0002" }, template: "kinetic_title",
   narration: "Police examine evidence", props: { text: "Police examine evidence" },
 }] }).scenes[0];
 
@@ -76,6 +76,8 @@ test("patching uses a selected derived clip and complete attribution", () => {
   if (selected.template !== "video_clip") assert.fail("expected video scene");
   assert.deepEqual(selected.props.license, licenseFor(clip));
   assert.match(selected.props.caption ?? "", /Illustrative/);
+  assert.equal(selected.holdMs, 120);
+  assert.deepEqual(selected.anchor, { startWordId: "w0001", endWordId: "w0002" });
 });
 
 test("synthetic video preview creates timestamped contact sheets", async () => {
@@ -131,4 +133,11 @@ test("render-time verification rejects tampered provenance and incomplete attrib
     await appendFile(path.join(project, clip.localFile), "tampered");
     await assert.rejects(verifyStoryboardMedia(project, storyboard), /changed\/corrupted/);
   } finally { await rm(project, { recursive: true, force: true }); }
+});
+
+test("scene hash follows narration, not timing", () => {
+  const retimed = { ...scene, startMs: 1000, endMs: 6000 } as typeof scene;
+  assert.equal(sceneHash(retimed), sceneHash(scene));
+  const rewritten = { ...scene, narration: "A different scene beat" } as typeof scene;
+  assert.notEqual(sceneHash(rewritten), sceneHash(scene));
 });

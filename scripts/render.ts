@@ -15,6 +15,7 @@ import { WordTimings } from "../schemas/words";
 import { stageProjectAssets } from "./project-assets";
 import { verifyStoryboardMedia } from "./media-workflow";
 import { DEFAULT_STYLE_ID, loadStyle } from "./style";
+import { assertBoundariesInGaps } from "./timing-guards";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -80,25 +81,6 @@ const formatIssues = (
   return `${label} is invalid:\n${details}`;
 };
 
-const assertSceneBoundaries = (
-  storyboard: ReturnType<typeof Storyboard.parse>,
-  timings: ReturnType<typeof WordTimings.parse>,
-) => {
-  const boundaries = new Set<number>([0, timings.durationMs]);
-  timings.words.forEach((word) => {
-    boundaries.add(word.startMs);
-    boundaries.add(word.endMs);
-  });
-
-  storyboard.scenes.forEach((scene) => {
-    if (!boundaries.has(scene.startMs) || !boundaries.has(scene.endMs)) {
-      throw new Error(
-        `Scene ${scene.id} must start and end on word boundaries (${scene.startMs}-${scene.endMs} ms)`,
-      );
-    }
-  });
-};
-
 const main = async () => {
   const options = parseArgs();
   if (!/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/.test(options.project)) {
@@ -126,7 +108,7 @@ const main = async () => {
       `Duration mismatch: storyboard is ${storyboardResult.data.durationMs} ms, audio is ${wordsResult.data.durationMs} ms`,
     );
   }
-  assertSceneBoundaries(storyboardResult.data, wordsResult.data);
+  assertBoundariesInGaps(storyboardResult.data.scenes, wordsResult.data);
   await verifyStoryboardMedia(projectDir, storyboardResult.data);
 
   console.log("2/4 Checking storyboard numbers against the script");

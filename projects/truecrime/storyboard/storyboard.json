@@ -1,40 +1,45 @@
 {
   "title": "The Red Scarf — A Fictional True-Crime Vignette",
   "audioFile": "voice/narration.mp3",
-  "durationMs": 69329,
+  "durationMs": 81006,
   "scenes": [
     {
       "id": "s1",
       "chapter": 1,
       "startMs": 0,
-      "endMs": 7187,
+      "endMs": 7500,
       "layout": 1,
       "narration": "The night shift at the downtown precinct began like any other, until the call came in at 2:17 a.m.",
       "source": {
         "label": "Illustrative archival footage — not case evidence",
         "url": "https://archive.org/details/FireandP1947"
       },
+      "anchor": {
+        "startWordId": "w0001",
+        "endWordId": "w0019"
+      },
+      "holdMs": 0,
       "template": "video_clip",
       "props": {
-        "videoFile": "assets/clips/s1-5715ba6690241b74.mp4",
+        "videoFile": "assets/clips/s1-3664dd73d4a23597.mp4",
         "caption": "Illustrative archival footage",
         "startFromMs": 0,
-        "mediaAssetId": "s1-5715ba6690241b74",
+        "mediaAssetId": "s1-3664dd73d4a23597",
         "license": {
           "type": "Public domain",
           "sourceUrl": "https://archive.org/details/FireandP1947",
           "credit": "Holmes (Burton) Films, Inc.",
           "licenseUrl": "https://creativecommons.org/licenses/publicdomain/",
-          "attribution": "Fire and Police Service — Holmes (Burton) Films, Inc.. Source: https://archive.org/details/FireandP1947. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 473.800–481.100s; trimmed, audio removed, re-encoded; illustrative use.",
-          "modifications": "Excerpt 473.800–481.100s; trimmed, audio removed, re-encoded; illustrative use"
+          "attribution": "Fire and Police Service — Holmes (Burton) Films, Inc.. Source: https://archive.org/details/FireandP1947. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 473.890–481.665s; trimmed, audio removed, re-encoded; illustrative use.",
+          "modifications": "Excerpt 473.890–481.665s; trimmed, audio removed, re-encoded; illustrative use"
         }
       }
     },
     {
       "id": "s2",
       "chapter": 2,
-      "startMs": 7187,
-      "endMs": 10983,
+      "startMs": 7500,
+      "endMs": 12567,
       "layout": 1,
       "transitionIn": {
         "type": "fade",
@@ -45,33 +50,43 @@
         "label": "Illustrative archival footage — not case evidence",
         "url": "https://archive.org/details/HowTexti1948"
       },
+      "anchor": {
+        "startWordId": "w0020",
+        "endWordId": "w0031"
+      },
+      "holdMs": 0,
       "template": "video_clip",
       "props": {
-        "videoFile": "assets/clips/s2-4293dcfacded9c11.mp4",
+        "videoFile": "assets/clips/s2-188359630ca5bae2.mp4",
         "caption": "Illustrative archival footage",
         "startFromMs": 0,
-        "mediaAssetId": "s2-4293dcfacded9c11",
+        "mediaAssetId": "s2-188359630ca5bae2",
         "license": {
           "type": "Public domain",
           "sourceUrl": "https://archive.org/details/HowTexti1948",
           "credit": "Wolff (Raphael G.) Studios",
           "licenseUrl": "https://creativecommons.org/licenses/publicdomain/",
-          "attribution": "How Textile Mills Are Modernizing — Wolff (Raphael G.) Studios. Source: https://archive.org/details/HowTexti1948. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 413.500–418.500s; trimmed, audio removed, re-encoded; illustrative use.",
-          "modifications": "Excerpt 413.500–418.500s; trimmed, audio removed, re-encoded; illustrative use"
+          "attribution": "How Textile Mills Are Modernizing — Wolff (Raphael G.) Studios. Source: https://archive.org/details/HowTexti1948. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 412.000–418.000s; trimmed, audio removed, re-encoded; illustrative use.",
+          "modifications": "Excerpt 412.000–418.000s; trimmed, audio removed, re-encoded; illustrative use"
         }
       }
     },
     {
       "id": "s3",
       "chapter": 3,
-      "startMs": 10983,
-      "endMs": 17716,
+      "startMs": 12567,
+      "endMs": 20067,
       "layout": 3,
       "transitionIn": {
         "type": "slide_up",
         "durationMs": 400
       },
       "narration": "No wallet. No phone. Just a single red scarf tied in a bow around the victim's neck.",
+      "anchor": {
+        "startWordId": "w0032",
+        "endWordId": "w0048"
+      },
+      "holdMs": 180,
       "template": "kinetic_title",
       "props": {
         "text": "No wallet. No phone. Just a single red scarf tied in a bow around the victim's neck.",
@@ -81,8 +96,8 @@
     {
       "id": "s4",
       "chapter": 4,
-      "startMs": 17716,
-      "endMs": 24241,
+      "startMs": 20067,
+      "endMs": 27433,
       "layout": 1,
       "transitionIn": {
         "type": "cut",
@@ -93,33 +108,43 @@
         "label": "Illustrative archival footage — not case evidence",
         "url": "https://archive.org/details/FireandP1947"
       },
+      "anchor": {
+        "startWordId": "w0049",
+        "endWordId": "w0062"
+      },
+      "holdMs": 0,
       "template": "video_clip",
       "props": {
-        "videoFile": "assets/clips/s4-2724c52eab1c42bc.mp4",
+        "videoFile": "assets/clips/s4-8776c18eb3f0d342.mp4",
         "caption": "Illustrative archival footage",
         "startFromMs": 0,
-        "mediaAssetId": "s4-2724c52eab1c42bc",
+        "mediaAssetId": "s4-8776c18eb3f0d342",
         "license": {
           "type": "Public domain",
           "sourceUrl": "https://archive.org/details/FireandP1947",
           "credit": "Holmes (Burton) Films, Inc.",
           "licenseUrl": "https://creativecommons.org/licenses/publicdomain/",
-          "attribution": "Fire and Police Service — Holmes (Burton) Films, Inc.. Source: https://archive.org/details/FireandP1947. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 346.500–353.200s; trimmed, audio removed, re-encoded; illustrative use.",
-          "modifications": "Excerpt 346.500–353.200s; trimmed, audio removed, re-encoded; illustrative use"
+          "attribution": "Fire and Police Service — Holmes (Burton) Films, Inc.. Source: https://archive.org/details/FireandP1947. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 346.296–355.505s; trimmed, audio removed, re-encoded; illustrative use.",
+          "modifications": "Excerpt 346.296–355.505s; trimmed, audio removed, re-encoded; illustrative use"
         }
       }
     },
     {
       "id": "s5",
       "chapter": 5,
-      "startMs": 24241,
-      "endMs": 28084,
+      "startMs": 27433,
+      "endMs": 32333,
       "layout": 2,
       "transitionIn": {
         "type": "fade",
         "durationMs": 500
       },
       "narration": "The rain had washed away most of the evidence, but not everything.",
+      "anchor": {
+        "startWordId": "w0063",
+        "endWordId": "w0074"
+      },
+      "holdMs": 160,
       "template": "kinetic_title",
       "props": {
         "text": "The rain had washed away most of the evidence, but not everything.",
@@ -129,14 +154,19 @@
     {
       "id": "s6",
       "chapter": 6,
-      "startMs": 28084,
-      "endMs": 35422,
+      "startMs": 32333,
+      "endMs": 43567,
       "layout": 3,
       "transitionIn": {
         "type": "slide_up",
         "durationMs": 400
       },
-      "narration": "Security footage from a bodega two blocks away showed a figure in a dark coat, limping, heading west at exactly",
+      "narration": "Security footage from a bodega two blocks away showed a figure in a dark coat, limping, heading west at exactly 1:44 a.m.",
+      "anchor": {
+        "startWordId": "w0075",
+        "endWordId": "w0096"
+      },
+      "holdMs": 200,
       "template": "kinetic_title",
       "props": {
         "text": "Security footage from a bodega two blocks away showed a figure in a dark coat, limping, heading west at exactly",
@@ -146,18 +176,23 @@
     {
       "id": "s7",
       "chapter": 7,
-      "startMs": 35422,
-      "endMs": 41250,
+      "startMs": 43567,
+      "endMs": 47433,
       "layout": 1,
       "transitionIn": {
         "type": "cut",
         "durationMs": 300
       },
-      "narration": "1:44 a.m. The timestamp matched the estimated time of death.",
+      "narration": "The timestamp matched the estimated time of death.",
       "source": {
         "label": "Illustrative archival footage — not case evidence",
         "url": "https://archive.org/details/FireandP1947"
       },
+      "anchor": {
+        "startWordId": "w0097",
+        "endWordId": "w0104"
+      },
+      "holdMs": 140,
       "template": "video_clip",
       "props": {
         "videoFile": "assets/clips/s7-a2e20edae28ca62a.mp4",
@@ -177,8 +212,8 @@
     {
       "id": "s8",
       "chapter": 8,
-      "startMs": 41250,
-      "endMs": 47693,
+      "startMs": 47433,
+      "endMs": 55333,
       "layout": 2,
       "transitionIn": {
         "type": "fade",
@@ -188,6 +223,11 @@
       "source": {
         "label": "True crime script"
       },
+      "anchor": {
+        "startWordId": "w0105",
+        "endWordId": "w0119"
+      },
+      "holdMs": 170,
       "template": "stat_counter",
       "props": {
         "label": "Partial prints recovered",
@@ -199,8 +239,8 @@
     {
       "id": "s9",
       "chapter": 9,
-      "startMs": 47693,
-      "endMs": 56981,
+      "startMs": 55333,
+      "endMs": 65333,
       "layout": 1,
       "transitionIn": {
         "type": "slide_up",
@@ -211,6 +251,11 @@
         "label": "Illustrative archival footage — not case evidence",
         "url": "https://archive.org/details/HowTexti1948"
       },
+      "anchor": {
+        "startWordId": "w0120",
+        "endWordId": "w0144"
+      },
+      "holdMs": 0,
       "template": "video_clip",
       "props": {
         "videoFile": "assets/clips/s9-2b24c1ac382b679f.mp4",
@@ -230,8 +275,8 @@
     {
       "id": "s10",
       "chapter": 10,
-      "startMs": 56981,
-      "endMs": 65735,
+      "startMs": 65333,
+      "endMs": 75367,
       "layout": 1,
       "transitionIn": {
         "type": "cut",
@@ -242,33 +287,43 @@
         "label": "Illustrative archival footage — not case evidence",
         "url": "https://archive.org/details/ThisIsYo1951"
       },
+      "anchor": {
+        "startWordId": "w0145",
+        "endWordId": "w0165"
+      },
+      "holdMs": 0,
       "template": "video_clip",
       "props": {
-        "videoFile": "assets/clips/s10-9bec3a6aa639b176.mp4",
+        "videoFile": "assets/clips/s10-a610a54bf8ffc284.mp4",
         "caption": "Illustrative archival footage",
         "startFromMs": 0,
-        "mediaAssetId": "s10-9bec3a6aa639b176",
+        "mediaAssetId": "s10-a610a54bf8ffc284",
         "license": {
           "type": "Public domain",
           "sourceUrl": "https://archive.org/details/ThisIsYo1951",
           "credit": "Handy (Jam) Organization",
           "licenseUrl": "https://creativecommons.org/licenses/publicdomain/",
-          "attribution": "This Is Your Police Department — Handy (Jam) Organization. Source: https://archive.org/details/ThisIsYo1951. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 529.000–539.000s; trimmed, audio removed, re-encoded; illustrative use.",
-          "modifications": "Excerpt 529.000–539.000s; trimmed, audio removed, re-encoded; illustrative use"
+          "attribution": "This Is Your Police Department — Handy (Jam) Organization. Source: https://archive.org/details/ThisIsYo1951. License/claim: https://creativecommons.org/licenses/publicdomain/. Excerpt 528.308–540.308s; trimmed, audio removed, re-encoded; illustrative use.",
+          "modifications": "Excerpt 528.308–540.308s; trimmed, audio removed, re-encoded; illustrative use"
         }
       }
     },
     {
       "id": "s11",
       "chapter": 11,
-      "startMs": 65735,
-      "endMs": 69329,
+      "startMs": 75367,
+      "endMs": 81006,
       "layout": 2,
       "transitionIn": {
         "type": "fade",
         "durationMs": 500
       },
       "narration": "Someone knows what happened that night. And they are watching.",
+      "anchor": {
+        "startWordId": "w0166",
+        "endWordId": "w0175"
+      },
+      "holdMs": 0,
       "template": "kinetic_title",
       "props": {
         "text": "Someone knows what happened that night. And they are watching.",
@@ -282,8 +337,12 @@
       "kind": "source_caption",
       "text": "Source: fictional script — not a documented case",
       "position": "bottom",
-      "startMs": 41250,
-      "endMs": 47693
+      "startMs": 47433,
+      "endMs": 55333,
+      "anchor": {
+        "startSceneId": "s8",
+        "endSceneId": "s8"
+      }
     },
     {
       "id": "fiction-label",
@@ -291,7 +350,8 @@
       "text": "FICTIONAL DRAMATIZATION · ARCHIVAL FOOTAGE IS ILLUSTRATIVE",
       "position": "top",
       "startMs": 0,
-      "endMs": 69329
+      "endMs": 81006,
+      "span": "full"
     }
   ]
 }

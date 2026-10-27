@@ -423,13 +423,15 @@ async function main(): Promise<void> {
     return;
   }
 
-  const key = loadKey("ELEVENLABS_API_KEY");
-  const voiceId = await findVoiceId(key, config.voiceName);
   console.log(
     `Script: ${script.length} characters, ${plan.segments.length} segment(s), ` +
       `speed ${speed}, style ${style.id}`,
   );
 
+  // Cache-only runs must not touch the network: resolve the key and voice id
+  // lazily on the first cache miss.
+  let apiKey: string | undefined;
+  let voiceId: string | undefined;
   const segmentWords: WordTiming[][] = [];
   for (let index = 0; index < plan.segments.length; index += 1) {
     const segment = plan.segments[index];
@@ -477,8 +479,10 @@ async function main(): Promise<void> {
         `Segment ${index + 1}/${plan.segments.length}: generating ` +
           `(${segment.words} words, ${segment.text.length} characters)`,
       );
+      apiKey ??= loadKey("ELEVENLABS_API_KEY");
+      voiceId ??= await findVoiceId(apiKey, config.voiceName);
       result = await speakSegment(
-        key,
+        apiKey,
         voiceId,
         config.modelId,
         segment.text,
@@ -571,9 +575,10 @@ async function main(): Promise<void> {
   const durationMs = probeDurationMs(narration);
   const pauses = plan.segments.map((segment) => segment.pauseAfterMs);
   const shifted = applyOffsets(segmentWords, segmentDurationsMs, pauses);
-  const words = shifted.map((word) => {
+  const words = shifted.map((word, index) => {
     const endMs = Math.min(word.endMs, durationMs);
     return {
+      id: `w${String(index + 1).padStart(4, "0")}`,
       word: word.word,
       startMs: word.startMs,
       endMs: Math.max(endMs, word.startMs + 1),

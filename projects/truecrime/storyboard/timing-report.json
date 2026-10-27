@@ -1,0 +1,210 @@
+{
+  "generatedBy": "scripts/compile-timing.ts",
+  "words": {
+    "durationMs": 81006,
+    "wordCount": 175
+  },
+  "settings": {
+    "fps": 30,
+    "padMs": 80,
+    "guardMs": 34,
+    "minShotMs": 1600,
+    "minSentenceEndShare": 0.6,
+    "arcTargets": {
+      "open_high": 14,
+      "mid_ease": 10,
+      "climax_accel": 12.5,
+      "resolve_hold": 8
+    }
+  },
+  "before": {
+    "durationMs": 69329,
+    "sceneCount": 11,
+    "cuts": 10,
+    "cutsPerMinute": 8.65,
+    "medianShotMs": 6525,
+    "p90ShotMs": 8754,
+    "minShotMs": 3594,
+    "shortShotShare": 0.273,
+    "longShotShare": 0.636,
+    "sentenceEndCuts": 9,
+    "cutOnSentenceEnd": 0.9
+  },
+  "after": {
+    "durationMs": 81006,
+    "sceneCount": 11,
+    "cuts": 10,
+    "cutsPerMinute": 7.41,
+    "medianShotMs": 7500,
+    "p90ShotMs": 10034,
+    "minShotMs": 3866,
+    "shortShotShare": 0.091,
+    "longShotShare": 0.636,
+    "sentenceEndCuts": 10,
+    "cutOnSentenceEnd": 1,
+    "holds": {
+      "count": 10,
+      "requestedTotalMs": 850,
+      "effectiveTotalMs": 854,
+      "clampedCount": 3,
+      "maxRequestedMs": 200,
+      "maxEffectiveMs": 195
+    }
+  },
+  "targets": {
+    "cutsPerMinute": 12,
+    "medianShotMs": 3700,
+    "minShotMs": 1600,
+    "longShotShare": 0.27,
+    "cutOnSentenceEnd": 0.65,
+    "arcCutsPerMinute": {
+      "open_high": 14,
+      "mid_ease": 10,
+      "climax_accel": 12.5,
+      "resolve_hold": 8
+    }
+  },
+  "pass": {
+    "minShot": true,
+    "sentenceEnd": true,
+    "style": {
+      "cutsPerMinute": false,
+      "medianShot": false,
+      "longShotShare": false,
+      "cutOnSentenceEnd": true
+    }
+  },
+  "arcs": [
+    {
+      "label": "open_high",
+      "targetCutsPerMinute": 14,
+      "sceneCount": 3,
+      "durationMs": 20067,
+      "cuts": 3,
+      "cutsPerMinute": 8.97,
+      "meanShotMs": 6689,
+      "pass": false
+    },
+    {
+      "label": "mid_ease",
+      "targetCutsPerMinute": 10,
+      "sceneCount": 3,
+      "durationMs": 23500,
+      "cuts": 3,
+      "cutsPerMinute": 7.66,
+      "meanShotMs": 7833,
+      "pass": false
+    },
+    {
+      "label": "climax_accel",
+      "targetCutsPerMinute": 12.5,
+      "sceneCount": 3,
+      "durationMs": 21766,
+      "cuts": 3,
+      "cutsPerMinute": 8.27,
+      "meanShotMs": 7255,
+      "pass": false
+    },
+    {
+      "label": "resolve_hold",
+      "targetCutsPerMinute": 8,
+      "sceneCount": 2,
+      "durationMs": 15673,
+      "cuts": 1,
+      "cutsPerMinute": 3.83,
+      "meanShotMs": 7837,
+      "pass": false
+    }
+  ],
+  "boundaries": [
+    {
+      "sceneId": "s1",
+      "boundaryMs": 7500,
+      "lastWordId": "w0019",
+      "holdRequestedMs": 0,
+      "holdEffectiveMs": 0,
+      "gapMs": 1240
+    },
+    {
+      "sceneId": "s2",
+      "boundaryMs": 12567,
+      "lastWordId": "w0031",
+      "holdRequestedMs": 0,
+      "holdEffectiveMs": 9,
+      "gapMs": 186
+    },
+    {
+      "sceneId": "s3",
+      "boundaryMs": 20067,
+      "lastWordId": "w0048",
+      "holdRequestedMs": 180,
+      "holdEffectiveMs": 182,
+      "gapMs": 1230
+    },
+    {
+      "sceneId": "s4",
+      "boundaryMs": 27433,
+      "lastWordId": "w0062",
+      "holdRequestedMs": 0,
+      "holdEffectiveMs": 2,
+      "gapMs": 500
+    },
+    {
+      "sceneId": "s5",
+      "boundaryMs": 32333,
+      "lastWordId": "w0074",
+      "holdRequestedMs": 160,
+      "holdEffectiveMs": 176,
+      "gapMs": 1230
+    },
+    {
+      "sceneId": "s6",
+      "boundaryMs": 43567,
+      "lastWordId": "w0096",
+      "holdRequestedMs": 200,
+      "holdEffectiveMs": 195,
+      "gapMs": 500
+    },
+    {
+      "sceneId": "s7",
+      "boundaryMs": 47433,
+      "lastWordId": "w0104",
+      "holdRequestedMs": 140,
+      "holdEffectiveMs": 124,
+      "gapMs": 1240
+    },
+    {
+      "sceneId": "s8",
+      "boundaryMs": 55333,
+      "lastWordId": "w0119",
+      "holdRequestedMs": 170,
+      "holdEffectiveMs": 155,
+      "gapMs": 337
+    },
+    {
+      "sceneId": "s9",
+      "boundaryMs": 65333,
+      "lastWordId": "w0144",
+      "holdRequestedMs": 0,
+      "holdEffectiveMs": 0,
+      "gapMs": 1230
+    },
+    {
+      "sceneId": "s10",
+      "boundaryMs": 75367,
+      "lastWordId": "w0165",
+      "holdRequestedMs": 0,
+      "holdEffectiveMs": 11,
+      "gapMs": 1230
+    }
+  ],
+  "warnings": [
+    "style cuts/min: 7.41 vs target 12",
+    "style median shot: 7500 ms vs target 3700 ms",
+    "style long-shot share: 0.636 vs target 0.27",
+    "arc open_high: 8.97 cuts/min vs target 14",
+    "arc mid_ease: 7.66 cuts/min vs target 10",
+    "arc climax_accel: 8.27 cuts/min vs target 12.5",
+    "arc resolve_hold: 3.83 cuts/min vs target 8"
+  ]
+}

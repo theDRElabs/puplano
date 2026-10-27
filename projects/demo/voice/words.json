@@ -3,651 +3,781 @@
   "durationMs": 52323,
   "words": [
     {
+      "id": "w0001",
       "word": "Welcome",
       "startMs": 0,
       "endMs": 430
     },
     {
+      "id": "w0002",
       "word": "to",
       "startMs": 453,
       "endMs": 499
     },
     {
+      "id": "w0003",
       "word": "the",
       "startMs": 557,
       "endMs": 627
     },
     {
+      "id": "w0004",
       "word": "pipeline",
       "startMs": 685,
       "endMs": 1196
     },
     {
+      "id": "w0005",
       "word": "test.",
       "startMs": 1231,
       "endMs": 1776
     },
     {
+      "id": "w0006",
       "word": "This",
       "startMs": 1985,
       "endMs": 2171
     },
     {
+      "id": "w0007",
       "word": "is",
       "startMs": 2229,
       "endMs": 2322
     },
     {
+      "id": "w0008",
       "word": "a",
       "startMs": 2368,
       "endMs": 2403
     },
     {
+      "id": "w0009",
       "word": "short",
       "startMs": 2485,
       "endMs": 2775
     },
     {
+      "id": "w0010",
       "word": "narration,",
       "startMs": 2821,
       "endMs": 3460
     },
     {
+      "id": "w0011",
       "word": "written",
       "startMs": 3634,
       "endMs": 3924
     },
     {
+      "id": "w0012",
       "word": "only",
       "startMs": 3982,
       "endMs": 4238
     },
     {
+      "id": "w0013",
       "word": "to",
       "startMs": 4307,
       "endMs": 4377
     },
     {
+      "id": "w0014",
       "word": "check",
       "startMs": 4458,
       "endMs": 4714
     },
     {
+      "id": "w0015",
       "word": "that",
       "startMs": 4783,
       "endMs": 4923
     },
     {
+      "id": "w0016",
       "word": "the",
       "startMs": 4969,
       "endMs": 5050
     },
     {
+      "id": "w0017",
       "word": "voice,",
       "startMs": 5132,
       "endMs": 5550
     },
     {
+      "id": "w0018",
       "word": "the",
       "startMs": 5666,
       "endMs": 5782
     },
     {
+      "id": "w0019",
       "word": "timing",
       "startMs": 5840,
       "endMs": 6293
     },
     {
+      "id": "w0020",
       "word": "and",
       "startMs": 6374,
       "endMs": 6548
     },
     {
+      "id": "w0021",
       "word": "the",
       "startMs": 6618,
       "endMs": 6687
     },
     {
+      "id": "w0022",
       "word": "video",
       "startMs": 6734,
       "endMs": 7047
     },
     {
+      "id": "w0023",
       "word": "templates",
       "startMs": 7117,
       "endMs": 7767
     },
     {
+      "id": "w0024",
       "word": "all",
       "startMs": 7883,
       "endMs": 8162
     },
     {
+      "id": "w0025",
       "word": "work",
       "startMs": 8231,
       "endMs": 8464
     },
     {
+      "id": "w0026",
       "word": "together.",
       "startMs": 8533,
       "endMs": 9125
     },
     {
+      "id": "w0027",
       "word": "Let's",
       "startMs": 9567,
       "endMs": 9834
     },
     {
+      "id": "w0028",
       "word": "start",
       "startMs": 9857,
       "endMs": 10101
     },
     {
+      "id": "w0029",
       "word": "with",
       "startMs": 10136,
       "endMs": 10252
     },
     {
+      "id": "w0030",
       "word": "a",
       "startMs": 10286,
       "endMs": 10321
     },
     {
+      "id": "w0031",
       "word": "number.",
       "startMs": 10414,
       "endMs": 10913
     },
     {
+      "id": "w0032",
       "word": "Imagine",
       "startMs": 11238,
       "endMs": 11680
     },
     {
+      "id": "w0033",
       "word": "a",
       "startMs": 11703,
       "endMs": 11726
     },
     {
+      "id": "w0034",
       "word": "monthly",
       "startMs": 11807,
       "endMs": 12214
     },
     {
+      "id": "w0035",
       "word": "rent",
       "startMs": 12307,
       "endMs": 12562
     },
     {
+      "id": "w0036",
       "word": "of",
       "startMs": 12608,
       "endMs": 12666
     },
     {
+      "id": "w0037",
       "word": "$1,700,",
       "startMs": 12759,
       "endMs": 14710
     },
     {
+      "id": "w0038",
       "word": "rising",
       "startMs": 14954,
       "endMs": 15337
     },
     {
+      "id": "w0039",
       "word": "to",
       "startMs": 15395,
       "endMs": 15488
     },
     {
+      "id": "w0040",
       "word": "$1,850",
       "startMs": 15581,
       "endMs": 17369
     },
     {
+      "id": "w0041",
       "word": "over",
       "startMs": 17485,
       "endMs": 17787
     },
     {
+      "id": "w0042",
       "word": "two",
       "startMs": 17857,
       "endMs": 18170
     },
     {
+      "id": "w0043",
       "word": "years.",
       "startMs": 18286,
       "endMs": 18832
     },
     {
+      "id": "w0044",
       "word": "That",
       "startMs": 19215,
       "endMs": 19412
     },
     {
+      "id": "w0045",
       "word": "is",
       "startMs": 19470,
       "endMs": 19552
     },
     {
+      "id": "w0046",
       "word": "an",
       "startMs": 19598,
       "endMs": 19668
     },
     {
+      "id": "w0047",
       "word": "increase",
       "startMs": 19737,
       "endMs": 20237
     },
     {
+      "id": "w0048",
       "word": "of",
       "startMs": 20283,
       "endMs": 20388
     },
     {
+      "id": "w0049",
       "word": "about",
       "startMs": 20446,
       "endMs": 20748
     },
     {
+      "id": "w0050",
       "word": "9",
       "startMs": 20864,
       "endMs": 21107
     },
     {
+      "id": "w0051",
       "word": "percent.",
       "startMs": 21189,
       "endMs": 21746
     },
     {
+      "id": "w0052",
       "word": "Now",
       "startMs": 21839,
       "endMs": 22106
     },
     {
+      "id": "w0053",
       "word": "a",
       "startMs": 22222,
       "endMs": 22280
     },
     {
+      "id": "w0054",
       "word": "date.",
       "startMs": 22373,
       "endMs": 22884
     },
     {
+      "id": "w0055",
       "word": "In",
       "startMs": 23395,
       "endMs": 23557
     },
     {
+      "id": "w0056",
       "word": "2026,",
       "startMs": 23627,
       "endMs": 25078
     },
     {
+      "id": "w0057",
       "word": "this",
       "startMs": 25113,
       "endMs": 25310
     },
     {
+      "id": "w0058",
       "word": "test",
       "startMs": 25380,
       "endMs": 25693
     },
     {
+      "id": "w0059",
       "word": "was",
       "startMs": 25751,
       "endMs": 25868
     },
     {
+      "id": "w0060",
       "word": "recorded",
       "startMs": 25926,
       "endMs": 26378
     },
     {
+      "id": "w0061",
       "word": "on",
       "startMs": 26436,
       "endMs": 26506
     },
     {
+      "id": "w0062",
       "word": "a",
       "startMs": 26552,
       "endMs": 26587
     },
     {
+      "id": "w0063",
       "word": "phone,",
       "startMs": 26657,
       "endMs": 27237
     },
     {
+      "id": "w0064",
       "word": "from",
       "startMs": 27388,
       "endMs": 27551
     },
     {
+      "id": "w0065",
       "word": "a",
       "startMs": 27597,
       "endMs": 27621
     },
     {
+      "id": "w0066",
       "word": "tiny",
       "startMs": 27702,
       "endMs": 28108
     },
     {
+      "id": "w0067",
       "word": "server,",
       "startMs": 28178,
       "endMs": 28735
     },
     {
+      "id": "w0068",
       "word": "with",
       "startMs": 28886,
       "endMs": 29083
     },
     {
+      "id": "w0069",
       "word": "no",
       "startMs": 29176,
       "endMs": 29374
     },
     {
+      "id": "w0070",
       "word": "editing",
       "startMs": 29490,
       "endMs": 29885
     },
     {
+      "id": "w0071",
       "word": "software",
       "startMs": 29954,
       "endMs": 30500
     },
     {
+      "id": "w0072",
       "word": "at",
       "startMs": 30546,
       "endMs": 30720
     },
     {
+      "id": "w0073",
       "word": "all.",
       "startMs": 30790,
       "endMs": 31719
     },
     {
+      "id": "w0074",
       "word": "Here",
       "startMs": 31765,
       "endMs": 32044
     },
     {
+      "id": "w0075",
       "word": "is",
       "startMs": 32102,
       "endMs": 32218
     },
     {
+      "id": "w0076",
       "word": "a",
       "startMs": 32276,
       "endMs": 32299
     },
     {
+      "id": "w0077",
       "word": "longer",
       "startMs": 32392,
       "endMs": 32717
     },
     {
+      "id": "w0078",
       "word": "sentence,",
       "startMs": 32775,
       "endMs": 33309
     },
     {
+      "id": "w0079",
       "word": "to",
       "startMs": 33332,
       "endMs": 33425
     },
     {
+      "id": "w0080",
       "word": "test",
       "startMs": 33495,
       "endMs": 33750
     },
     {
+      "id": "w0081",
       "word": "the",
       "startMs": 33797,
       "endMs": 33866
     },
     {
+      "id": "w0082",
       "word": "pauses:",
       "startMs": 33913,
       "endMs": 34679
     },
     {
+      "id": "w0083",
       "word": "when",
       "startMs": 35004,
       "endMs": 35178
     },
     {
+      "id": "w0084",
       "word": "the",
       "startMs": 35213,
       "endMs": 35283
     },
     {
+      "id": "w0085",
       "word": "narration",
       "startMs": 35318,
       "endMs": 35805
     },
     {
+      "id": "w0086",
       "word": "slows",
       "startMs": 35898,
       "endMs": 36293
     },
     {
+      "id": "w0087",
       "word": "down,",
       "startMs": 36363,
       "endMs": 36815
     },
     {
+      "id": "w0088",
       "word": "speeds",
       "startMs": 36966,
       "endMs": 37396
     },
     {
+      "id": "w0089",
       "word": "up,",
       "startMs": 37477,
       "endMs": 37709
     },
     {
+      "id": "w0090",
       "word": "or",
       "startMs": 37744,
       "endMs": 37907
     },
     {
+      "id": "w0091",
       "word": "stops",
       "startMs": 37976,
       "endMs": 38301
     },
     {
+      "id": "w0092",
       "word": "for",
       "startMs": 38348,
       "endMs": 38464
     },
     {
+      "id": "w0093",
       "word": "a",
       "startMs": 38522,
       "endMs": 38545
     },
     {
+      "id": "w0094",
       "word": "breath,",
       "startMs": 38603,
       "endMs": 39172
     },
     {
+      "id": "w0095",
       "word": "the",
       "startMs": 39346,
       "endMs": 39451
     },
     {
+      "id": "w0096",
       "word": "timing",
       "startMs": 39509,
       "endMs": 39869
     },
     {
+      "id": "w0097",
       "word": "data",
       "startMs": 39927,
       "endMs": 40240
     },
     {
+      "id": "w0098",
       "word": "should",
       "startMs": 40287,
       "endMs": 40484
     },
     {
+      "id": "w0099",
       "word": "follow",
       "startMs": 40542,
       "endMs": 40821
     },
     {
+      "id": "w0100",
       "word": "every",
       "startMs": 40937,
       "endMs": 41366
     },
     {
+      "id": "w0101",
       "word": "word,",
       "startMs": 41436,
       "endMs": 42017
     },
     {
+      "id": "w0102",
       "word": "so",
       "startMs": 42191,
       "endMs": 42330
     },
     {
+      "id": "w0103",
       "word": "the",
       "startMs": 42400,
       "endMs": 42469
     },
     {
+      "id": "w0104",
       "word": "text",
       "startMs": 42527,
       "endMs": 42853
     },
     {
+      "id": "w0105",
       "word": "on",
       "startMs": 42911,
       "endMs": 43015
     },
     {
+      "id": "w0106",
       "word": "screen",
       "startMs": 43085,
       "endMs": 43410
     },
     {
+      "id": "w0107",
       "word": "lands",
       "startMs": 43491,
       "endMs": 43770
     },
     {
+      "id": "w0108",
       "word": "exactly",
       "startMs": 43840,
       "endMs": 44548
     },
     {
+      "id": "w0109",
       "word": "when",
       "startMs": 44606,
       "endMs": 44757
     },
     {
+      "id": "w0110",
       "word": "it",
       "startMs": 44803,
       "endMs": 44873
     },
     {
+      "id": "w0111",
       "word": "is",
       "startMs": 44931,
       "endMs": 45012
     },
     {
+      "id": "w0112",
       "word": "spoken.",
       "startMs": 45047,
       "endMs": 45767
     },
     {
+      "id": "w0113",
       "word": "Last,",
       "startMs": 46278,
       "endMs": 46789
     },
     {
+      "id": "w0114",
       "word": "a",
       "startMs": 46823,
       "endMs": 46893
     },
     {
+      "id": "w0115",
       "word": "short",
       "startMs": 47009,
       "endMs": 47288
     },
     {
+      "id": "w0116",
       "word": "line.",
       "startMs": 47346,
       "endMs": 47787
     },
     {
+      "id": "w0117",
       "word": "That",
       "startMs": 47915,
       "endMs": 48147
     },
     {
+      "id": "w0118",
       "word": "is",
       "startMs": 48205,
       "endMs": 48298
     },
     {
+      "id": "w0119",
       "word": "the",
       "startMs": 48356,
       "endMs": 48437
     },
     {
+      "id": "w0120",
       "word": "whole",
       "startMs": 48484,
       "endMs": 48681
     },
     {
+      "id": "w0121",
       "word": "test.",
       "startMs": 48716,
       "endMs": 49262
     },
     {
+      "id": "w0122",
       "word": "If",
       "startMs": 49471,
       "endMs": 49610
     },
     {
+      "id": "w0123",
       "word": "you",
       "startMs": 49656,
       "endMs": 49738
     },
     {
+      "id": "w0124",
       "word": "can",
       "startMs": 49784,
       "endMs": 49889
     },
     {
+      "id": "w0125",
       "word": "hear",
       "startMs": 49935,
       "endMs": 50074
     },
     {
+      "id": "w0126",
       "word": "this",
       "startMs": 50121,
       "endMs": 50260
     },
     {
+      "id": "w0127",
       "word": "clearly,",
       "startMs": 50341,
       "endMs": 50806
     },
     {
+      "id": "w0128",
       "word": "the",
       "startMs": 50875,
       "endMs": 50991
     },
     {
+      "id": "w0129",
       "word": "voice",
       "startMs": 51073,
       "endMs": 51398
     },
     {
+      "id": "w0130",
       "word": "works.",
       "startMs": 51456,
       "endMs": 52323

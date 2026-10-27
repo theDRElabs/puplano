@@ -49,7 +49,10 @@ npm run voice -- <project>
 ```
 
 The voice script caches unchanged ElevenLabs segments, joins them into
-`voice/narration.mp3`, and writes exact timings to `voice/words.json`.
+`voice/narration.mp3`, and writes exact timings to `voice/words.json`. Each
+word gets a stable id (`w0001`, `w0002`, ...) assigned from its global position
+in the joined narration. Storyboard anchors reference those ids, not raw text
+or punctuation.
 
 ### Voice pacing
 
@@ -72,6 +75,57 @@ without it the run warns and still writes the report. A voice run leaves the
 storyboard untouched, so re-time the storyboard after any voice or script
 change.
 
+### Timing compilation
+
+Storyboard timing is compiled from word ids instead of hand-edited
+milliseconds. A scene can carry:
+
+```json
+{
+  "anchor": { "startWordId": "w0034", "endWordId": "w0041" },
+  "holdMs": 250
+}
+```
+
+The anchor must resolve to the scene's exact `narration` tokens, and the scene
+must end on sentence punctuation. The compiler places the cut after the last
+word, adds the authored hold and an 80 ms pad, clamps it inside the following
+silence gap with a one-frame guard, and quantizes it to the 30 fps grid. Holds
+are reduced when the following pause is too short; the report records requested
+and effective values. Scenes stay contiguous, `durationMs` comes from the audio,
+and cuts are never allowed inside a word.
+
+Overlays can use a word span, a `{ "startSceneId": "s8", "endSceneId": "s8" }`
+scene span, or `"span": "full"` for the whole track. Their millisecond fields
+are rewritten from the compiled timing.
+
+```bash
+npm run compile-timing -- truecrime --style network-truecrime
+# infer anchors from each scene's narration, then compile and write them:
+npm run compile-timing -- truecrime --style network-truecrime --write-anchors
+```
+
+The command writes `storyboard/storyboard.json` and
+`storyboard/timing-report.json` only after a successful compilation. The report
+contains before/after pacing metrics, per-boundary requested/effective holds,
+four arc metrics, style targets, and warnings. Style-target misses are warnings
+for a later scene-splitting pass; the compiler still enforces contiguous
+timing, `minShotMs`, and a sentence-end cut share of at least 0.60.
+
+Use `--baseline <git-ref>` when re-timing an existing project: the report's
+before block is measured against that ref's storyboard and narration timings
+(for example, `--baseline fbfc537` for the current truecrime migration).
+
+Re-timing does not invalidate a reviewed footage selection, because selection
+hashes cover the scene id and narration rather than milliseconds. Coverage is
+checked separately: `npm run source-media -- <project> verify` fails if a
+compiled scene is longer than its clip, so extend or re-select footage when a
+shot needs more screen time.
+
+When narration changes, regenerate `voice/words.json` (which refreshes the
+word ids) and recompile the storyboard. Normal renders use the committed
+anchors and never tokenize narration at runtime.
+
 ### 2. Create the storyboard
 
 Use `STORYBOARD-TASK.md` as the agent task. The output must be:
@@ -93,9 +147,9 @@ npm run check-numbers -- <project>
 npm run render -- <project>
 ```
 
-The command validates the storyboard and word timings, rejects scene cuts that
-are not on word boundaries, checks displayed numbers against the script, stages
-project assets, and renders:
+The command validates the storyboard and word timings, requires scene cuts in
+silence gaps (never inside a word) with 30 fps-quantized timing, checks
+displayed numbers against the script, stages project assets, and renders:
 
 ```text
 projects/<project>/renders/final.mp4

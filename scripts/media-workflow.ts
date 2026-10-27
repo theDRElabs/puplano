@@ -63,7 +63,10 @@ export const loadManifest = async (projectDir: string) => {
 export const saveManifest = (projectDir: string, manifest: Manifest) => writeJson(manifestPath(projectDir), Manifest.parse(manifest));
 export const assetId = (identifier: string, filename: string) => `${identifier.slice(0, 65)}-${hash(filename).slice(0, 12)}`;
 export const hash = (value: string) => createHash("sha256").update(value).digest("hex");
-export const sceneHash = (scene: Scene) => hash(JSON.stringify({ id: scene.id, startMs: scene.startMs, endMs: scene.endMs, narration: scene.narration }));
+// Timing is deliberately excluded: re-timing or adding holds must not
+// invalidate a reviewed footage selection. Clip coverage is checked
+// separately by selectClip, patchScene, and verifyStoryboardMedia.
+export const sceneHash = (scene: Scene) => hash(JSON.stringify({ id: scene.id, narration: scene.narration }));
 export const metadataHash = (item: ItemMetadata) => hash(JSON.stringify({ identifier: item.identifier,
   title: item.title, creator: item.creator, licenseUrls: item.licenseUrls, rights: item.rights, collections: item.collections }));
 
@@ -277,7 +280,7 @@ export const patchScene = (storyboard: Storyboard, clip: Asset): Storyboard => {
   const result = structuredClone(storyboard);
   const index = result.scenes.findIndex(s => s.id === scene.id);
   result.scenes[index] = { id: scene.id, chapter: scene.chapter, startMs: scene.startMs, endMs: scene.endMs,
-    narration: scene.narration, layout: 1, transitionIn: scene.transitionIn,
+    narration: scene.narration, layout: 1, transitionIn: scene.transitionIn, anchor: scene.anchor, holdMs: scene.holdMs,
     source: { label: "Illustrative archival footage — not case evidence", url: clip.detailsUrl },
     template: "video_clip", props: { videoFile: clip.localFile, mediaAssetId: clip.id, startFromMs: 0,
       caption: "Illustrative archival footage", license: licenseFor(clip) } };
