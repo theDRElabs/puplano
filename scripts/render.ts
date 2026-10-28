@@ -13,6 +13,8 @@ import { fileURLToPath } from "node:url";
 import { Storyboard } from "../schemas/storyboard";
 import { WordTimings } from "../schemas/words";
 import { stageProjectAssets } from "./project-assets";
+import { compileProjectTimeline } from "./compile-timeline";
+import { remapTimelineAssets } from "./timeline-assets";
 import { verifyStoryboardMedia } from "./media-workflow";
 import { DEFAULT_STYLE_ID, loadStyle } from "./style";
 import { assertBoundariesInGaps } from "./timing-guards";
@@ -94,7 +96,7 @@ const main = async () => {
   if (!existsSync(storyboardFile)) throw new Error(`Missing ${storyboardFile}`);
   if (!existsSync(wordsFile)) throw new Error(`Missing ${wordsFile}`);
 
-  console.log("1/4 Validating storyboard and word timings");
+  console.log("1/5 Validating storyboard and word timings");
   const storyboardResult = Storyboard.safeParse(readJson(storyboardFile));
   if (!storyboardResult.success) {
     throw new Error(formatIssues("Storyboard", storyboardResult.error.issues));
@@ -111,19 +113,30 @@ const main = async () => {
   assertBoundariesInGaps(storyboardResult.data.scenes, wordsResult.data);
   await verifyStoryboardMedia(projectDir, storyboardResult.data);
 
-  console.log("2/4 Checking storyboard numbers against the script");
+  console.log("2/5 Checking storyboard numbers against the script");
   execFileSync("python3", [path.join(ROOT, "scripts", "check-numbers.py"), options.project], {
     cwd: ROOT,
     stdio: "inherit",
   });
 
-  console.log("3/4 Staging project assets");
+  console.log("3/5 Staging project assets");
   const staged = stageProjectAssets({
     root: ROOT,
     project: options.project,
     storyboard: storyboardResult.data,
   });
   staged.warnings.forEach((warning) => console.warn(`Warning: ${warning}`));
+
+  console.log("4/5 Compiling the timeline and remapping staged assets");
+  const timeline = compileProjectTimeline({
+    project: options.project,
+    styleId: options.style,
+  });
+  const remappedTimeline = remapTimelineAssets(
+    timeline,
+    storyboardResult.data,
+    staged.storyboard,
+  );
 
   const output = path.resolve(
     ROOT,
@@ -136,7 +149,11 @@ const main = async () => {
   try {
     writeFileSync(
       propsFile,
-      JSON.stringify({ ...staged.storyboard, words: wordsResult.data.words, style }),
+      JSON.stringify({
+        timeline: remappedTimeline,
+        words: wordsResult.data.words,
+        style,
+      }),
     );
 
     const remotionDir = path.join(ROOT, "remotion");
@@ -150,11 +167,11 @@ const main = async () => {
       throw new Error("Remotion is not installed. Run: npm install --prefix remotion");
     }
 
-    console.log(`4/4 Rendering ${path.relative(ROOT, output)}`);
+    console.log(`5/5 Rendering ${path.relative(ROOT, output)}`);
     const remotionArgs = [
       "render",
       "src/index.ts",
-      "StoryboardVideo",
+      "TimelineVideo",
       output,
       "--props",
       propsFile,

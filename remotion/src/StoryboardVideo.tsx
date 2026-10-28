@@ -25,7 +25,7 @@ type Music = {
   fadeMs: number;
 };
 
-type Overlay = {
+export type Overlay = {
   id: string;
   kind: string;
   text: string;
@@ -104,7 +104,7 @@ const AudioTracks: React.FC<{
   );
 };
 
-const Transition: React.FC<{ type?: string; durationMs?: number; children: React.ReactNode }> = ({ type, durationMs = 0, children }) => {
+export const Transition: React.FC<{ type?: string; durationMs?: number; children: React.ReactNode }> = ({ type, durationMs = 0, children }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const d = Math.max(1, Math.round((durationMs * fps) / 1000));
@@ -117,7 +117,7 @@ const Transition: React.FC<{ type?: string; durationMs?: number; children: React
   return <AbsoluteFill style={style}>{children}</AbsoluteFill>;
 };
 
-const OverlayItem: React.FC<{ o: Overlay }> = ({ o }) => {
+export const OverlayItem: React.FC<{ o: Overlay }> = ({ o }) => {
   const style = useStyle();
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
@@ -152,6 +152,17 @@ const OverlayItem: React.FC<{ o: Overlay }> = ({ o }) => {
   );
 };
 
+/** Caption styling shared with TimelineVideo. */
+export const captionStyleFor = (style: StyleProfile) => ({
+  size: style.typography.captionSizePx,
+  color: style.typography.captionColor,
+  background: style.typography.captionBackground,
+  opacity: style.typography.captionBackgroundOpacity,
+  position: style.captions.position,
+  fontFamily: style.typography.captionFont,
+  activeColor: style.palette.accent,
+});
+
 const StoryboardVideoBody: React.FC<StoryboardProps> = ({
   audioFile,
   durationMs,
@@ -182,15 +193,7 @@ const StoryboardVideoBody: React.FC<StoryboardProps> = ({
           words={words}
           maxWords={style.captions.maxWords}
           maxMs={style.captions.maxMs}
-          captionStyle={{
-            size: style.typography.captionSizePx,
-            color: style.typography.captionColor,
-            background: style.typography.captionBackground,
-            opacity: style.typography.captionBackgroundOpacity,
-            position: style.captions.position,
-            fontFamily: style.typography.captionFont,
-            activeColor: style.palette.accent,
-          }}
+          captionStyle={captionStyleFor(style)}
         />
       )}
       <AudioTracks

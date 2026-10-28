@@ -8,6 +8,9 @@ import { MapScene } from "./templates/MapScene";
 import { QuoteCutout } from "./templates/QuoteCutout";
 import { ImageZoom } from "./templates/ImageZoom";
 import { StoryboardVideo, type StoryboardProps } from "./StoryboardVideo";
+import { TimelineVideo, type TimelineVideoProps } from "./TimelineVideo";
+import { totalFrames } from "./timeline-timing";
+import type { Timeline as TimelineType } from "../../schemas/timeline";
 
 const storyboardDefaults: StoryboardProps = {
   title: "Test",
@@ -23,6 +26,63 @@ const storyboardDefaults: StoryboardProps = {
       props: { text: "Test" },
     },
   ],
+};
+
+const timelineDefaults: TimelineVideoProps = {
+  timeline: {
+    id: "timeline-default",
+    title: "Test",
+    durationMs: 5000,
+    fps: 30,
+    width: 1920,
+    height: 1080,
+    tracks: [
+      {
+        kind: "video",
+        id: "video-main",
+        role: "program",
+        clips: [
+          {
+            id: "s1",
+            sceneId: "s1",
+            template: "kinetic_title",
+            layout: 1,
+            props: { text: "Test" },
+            startMs: 0,
+            endMs: 5000,
+          },
+        ],
+      },
+      {
+        kind: "audio",
+        id: "audio-narration",
+        clips: [
+          {
+            id: "narration",
+            kind: "narration",
+            file: "generated/demo/voice/narration.mp3",
+            startMs: 0,
+            endMs: 5000,
+            sourceInMs: 0,
+            sourceOutMs: 5000,
+            gain: 1,
+          },
+        ],
+      },
+    ],
+    markers: [],
+    metadata: {
+      styleId: "network-truecrime",
+      project: "demo",
+      sourceHashes: {
+        script: "0".repeat(64),
+        words: "0".repeat(64),
+        storyboard: "0".repeat(64),
+      },
+      compiler: { id: "puplano.compile-timeline", version: "1" },
+      schemaVersion: 1,
+    },
+  } satisfies TimelineType,
 };
 
 export const Root: React.FC = () => {
@@ -107,6 +167,24 @@ export const Root: React.FC = () => {
             width: video?.width ?? 1920,
             height: video?.height ?? 1080,
             durationInFrames: Math.max(1, Math.round((props.durationMs * fps) / 1000)),
+          };
+        }}
+      />
+      <Composition
+        id="TimelineVideo"
+        component={TimelineVideo}
+        durationInFrames={150}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={timelineDefaults}
+        calculateMetadata={({ props }) => {
+          const { timeline } = props;
+          return {
+            fps: timeline.fps,
+            width: timeline.width,
+            height: timeline.height,
+            durationInFrames: totalFrames(timeline.durationMs, timeline.fps),
           };
         }}
       />
