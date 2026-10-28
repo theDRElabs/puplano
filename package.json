@@ -6,6 +6,7 @@
   "scripts": {
     "voice": "tsx scripts/voice.ts",
     "validate": "tsx scripts/validate-storyboard.ts",
+    "timeline:compile": "tsx scripts/compile-timeline.ts",
     "check-numbers": "python3 scripts/check-numbers.py",
     "render": "tsx scripts/render.ts",
     "typecheck": "npm --prefix remotion run typecheck:all",
